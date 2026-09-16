@@ -108,7 +108,7 @@
           <a href="./problem-to-remedy.html" class="nav__link"><i data-lucide="help-circle" class="inline-icon"></i> <span>समाधान (Remedy)</span></a>
           <a href="./fee-transparency.html" class="nav__link"><i data-lucide="shield-alert" class="inline-icon"></i> <span>फीस (Fees)</span></a>
           <a href="./escalation-guide.html" class="nav__link"><i data-lucide="trending-up" class="inline-icon"></i> <span>अपील (Appeals)</span></a>
-          <a href="./land-revenue-guide.html" class="nav__link"><i data-lucide="map" class="inline-icon"></i> <span>ज़मीन (Land)</span></a></li>
+          <a href="./land-revenue-guide.html" class="nav__link nav__link--active"><i data-lucide="map" class="inline-icon"></i> <span>ज़मीन (Land)</span></a></li>
             <li><a href="./legal.html"     class="nav__link"><i data-lucide="file-text" class="inline-icon"></i> नीति</a></li>
           </ul>
         </nav>
@@ -215,55 +215,162 @@
   </div>
 
   <main id="main-content">
-  <section class="section" style="padding-top: 40px; padding-bottom: 40px;">
+  <section class="section" style="padding-top: 40px; padding-bottom: 60px; background-color: #f8fafc;">
     <div class="container">
-      <div class="section__header text-center" style="margin-bottom: 24px;">
-        <h2 class="section__title"><i data-lucide="file-edit" class="inline-icon" style="color:var(--brand-teal);"></i> AI प्रार्थना पत्र (Legal Drafter)</h2>
-        <p class="section__desc">अपनी समस्या चुनें और अधिकारियों को देने के लिए एक सटीक, औपचारिक प्रार्थना पत्र (Application) तुरंत तैयार करें।</p>
+      <div class="section__header text-center" style="margin-bottom: 40px;">
+        <h1 class="section__title"><i data-lucide="map" class="inline-icon" style="color:var(--brand-teal);"></i> ज़मीन और राजस्व (Land Guide)</h1>
+        <p class="section__desc">खतौनी, विरासत, पैमाइश और ज़मीन के विवादों का कानूनी समाधान। बिना वकील के अपने अधिकार जानें।</p>
+        <p style="font-size: 0.9rem; color: #64748b; margin-top: 8px;">अंतिम अद्यतन: 16 सितंबर 2026</p>
       </div>
-      
-      <div style="background: white; padding: 24px; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); max-width: 800px; margin: 0 auto;">
+
+      <!-- Quick Info Box -->
+      <div style="background: #1e293b; color: white; border-radius: 12px; padding: 24px; margin-bottom: 40px; display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: center;">
+        <div>
+          <h3 style="margin-top: 0; margin-bottom: 8px; color: #e2e8f0; font-size: 1.1rem;"><i data-lucide="info" class="inline-icon"></i> हरदोई / संडीला संपर्क</h3>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.95rem; line-height: 1.6;">
+            <li><strong>SDM ऑफिस:</strong> तहसील संडीला (सुबह 10 बजे - शाम 5 बजे)</li>
+            <li><strong>लेखपाल (संडीला ब्लॉक):</strong> तहसील कार्यालय में मिलें (आमतौर पर दोपहर 2 बजे के बाद)</li>
+          </ul>
+        </div>
+        <div>
+          <a href="https://upbhulekh.gov.in/public/public_ror/Public_ROR.jsp" target="_blank" class="btn btn--primary" style="background: #10b981; border: none;"><i data-lucide="external-link" class="inline-icon"></i> भूलेख (Bhulekh) पोर्टल देखें</a>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-bottom: 48px;">
         
-        <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 24px;">
-          <div>
-            <label style="font-weight: 700; margin-bottom: 8px; display: block; color: var(--text-dark);">आपका नाम (Name):</label>
-            <input type="text" id="drafterName" class="input-field" placeholder="अपना पूरा नाम लिखें..." style="width:100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px;">
+        <!-- 4.1 Khatauni -->
+        <div style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); border-top: 4px solid #0ea5e9;">
+          <h2 style="font-size: 1.4rem; color: #0f172a; margin-top: 0; margin-bottom: 16px;">1. अपनी खतौनी कैसे पढ़ें?</h2>
+          <p style="color: #475569; font-size: 0.95rem; margin-bottom: 12px;">खतौनी ज़मीन का सबसे मुख्य कागज़ है। इसके कॉलम (कॉलम) का मतलब समझें:</p>
+          <ul style="padding-left: 20px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+            <li><strong>कॉलम 1:</strong> खसरा नंबर (आपके खेत का नंबर)</li>
+            <li><strong>कॉलम 2:</strong> खातेदार का नाम (मालिक)</li>
+            <li><strong>कॉलम 3:</strong> क्षेत्रफल (ज़मीन कितनी है - हेक्टेयर में)</li>
+            <li><strong>कॉलम 4-5:</strong> सिंचाई का प्रकार और लगान (टैक्स)</li>
+          </ul>
+          <div style="background: #f0fdf4; padding: 12px; border-radius: 6px; margin-top: 16px; font-size: 0.9rem;">
+            <strong>अगर जानकारी गलत है:</strong> तहसील में 'धारा 24' या नाम सुधार (Mutation Objection) का फॉर्म भरें।
           </div>
-          <div>
-            <label style="font-weight: 700; margin-bottom: 8px; display: block; color: var(--text-dark);">समस्या का प्रकार (Issue):</label>
-            <select id="drafterIssue" class="input-field" style="width:100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px;">
-              <option value="">-- कृपया एक समस्या चुनें --</option>
-              <option value="ration">राशन कार्ड कट जाना / नया बनवाना</option>
-              <option value="land">जमीन/खेत पर अवैध कब्जा (Land Dispute)</option>
-              <option value="police">पुलिस FIR दर्ज न करना</option>
-              <option value="pension">वृद्धा/विधवा पेंशन रुक जाना</option>
-              <option value="pradhan">ग्राम प्रधान द्वारा विकास कार्य में भ्रष्टाचार</option>
-            </select>
-          </div>
-          <div>
-            <label style="font-weight: 700; margin-bottom: 8px; display: block; color: var(--text-dark);">विवरण (Details - Optional):</label>
-            <textarea id="drafterDetails" class="input-field" placeholder="समस्या के बारे में कुछ और जानकारी (जैसे तारीख, पता, या लोगों के नाम)..." style="width:100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; min-height: 80px;"></textarea>
-          </div>
-          
-          <button id="generateDraftBtn" class="btn btn--primary btn--lg" style="width: 100%; display: flex; justify-content: center; align-items: center; gap: 8px;">
-            <i data-lucide="sparkles"></i> प्रार्थना पत्र तैयार करें (Generate)
-          </button>
         </div>
 
-        <!-- Output Area -->
-        <div id="draftOutputArea" style="display: none;">
-          <hr style="border:0; border-top: 1px solid #cbd5e1; margin: 24px 0;">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-            <h3 style="margin:0; font-size:1.1rem; color:var(--text-dark);">आपका प्रार्थना पत्र:</h3>
-            <button id="printDraftBtn" class="btn btn--outline" style="padding: 6px 12px; font-size: 0.9rem;">
-              <i data-lucide="printer" class="inline-icon"></i> Print / PDF
-            </button>
+        <!-- 4.2 Varasat -->
+        <div style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); border-top: 4px solid #16a34a;">
+          <h2 style="font-size: 1.4rem; color: #0f172a; margin-top: 0; margin-bottom: 16px;">2. वरासत (मृत्यु के बाद नाम दर्ज)</h2>
+          <p style="color: #475569; font-size: 0.95rem; margin-bottom: 12px;">घर के मुखिया की मृत्यु के बाद ज़मीन उनके कानूनी वारिसों (पत्नी, बेटा, बेटी) के नाम होती है।</p>
+          <ol style="padding-left: 20px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+            <li>तहसील (लेखपाल) के पास <strong>फ्री</strong> वरासत फॉर्म भरें। मृत्यु प्रमाण पत्र और वारिस का आधार साथ लें।</li>
+            <li>ग्राम सभा की खुली बैठक में इसकी पुष्टि होगी।</li>
+            <li>लेखपाल खतौनी में नाम अपडेट करेगा (2-4 हफ्ते)।</li>
+          </ol>
+          <div style="background: #fef2f2; padding: 12px; border-radius: 6px; margin-top: 16px; font-size: 0.9rem;">
+            <strong>सावधान:</strong> यह काम <strong>बिल्कुल मुफ्त</strong> है। अगर कोई ₹500 मांगे, तो सीधे तहसील जाएं।
           </div>
-          <div id="draftContent" style="padding: 32px; border: 1px solid #cbd5e1; border-radius: 8px; background: #f8fafc; font-family: 'Times New Roman', serif; white-space: pre-wrap; font-size: 1.1rem; line-height: 1.6; color: #000;">
-          </div>
+        </div>
+
+        <!-- 4.3 Paimaish -->
+        <div style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); border-top: 4px solid #eab308;">
+          <h2 style="font-size: 1.4rem; color: #0f172a; margin-top: 0; margin-bottom: 16px;">3. पैमाइश (खेत की नाप)</h2>
+          <p style="color: #475569; font-size: 0.95rem; margin-bottom: 12px;">अगर पड़ोसी से ज़मीन की मेड़ का विवाद है, तो खुद झगड़ा न करें। पैमाइश (नाप) करवाएं।</p>
+          <ul style="padding-left: 20px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+            <li><strong>कहाँ जाएं:</strong> SDM (उप जिलाधिकारी) को आवेदन दें।</li>
+            <li><strong>फीस:</strong> ₹200–500 (सरकारी चालान)। लेखपाल इसके ऊपर पैसे नहीं मांग सकता।</li>
+            <li><strong>प्रक्रिया:</strong> लेखपाल खेत नापेगा और SDM उसे पास करेगा (3-6 हफ्ते)।</li>
+          </ul>
+        </div>
+
+        <!-- 4.4 Sarkaari Land -->
+        <div style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); border-top: 4px solid #8b5cf6;">
+          <h2 style="font-size: 1.4rem; color: #0f172a; margin-top: 0; margin-bottom: 16px;">4. ज़मीन "सरकारी" दिख रही है?</h2>
+          <p style="color: #475569; font-size: 0.95rem; margin-bottom: 12px;">अगर भूलेख में आपका खेत "सरकार" के नाम दर्ज़ है, लेकिन आप पीढ़ियों से खेती कर रहे हैं:</p>
+          <ul style="padding-left: 20px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+            <li><strong>समाधान:</strong> 'धारा 24 (सरकारी ज़मीन के विरुद्ध)' के तहत केस दर्ज करें।</li>
+            <li><strong>प्रक्रिया:</strong> ग्राम सभा लिख कर देगी कि आप सालों से खेती कर रहे हैं। फिर SDM उसे आपके नाम (प्राइवेट) कर देगा।</li>
+            <li><strong>समय:</strong> करीब 3 महीने लगते हैं, लेकिन यह पक्का और मुफ्त तरीका है।</li>
+          </ul>
+        </div>
+
+        <!-- 4.5 Disputes -->
+        <div style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); border-top: 4px solid #ef4444;">
+          <h2 style="font-size: 1.4rem; color: #0f172a; margin-top: 0; margin-bottom: 16px;">5. पड़ोसी से ज़मीन विवाद</h2>
+          <p style="color: #475569; font-size: 0.95rem; margin-bottom: 12px;">मेड़ तोड़ने या कब्ज़ा करने पर <strong>कानून हाथ में न लें</strong> (यह FIR बन जाएगी)।</p>
+          <ol style="padding-left: 20px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+            <li><strong>ग्राम सभा (फ्री):</strong> सबसे पहले ग्राम प्रधान से पंचायत करवाएं।</li>
+            <li><strong>पैमाइश (₹500):</strong> SDM से नाप करवाएं।</li>
+            <li><strong>RTI (₹10):</strong> पुराने रिकॉर्ड निकालने के लिए RTI लगाएं।</li>
+            <li><strong>दीवानी मुकदमा (Civil Suit):</strong> यह सबसे आखिरी रास्ता है, इसमें 2-3 साल और पैसा लगता है।</li>
+          </ol>
+        </div>
+
+        <!-- 4.6 Lost Papers -->
+        <div style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); border-top: 4px solid #64748b;">
+          <h2 style="font-size: 1.4rem; color: #0f172a; margin-top: 0; margin-bottom: 16px;">6. ज़मीन के कागज़ गुम हो जाएं</h2>
+          <p style="color: #475569; font-size: 0.95rem; margin-bottom: 12px;">घबराएं नहीं, ज़मीन सरकारी रिकॉर्ड में रहती है।</p>
+          <ul style="padding-left: 20px; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+            <li><strong>डुप्लीकेट खतौनी:</strong> Bhulekh.up.nic.in से मुफ्त प्रिंट करें।</li>
+            <li><strong>पुराना रिकॉर्ड (हिस्ट्री):</strong> तहसील में ₹10 की RTI लगाकर पुराना रिकॉर्ड मांगें (30 दिन में मिलेगा)।</li>
+          </ul>
         </div>
 
       </div>
+
+      <!-- Templates Section -->
+      <h2 style="font-size: 1.8rem; color: #0f172a; margin-bottom: 24px; text-align: center;"><i data-lucide="file-text" class="inline-icon"></i> काम आने वाले प्रार्थना पत्र (टेम्पलेट)</h2>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+        
+        <div style="background: #f1f5f9; padding: 20px; border-radius: 8px;">
+          <h3 style="margin-top: 0; font-size: 1.2rem;">1. RTI आवेदन (रिकॉर्ड मांगने हेतु)</h3>
+          <pre style="background: white; padding: 12px; border-radius: 4px; font-family: monospace; white-space: pre-wrap; font-size: 0.85rem; border: 1px solid #cbd5e1; height: 250px; overflow-y: auto;">सेवा में,
+जन सूचना अधिकारी / तहसीलदार,
+तहसील संडीला, जिला हरदोई।
+
+विषय: सूचना का अधिकार अधिनियम 2005 के तहत जानकारी।
+
+महोदय,
+कृपया मुझे ग्राम पंचायत (गांव का नाम) के खसरा नंबर (नंबर लिखें) के पिछले 10 वर्षों के भू-रिकॉर्ड और वरासत की प्रमाणित कॉपी उपलब्ध कराएं। 
+मैं 10 रुपये का पोस्टल ऑर्डर साथ भेज रहा हूँ।
+
+नाम: 
+पता:
+दिनांक:</pre>
+        </div>
+
+        <div style="background: #f1f5f9; padding: 20px; border-radius: 8px;">
+          <h3 style="margin-top: 0; font-size: 1.2rem;">2. वरासत / नाम आपत्ति दर्ज़ कराना</h3>
+          <pre style="background: white; padding: 12px; border-radius: 4px; font-family: monospace; white-space: pre-wrap; font-size: 0.85rem; border: 1px solid #cbd5e1; height: 250px; overflow-y: auto;">सेवा में,
+श्रीमान तहसीलदार महोदय,
+तहसील संडीला, जिला हरदोई।
+
+विषय: खतौनी में नाम सुधार / आपत्ति दर्ज करने हेतु।
+
+महोदय,
+निवेदन है कि मेरे पिता श्री (नाम) की मृत्यु दिनांक (तारीख) को हो गई थी। उनकी कृषि भूमि (खसरा नंबर) ग्राम (गांव का नाम) में स्थित है। 
+खतौनी में किसी अन्य व्यक्ति का नाम गलती से दर्ज हो गया है (या वरासत दर्ज नहीं हुई है)।
+अतः श्रीमान से प्रार्थना है कि रिकॉर्ड दुरुस्त कर हम कानूनी वारिसों का नाम दर्ज करने की कृपा करें।
+
+नाम:
+हस्ताक्षर:</pre>
+        </div>
+
+        <div style="background: #f1f5f9; padding: 20px; border-radius: 8px;">
+          <h3 style="margin-top: 0; font-size: 1.2rem;">3. पैमाइश (नाप) के लिए आवेदन</h3>
+          <pre style="background: white; padding: 12px; border-radius: 4px; font-family: monospace; white-space: pre-wrap; font-size: 0.85rem; border: 1px solid #cbd5e1; height: 250px; overflow-y: auto;">सेवा में,
+श्रीमान उप जिलाधिकारी (SDM) महोदय,
+तहसील संडीला, जिला हरदोई।
+
+विषय: कृषि भूमि (खसरा नंबर) की पैमाइश/नाप कराने हेतु।
+
+महोदय,
+निवेदन है कि मेरी कृषि भूमि खसरा नंबर (नंबर) ग्राम (गांव) में स्थित है। पड़ोसी खेत वालों के साथ मेड़ को लेकर विवाद उत्पन्न हो गया है जिससे शांति भंग होने की आशंका है। मैंने सरकारी फीस (चालान) जमा कर दी है।
+अतः श्रीमान से प्रार्थना है कि संबंधित राजस्व निरीक्षक/लेखपाल को मौके पर भेजकर मेरे खेत की सरकारी पैमाइश कराने की कृपा करें।
+
+नाम:
+हस्ताक्षर:</pre>
+        </div>
+
+      </div>
+
     </div>
   </section>
 </main>
