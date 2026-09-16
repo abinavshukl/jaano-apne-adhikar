@@ -211,51 +211,64 @@
   </div>
 
   <main id="main-content">
-  <section class="section" style="padding-top: 40px; padding-bottom: 40px;">
+  <section class="section" style="padding-top: 40px; padding-bottom: 40px; background-color: #f8fafc;">
     <div class="container">
-      <div class="section__header text-center" style="margin-bottom: 24px;">
-        <h2 class="section__title"><i data-lucide="file-edit" class="inline-icon" style="color:var(--brand-teal);"></i> AI प्रार्थना पत्र (Legal Drafter)</h2>
-        <p class="section__desc">अपनी समस्या चुनें और अधिकारियों को देने के लिए एक सटीक, औपचारिक प्रार्थना पत्र (Application) तुरंत तैयार करें।</p>
+      <div class="section__header text-center" style="margin-bottom: 40px;">
+        <h2 class="section__title"><i data-lucide="book-open" class="inline-icon" style="color:var(--brand-teal);"></i> नागरिक मार्गदर्शक (Guides & Articles)</h2>
+        <p class="section__desc">विभिन्न सरकारी योजनाओं और कानूनी प्रक्रियाओं की विस्तृत चरण-दर-चरण जानकारी आसान हिंदी में पढ़ें।</p>
       </div>
       
-      <div style="background: white; padding: 24px; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); max-width: 800px; margin: 0 auto;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
         
-        <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 24px;">
-          <div>
-            <label style="font-weight: 700; margin-bottom: 8px; display: block; color: var(--text-dark);">आपका नाम (Name):</label>
-            <input type="text" id="drafterName" class="input-field" placeholder="अपना पूरा नाम लिखें..." style="width:100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px;">
+        <!-- Article 1 -->
+        <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+          <div style="height: 160px; background: #0d5c50; display: flex; align-items: center; justify-content: center;">
+            <i data-lucide="file-question" style="color: white; width: 64px; height: 64px; opacity: 0.8;"></i>
           </div>
-          <div>
-            <label style="font-weight: 700; margin-bottom: 8px; display: block; color: var(--text-dark);">समस्या का प्रकार (Issue):</label>
-            <select id="drafterIssue" class="input-field" style="width:100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px;">
-              <option value="">-- कृपया एक समस्या चुनें --</option>
-              <option value="ration">राशन कार्ड कट जाना / नया बनवाना</option>
-              <option value="land">जमीन/खेत पर अवैध कब्जा (Land Dispute)</option>
-              <option value="police">पुलिस FIR दर्ज न करना</option>
-              <option value="pension">वृद्धा/विधवा पेंशन रुक जाना</option>
-              <option value="pradhan">ग्राम प्रधान द्वारा विकास कार्य में भ्रष्टाचार</option>
-            </select>
+          <div style="padding: 24px;">
+            <span style="background: #dcfce7; color: #166534; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 12px; display: inline-block;">RTI (सूचना का अधिकार)</span>
+            <h3 style="margin: 0 0 12px 0; font-size: 1.25rem; color: #0f172a;">RTI कैसे दाखिल करें? (Step-by-step)</h3>
+            <p style="color: #475569; font-size: 0.95rem; line-height: 1.5; margin-bottom: 16px;">ग्राम पंचायत के खर्चों की जानकारी चाहिए? जानिए सूचना का अधिकार 2005 के तहत ऑफलाइन और ऑनलाइन RTI कैसे लगाएं।</p>
+            <a href="#" style="color: #0ea5e9; font-weight: bold; text-decoration: none; display: flex; align-items: center; gap: 4px;">पूरा लेख पढ़ें <i data-lucide="arrow-right" style="width: 16px;"></i></a>
           </div>
-          <div>
-            <label style="font-weight: 700; margin-bottom: 8px; display: block; color: var(--text-dark);">विवरण (Details - Optional):</label>
-            <textarea id="drafterDetails" class="input-field" placeholder="समस्या के बारे में कुछ और जानकारी (जैसे तारीख, पता, या लोगों के नाम)..." style="width:100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; min-height: 80px;"></textarea>
-          </div>
-          
-          <button id="generateDraftBtn" class="btn btn--primary btn--lg" style="width: 100%; display: flex; justify-content: center; align-items: center; gap: 8px;">
-            <i data-lucide="sparkles"></i> प्रार्थना पत्र तैयार करें (Generate)
-          </button>
         </div>
 
-        <!-- Output Area -->
-        <div id="draftOutputArea" style="display: none;">
-          <hr style="border:0; border-top: 1px solid #cbd5e1; margin: 24px 0;">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-            <h3 style="margin:0; font-size:1.1rem; color:var(--text-dark);">आपका प्रार्थना पत्र:</h3>
-            <button id="printDraftBtn" class="btn btn--outline" style="padding: 6px 12px; font-size: 0.9rem;">
-              <i data-lucide="printer" class="inline-icon"></i> Print / PDF
-            </button>
+        <!-- Article 2 -->
+        <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+          <div style="height: 160px; background: #ea580c; display: flex; align-items: center; justify-content: center;">
+            <i data-lucide="home" style="color: white; width: 64px; height: 64px; opacity: 0.8;"></i>
           </div>
-          <div id="draftContent" style="padding: 32px; border: 1px solid #cbd5e1; border-radius: 8px; background: #f8fafc; font-family: 'Times New Roman', serif; white-space: pre-wrap; font-size: 1.1rem; line-height: 1.6; color: #000;">
+          <div style="padding: 24px;">
+            <span style="background: #ffedd5; color: #9a3412; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 12px; display: inline-block;">आवास योजना</span>
+            <h3 style="margin: 0 0 12px 0; font-size: 1.25rem; color: #0f172a;">PM आवास योजना (ग्रामीण) नियम</h3>
+            <p style="color: #475569; font-size: 0.95rem; line-height: 1.5; margin-bottom: 16px;">जानें कि कौन-कौन इस योजना के पात्र हैं, 1.20 लाख रुपये की राशि कैसे मिलती है और आवेदन में क्या दस्तावेज लगते हैं।</p>
+            <a href="#" style="color: #0ea5e9; font-weight: bold; text-decoration: none; display: flex; align-items: center; gap: 4px;">पूरा लेख पढ़ें <i data-lucide="arrow-right" style="width: 16px;"></i></a>
+          </div>
+        </div>
+
+        <!-- Article 3 -->
+        <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+          <div style="height: 160px; background: #2563eb; display: flex; align-items: center; justify-content: center;">
+            <i data-lucide="shield-alert" style="color: white; width: 64px; height: 64px; opacity: 0.8;"></i>
+          </div>
+          <div style="padding: 24px;">
+            <span style="background: #dbeafe; color: #1e40af; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 12px; display: inline-block;">कानूनी अधिकार</span>
+            <h3 style="margin: 0 0 12px 0; font-size: 1.25rem; color: #0f172a;">पुलिस FIR दर्ज न करे तो क्या करें?</h3>
+            <p style="color: #475569; font-size: 0.95rem; line-height: 1.5; margin-bottom: 16px;">अगर स्थानीय थाना प्रभारी आपकी FIR नहीं लिखते हैं, तो CrPC 154(3) और 156(3) के तहत आपके पास क्या कानूनी विकल्प हैं।</p>
+            <a href="#" style="color: #0ea5e9; font-weight: bold; text-decoration: none; display: flex; align-items: center; gap: 4px;">पूरा लेख पढ़ें <i data-lucide="arrow-right" style="width: 16px;"></i></a>
+          </div>
+        </div>
+
+        <!-- Article 4 -->
+        <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+          <div style="height: 160px; background: #7c3aed; display: flex; align-items: center; justify-content: center;">
+            <i data-lucide="landmark" style="color: white; width: 64px; height: 64px; opacity: 0.8;"></i>
+          </div>
+          <div style="padding: 24px;">
+            <span style="background: #f3e8ff; color: #6b21a8; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 12px; display: inline-block;">पंचायती राज</span>
+            <h3 style="margin: 0 0 12px 0; font-size: 1.25rem; color: #0f172a;">ग्राम सभा की बैठक के नियम</h3>
+            <p style="color: #475569; font-size: 0.95rem; line-height: 1.5; margin-bottom: 16px;">एक साल में कितनी खुली बैठकें होनी चाहिए? और एक नागरिक के रूप में प्रधान से सवाल पूछने का आपका क्या अधिकार है।</p>
+            <a href="#" style="color: #0ea5e9; font-weight: bold; text-decoration: none; display: flex; align-items: center; gap: 4px;">पूरा लेख पढ़ें <i data-lucide="arrow-right" style="width: 16px;"></i></a>
           </div>
         </div>
 
