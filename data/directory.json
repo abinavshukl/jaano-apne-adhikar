@@ -99,6 +99,58 @@
       "noteEn": "24×7 Emergency Service",
       "whatsapp": false,
       "emergency": true
+    },
+    {
+      "title": "CM Helpline (जनसुनवाई)",
+      "titleEn": "CM Helpline (Jan Sunwai)",
+      "name": "उत्तर प्रदेश सरकार",
+      "nameEn": "UP Government",
+      "office": "लखनऊ",
+      "officeEn": "Lucknow",
+      "phone": "1076",
+      "note": "किसी भी विभाग की शिकायत दर्ज कराने हेतु।",
+      "noteEn": "For filing complaints against any department.",
+      "whatsapp": false,
+      "emergency": true
+    },
+    {
+      "title": "Women Power Line (महिला हेल्पलाइन)",
+      "titleEn": "Women Power Line",
+      "name": "UP Police",
+      "nameEn": "UP Police",
+      "office": "लखनऊ",
+      "officeEn": "Lucknow",
+      "phone": "1090",
+      "note": "महिलाओं के खिलाफ अपराध/छेड़छाड़ की शिकायत हेतु (गोपनीय)।",
+      "noteEn": "For reporting crimes/harassment against women.",
+      "whatsapp": false,
+      "emergency": true
+    },
+    {
+      "title": "Child Helpline (बाल सहायता)",
+      "titleEn": "Child Helpline",
+      "name": "Women & Child Dev",
+      "nameEn": "WCD",
+      "office": "राष्ट्रीय स्तर",
+      "officeEn": "National",
+      "phone": "1098",
+      "note": "बच्चों के शोषण या बाल श्रम की शिकायत हेतु।",
+      "noteEn": "For reporting child abuse or labour.",
+      "whatsapp": false,
+      "emergency": true
+    },
+    {
+      "title": "Cyber Crime (साइबर अपराध)",
+      "titleEn": "Cyber Crime Helpline",
+      "name": "MHA",
+      "nameEn": "MHA",
+      "office": "राष्ट्रीय स्तर",
+      "officeEn": "National",
+      "phone": "1930",
+      "note": "ऑनलाइन ठगी या बैंक फ्रॉड की तुरंत सूचना देने हेतु।",
+      "noteEn": "For reporting online/bank fraud.",
+      "whatsapp": false,
+      "emergency": true
     }
   ],
   "utilities": [
@@ -152,6 +204,17 @@
       "note": "टीकाकरण, मातृ स्वास्थ्य",
       "noteEn": "Vaccination, Maternal Health",
       "whatsapp": true
+    },
+    {
+      "title": "Ambulance (एम्बुलेंस)",
+      "titleEn": "Ambulance",
+      "name": "स्वास्थ्य विभाग",
+      "nameEn": "Health Dept",
+      "phone": "108",
+      "note": "आपातकालीन चिकित्सा सहायता हेतु।",
+      "noteEn": "Emergency medical assistance.",
+      "whatsapp": false,
+      "emergency": true
     }
   ]
 }
