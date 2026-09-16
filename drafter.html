@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="hi" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="उत्तर प्रदेश नागरिक जानकारी: सरकारी योजनाएँ, मतदाता और बूथ खोज, नागरिक अधिकार, संपर्क और शिकायत मसौदा। यह एक स्वतंत्र निजी जन-जागरूकता पहल है।" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="google-site-verification" content="Ftf0hppVZRFhVOI5QPGeNBmNCt0L_n2qzsALrn6NytU" />
+  <meta name="theme-color" content="#065f46" />
+  <meta name="keywords" content="गांव, a village, ग्राम पंचायत, हरदोई, बेंहदर, UP, voter booth, shikayat, gram panchayat portal" />
+  <meta property="og:title" content="जानो अपने अधिकार — UP नागरिक जानकारी" />
+  <meta property="og:description" content="उत्तर प्रदेश में योजनाएँ, मतदाता जानकारी, नागरिक अधिकार और शिकायत मसौदा एक जगह। स्वतंत्र निजी जन-जागरूकता पहल।" />
+    <title>UP नागरिक जानकारी, योजनाएँ और अधिकार — जानो अपने अधिकार</title>
+  <link rel="stylesheet" href="./css/styles.css?v=20260914-ux7" />
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+
+  <link rel="canonical" href="https://abinavshukl.github.io/jaano-apne-adhikar/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="hi_IN" />
+  <meta property="og:url" content="https://abinavshukl.github.io/jaano-apne-adhikar/" />
+  <meta property="og:image" content="https://abinavshukl.github.io/jaano-apne-adhikar/assets/og-banner.jpg" />
+  <meta property="og:site_name" content="जानो अपने अधिकार" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="जानो अपने अधिकार (Know Your Rights)" />
+  <meta name="twitter:description" content="कानूनी अधिकार एवं जागरूकता पोर्टल - हरदोई (एक निजी पहल)" />
+  <meta name="twitter:image" content="https://abinavshukl.github.io/jaano-apne-adhikar/assets/og-banner.jpg" />
+  <!-- Google Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "जानो अपने अधिकार (Know Your Rights)",
+    "alternateName": "Jaano Apne Adhikar A Private Initiative",
+    "url": "https://abinavshukl.github.io/jaano-apne-adhikar/",
+    "inLanguage": ["hi-IN", "en-IN"],
+    "publisher": {
+      "@type": "Person",
+      "name": "Abhinav Kumar"
+    },
+    "description": "Independent legal awareness and citizen information portal for Hardoi, Uttar Pradesh."
+  }
+  </script>
+
+</head>
+<body>
+
+  <!-- ════ LEGAL DISCLAIMER MODAL (First-Touch) ════ -->
+  <div id="disclaimerOverlay" class="disclaimer-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="disclaimerTitle">
+    <div class="disclaimer-modal">
+      <div class="disclaimer-modal__header">
+        <div class="disclaimer-modal__icon" aria-hidden="true"><i data-lucide="scale" class="inline-icon"></i></div>
+        <div>
+          <div class="disclaimer-modal__title">महत्वपूर्ण सूचना / Important Notice</div>
+          <div class="disclaimer-modal__subtitle">कृपया आगे बढ़ने से पहले पढ़ें / Please read before proceeding</div>
+        </div>
+      </div>
+      <div class="disclaimer-modal__body">
+        <div class="disclaimer-modal__text">
+          <strong>कानूनी अस्वीकरण (Legal Disclaimer):</strong><br/>
+          यह वेबसाइट नागरिकों को अधिकारों, योजनाओं और जन-सुविधाओं के बारे में सामान्य जानकारी देने वाली एक स्वतंत्र जन-जागरूकता पहल है।
+          <br/><br/>
+          <strong>कृपया ध्यान दें:</strong><br/>
+          🔴 यह कोई आधिकारिक सरकारी पोर्टल नहीं है।<br/>
+          🔴 यह कानूनी सलाह, सरकारी आदेश या सेवा की गारंटी नहीं है।<br/>
+          🔴 जानकारी को सटीक रखने का प्रयास किया गया है, फिर भी किसी कार्रवाई से पहले संबंधित आधिकारिक पोर्टल/विभाग से पुष्टि करें। वेबसाइट के निर्माता/डेवलपर किसी शिकायत, आवेदन, निर्णय या परिणाम के लिए उत्तरदायी नहीं हैं।
+          <br/><br/>
+          <em style="font-size:0.85em;color:#92400e;">This is an independent awareness initiative, not an official government portal or legal advice. Please verify details with official sources before taking action.</em>
+        </div>
+      </div>
+      <div class="disclaimer-modal__footer" style="justify-content: center;">
+        <button id="disclaimerAccept" class="btn btn--primary btn--full">
+          ✅ मैं सहमत हूँ / I Agree (Proceed)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Sentinel for sticky header shadow ── -->
+  <div id="headerSentinel" aria-hidden="true" style="height:1px;position:absolute;top:0;width:100%;pointer-events:none;"></div>
+
+  <!-- ════ SITE HEADER ════ -->
+  <header class="site-header" role="banner">
+  <div class="site-disclaimer" style="background-color: #fef2f2; color: #991b1b; text-align: center; padding: 8px 16px; font-size: 0.85rem; font-weight: 600; border-bottom: 1px solid #fca5a5; margin-bottom: 16px;">
+    विधिक अस्वीकरण (Legal Disclaimer): यह वेबसाइट स्वतंत्र, गैर-सरकारी जन-जागरूकता पहल है। यह कानूनी सलाह, सरकारी आदेश या सेवा की गारंटी नहीं है।
+  </div>
+    <div class="container">
+      <div class="header-inner">
+        <a href="./index.html" class="site-logo" aria-label="एक निजी पहल — होम पेज">
+          <div class="site-logo__emblem" aria-hidden="true"><i data-lucide="landmark" class="inline-icon"></i></div>
+          <span class="site-logo__text"><span class="site-logo__name">जानो अपने अधिकार</span><span class="site-logo__sub">नागरिक जानकारी • हरदोई</span></span>
+        </a>
+
+        <!-- Hamburger Button -->
+        <button class="menu-toggle" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="navMenu">
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+
+        <nav id="navMenu" class="site-nav" aria-label="मुख्य नेविगेशन">
+          <ul class="nav__list" role="list">
+            <li><a href="./index.html"     class="nav__link"><i data-lucide="home" class="inline-icon"></i> होम</a></li>
+            <li><a href="./rights.html"    class="nav__link"><i data-lucide="scale" class="inline-icon"></i> अधिकार</a></li>
+            <li><a href="./schemes.html"   class="nav__link"><i data-lucide="clipboard-list" class="inline-icon"></i> योजनाएँ</a></li>
+            <li><a href="./directory.html" class="nav__link"><i data-lucide="phone" class="inline-icon"></i> संपर्क</a>
+          <a href="./drafter.html" class="nav__link"><i data-lucide="file-text" class="inline-icon"></i> <span>AI Drafter</span></a></li>
+            <li><a href="./legal.html"     class="nav__link"><i data-lucide="file-text" class="inline-icon"></i> नीति</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+  
+  <!-- ════ NOTICE TICKER ════ -->
+  <div class="notice-ticker" role="marquee" aria-label="नवीनतम अपडेट">
+    <div class="container" style="display: flex; align-items: center; width: 100%;">
+      <div class="notice-ticker__label"><i data-lucide="newspaper" class="inline-icon" aria-hidden="true"></i><span>खबरें</span></div>
+      <label class="notice-ticker__location" for="districtSelector">
+        <span>अपना जिला चुनें / District:</span>
+        <select id="districtSelector" aria-label="अपना जिला चुनें" data-basepath="." style="font-weight: 700; color: #0d5c50; border: none; background: transparent; cursor: pointer;">
+          <option value="">हरदोई (Hardoi)</option>
+          <option value="agra">आगरा (Agra)</option>
+          <option value="aligarh">अलीगढ़ (Aligarh)</option>
+          <option value="ambedkar-nagar">अम्बेडकर नगर (Ambedkar Nagar)</option>
+          <option value="amethi">अमेठी (Amethi)</option>
+          <option value="amroha">अमरोहा (Amroha)</option>
+          <option value="auraiya">औरैया (Auraiya)</option>
+          <option value="ayodhya">अयोध्या (Ayodhya)</option>
+          <option value="azamgarh">आजमगढ़ (Azamgarh)</option>
+          <option value="baghpat">बागपत (Baghpat)</option>
+          <option value="bahraich">बहराइच (Bahraich)</option>
+          <option value="ballia">बलिया (Ballia)</option>
+          <option value="balrampur">बलरामपुर (Balrampur)</option>
+          <option value="banda">बांदा (Banda)</option>
+          <option value="barabanki">बाराबंकी (Barabanki)</option>
+          <option value="bareilly">बरेली (Bareilly)</option>
+          <option value="basti">बस्ती (Basti)</option>
+          <option value="bhadohi">भदोही (Bhadohi)</option>
+          <option value="bijnor">बिजनौर (Bijnor)</option>
+          <option value="budaun">बदायूँ (Budaun)</option>
+          <option value="bulandshahr">बुलन्दशहर (Bulandshahr)</option>
+          <option value="chandauli">चंदौली (Chandauli)</option>
+          <option value="chitrakoot">चित्रकूट (Chitrakoot)</option>
+          <option value="deoria">देवरिया (Deoria)</option>
+          <option value="etah">एटा (Etah)</option>
+          <option value="etawah">इटावा (Etawah)</option>
+          <option value="farrukhabad">फर्रुखाबाद (Farrukhabad)</option>
+          <option value="fatehpur">फतेहपुर (Fatehpur)</option>
+          <option value="firozabad">फिरोजाबाद (Firozabad)</option>
+          <option value="gautam-buddha-nagar">गौतम बुद्ध नगर (Gautam Buddha Nagar)</option>
+          <option value="ghaziabad">गाज़ियाबाद (Ghaziabad)</option>
+          <option value="ghazipur">गाज़ीपुर (Ghazipur)</option>
+          <option value="gonda">गोण्डा (Gonda)</option>
+          <option value="gorakhpur">गोरखपुर (Gorakhpur)</option>
+          <option value="hamirpur">हमीरपुर (Hamirpur)</option>
+          <option value="hapur">हापुड़ (Hapur)</option>
+          <option value="hardoi">हरदोई (Hardoi)</option>
+          <option value="hathras">हाथरस (Hathras)</option>
+          <option value="jalaun">जालौन (Jalaun)</option>
+          <option value="jaunpur">जौनपुर (Jaunpur)</option>
+          <option value="jhansi">झाँसी (Jhansi)</option>
+          <option value="kannauj">कन्नौज (Kannauj)</option>
+          <option value="kanpur-dehat">कानपुर देहात (Kanpur Dehat)</option>
+          <option value="kanpur-nagar">कानपुर नगर (Kanpur Nagar)</option>
+          <option value="kasganj">कासगंज (Kasganj)</option>
+          <option value="kaushambi">कौशाम्बी (Kaushambi)</option>
+          <option value="kheri">खीरी (Kheri)</option>
+          <option value="kushinagar">कुशीनगर (Kushinagar)</option>
+          <option value="lalitpur">ललितपुर (Lalitpur)</option>
+          <option value="lucknow">लखनऊ (Lucknow)</option>
+          <option value="maharajganj">महराजगंज (Maharajganj)</option>
+          <option value="mahoba">महोबा (Mahoba)</option>
+          <option value="mainpuri">मैनपुरी (Mainpuri)</option>
+          <option value="mathura">मथुरा (Mathura)</option>
+          <option value="mau">मऊ (Mau)</option>
+          <option value="meerut">मेरठ (Meerut)</option>
+          <option value="mirzapur">मिर्ज़ापुर (Mirzapur)</option>
+          <option value="moradabad">मुरादाबाद (Moradabad)</option>
+          <option value="muzaffarnagar">मुज़फ़्फ़रनगर (Muzaffarnagar)</option>
+          <option value="pilibhit">पीलीभीत (Pilibhit)</option>
+          <option value="pratapgarh">प्रतापगढ़ (Pratapgarh)</option>
+          <option value="prayagraj">प्रयागराज (Prayagraj)</option>
+          <option value="raebareli">रायबरेली (Raebareli)</option>
+          <option value="rampur">रामपुर (Rampur)</option>
+          <option value="saharanpur">सहारनपुर (Saharanpur)</option>
+          <option value="sambhal">सम्भल (Sambhal)</option>
+          <option value="sant-kabir-nagar">संत कबीर नगर (Sant Kabir Nagar)</option>
+          <option value="shahjahanpur">शाहजहाँपुर (Shahjahanpur)</option>
+          <option value="shamli">शामली (Shamli)</option>
+          <option value="shravasti">श्रावस्ती (Shravasti)</option>
+          <option value="siddharthnagar">सिद्धार्थनगर (Siddharthnagar)</option>
+          <option value="sitapur">सीतापुर (Sitapur)</option>
+          <option value="sonbhadra">सोनभद्र (Sonbhadra)</option>
+          <option value="sultanpur">सुल्तानपुर (Sultanpur)</option>
+          <option value="unnao">उन्नाव (Unnao)</option>
+          <option value="varanasi">वाराणसी (Varanasi)</option>
+        </select>
+      </label>
+      <div style="overflow: hidden; flex-grow: 1;">
+        <div class="notice-ticker__content">
+          <span><i data-lucide="home" class="inline-icon"></i> <strong>आवास योजना:</strong> क्या आप जानते हैं? पीएम आवास योजना (ग्रामीण) के तहत पक्का घर बनाने के लिए ₹1.20 लाख की सहायता मिलती है।</span>
+          <span><i data-lucide="tractor" class="inline-icon"></i> <strong>किसान अपडेट:</strong> पीएम किसान सम्मान निधि की अगली किस्त के लिए अपना e-KYC तुरंत पूरा करें, यह अनिवार्य है!</span>
+          <span><i data-lucide="building" class="inline-icon"></i> <strong>ग्राम सचिवालय:</strong> अब आप आय, जाति और निवास प्रमाण पत्र सीधे अपने पंचायत भवन (पंचायत सहायक) से बनवा सकते हैं।</span>
+          <span><i data-lucide="wheat" class="inline-icon"></i> <strong>राशन योजना:</strong> पीएम गरीब कल्याण अन्न योजना के तहत मुफ्त राशन वितरण जारी है।</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+  <section class="section" style="padding-top: 40px; padding-bottom: 40px;">
+    <div class="container">
+      <div class="section__header text-center" style="margin-bottom: 24px;">
+        <h2 class="section__title"><i data-lucide="file-edit" class="inline-icon" style="color:var(--brand-teal);"></i> AI प्रार्थना पत्र (Legal Drafter)</h2>
+        <p class="section__desc">अपनी समस्या चुनें और अधिकारियों को देने के लिए एक सटीक, औपचारिक प्रार्थना पत्र (Application) तुरंत तैयार करें।</p>
+      </div>
+      
+      <div style="background: white; padding: 24px; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); max-width: 800px; margin: 0 auto;">
+        
+        <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 24px;">
+          <div>
+            <label style="font-weight: 700; margin-bottom: 8px; display: block; color: var(--text-dark);">आपका नाम (Name):</label>
+            <input type="text" id="drafterName" class="input-field" placeholder="अपना पूरा नाम लिखें..." style="width:100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px;">
+          </div>
+          <div>
+            <label style="font-weight: 700; margin-bottom: 8px; display: block; color: var(--text-dark);">समस्या का प्रकार (Issue):</label>
+            <select id="drafterIssue" class="input-field" style="width:100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px;">
+              <option value="">-- कृपया एक समस्या चुनें --</option>
+              <option value="ration">राशन कार्ड कट जाना / नया बनवाना</option>
+              <option value="land">जमीन/खेत पर अवैध कब्जा (Land Dispute)</option>
+              <option value="police">पुलिस FIR दर्ज न करना</option>
+              <option value="pension">वृद्धा/विधवा पेंशन रुक जाना</option>
+              <option value="pradhan">ग्राम प्रधान द्वारा विकास कार्य में भ्रष्टाचार</option>
+            </select>
+          </div>
+          <div>
+            <label style="font-weight: 700; margin-bottom: 8px; display: block; color: var(--text-dark);">विवरण (Details - Optional):</label>
+            <textarea id="drafterDetails" class="input-field" placeholder="समस्या के बारे में कुछ और जानकारी (जैसे तारीख, पता, या लोगों के नाम)..." style="width:100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; min-height: 80px;"></textarea>
+          </div>
+          
+          <button id="generateDraftBtn" class="btn btn--primary btn--lg" style="width: 100%; display: flex; justify-content: center; align-items: center; gap: 8px;">
+            <i data-lucide="sparkles"></i> प्रार्थना पत्र तैयार करें (Generate)
+          </button>
+        </div>
+
+        <!-- Output Area -->
+        <div id="draftOutputArea" style="display: none;">
+          <hr style="border:0; border-top: 1px solid #cbd5e1; margin: 24px 0;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+            <h3 style="margin:0; font-size:1.1rem; color:var(--text-dark);">आपका प्रार्थना पत्र:</h3>
+            <button id="printDraftBtn" class="btn btn--outline" style="padding: 6px 12px; font-size: 0.9rem;">
+              <i data-lucide="printer" class="inline-icon"></i> Print / PDF
+            </button>
+          </div>
+          <div id="draftContent" style="padding: 32px; border: 1px solid #cbd5e1; border-radius: 8px; background: #f8fafc; font-family: 'Times New Roman', serif; white-space: pre-wrap; font-size: 1.1rem; line-height: 1.6; color: #000;">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+  <nav class="mobile-bottom-nav" aria-label="त्वरित नेविगेशन">
+    <a  href="./index.html" aria-current="page"><i data-lucide="home" class="inline-icon"></i><span>होम</span></a>
+    <a href="./rights.html"><i data-lucide="scale" class="inline-icon"></i><span>अधिकार</span></a>
+    <a href="./schemes.html"><i data-lucide="clipboard-list" class="inline-icon"></i><span>योजनाएँ</span></a>
+    <a href="./directory.html"><i data-lucide="phone" class="inline-icon"></i><span>संपर्क</span></a>
+    <a href="./drafter.html"><i data-lucide="file-text" class="inline-icon"></i><span>Drafter</span></a>
+  </nav>
+
+  <!-- ════ SITE FOOTER ════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Column 1: Brand & Mission -->
+        <div class="footer-brand">
+          <div class="footer-brand__name"><i data-lucide="landmark" class="inline-icon"></i> जानो अपने अधिकार</div>
+          <p class="footer-brand__desc" style="margin-top: 12px; line-height: 1.6;">
+            स्वतंत्र नागरिक-जागरूकता पहल<br/>
+            उत्तर प्रदेश • विधिक साक्षरता और नागरिक सशक्तिकरण
+          </p>
+          <p class="footer-brand__creator">निर्माता / Created by <a href="https://abinavshukl.github.io/Abhinav-s-Portfolio/" target="_blank" rel="noopener noreferrer">Abhinav Kumar</a></p>
+        </div>
+
+      </div>
+
+      <hr class="footer-divider" style="margin: 40px 0 24px;" />
+
+      <p class="footer-legal"><strong>विधिक सूचना:</strong> यह सरकारी पोर्टल या कानूनी सलाह नहीं है। कार्रवाई से पहले आधिकारिक स्रोत से पुष्टि करें। <a href="./legal.html">पूरी नीति पढ़ें</a></p>
+      <div class="footer-meta">© <span id="footerYear">2025</span> जानो अपने अधिकार — एक निजी पहल।</div>
+    </div>
+  </footer>
+
+
+
+  <!-- ── Scripts ── -->
+  <script src="./js/config.js"></script>
+  <script src="./js/main.js?v=1789393113538"></script>
+  <script src="./js/booth-finder.js"></script>
+  <script src="./js/voter-search.js?v=2"></script>
+  <script src="./js/grievance.js"></script>
+  <script>
+    /* ── Disclaimer Modal Logic ── */
+    (function () {
+      var overlay = document.getElementById('disclaimerOverlay');
+      
+      // Check if user already accepted in this session
+      if (sessionStorage.getItem('disclaimerAccepted') === 'true') {
+        overlay.classList.add('hidden');
+        return;
+      }
+      
+      var acceptBtn = document.getElementById('disclaimerAccept');
+      // Show modal; trap focus inside
+      acceptBtn.focus();
+      acceptBtn.addEventListener('click', function () {
+        overlay.classList.add('hidden');
+        document.body.style.overflow = '';
+        sessionStorage.setItem('disclaimerAccepted', 'true');
+      });
+      document.body.style.overflow = 'hidden';
+      // Close on overlay click (outside modal box)
+      overlay.addEventListener('click', function (e) {
+        if (e.target === overlay) {
+          overlay.classList.add('hidden');
+          document.body.style.overflow = '';
+          sessionStorage.setItem('disclaimerAccepted', 'true');
+        }
+      });
+    })();
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+    });
+  </script>
+  <!-- Google Transliteration API -->
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script src="./js/drafter.js"></script>
+</body>
+</html>
