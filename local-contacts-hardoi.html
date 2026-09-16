@@ -104,7 +104,11 @@
             <li><a href="./schemes.html"   class="nav__link"><i data-lucide="clipboard-list" class="inline-icon"></i> योजनाएँ</a></li>
             <li><a href="./directory.html" class="nav__link"><i data-lucide="phone" class="inline-icon"></i> संपर्क</a>
           <a href="./drafter.html" class="nav__link"><i data-lucide="file-text" class="inline-icon"></i> <span>AI Drafter</span></a>
-          <a href="./articles.html" class="nav__link nav__link--active"><i data-lucide="book-open" class="inline-icon"></i> <span>मार्गदर्शक (Guides)</span></a></li>
+          <a href="./articles.html" class="nav__link"><i data-lucide="book-open" class="inline-icon"></i> <span>मार्गदर्शक (Guides)</span></a>
+          <a href="./problem-to-remedy.html" class="nav__link"><i data-lucide="help-circle" class="inline-icon"></i> <span>समाधान (Remedy)</span></a>
+          <a href="./fee-transparency.html" class="nav__link"><i data-lucide="shield-alert" class="inline-icon"></i> <span>फीस (Fees)</span></a>
+          <a href="./escalation-guide.html" class="nav__link"><i data-lucide="trending-up" class="inline-icon"></i> <span>अपील (Appeals)</span></a>
+          <a href="./land-revenue-guide.html" class="nav__link"><i data-lucide="map" class="inline-icon"></i> <span>ज़मीन (Land)</span></a></li>
             <li><a href="./legal.html"     class="nav__link"><i data-lucide="file-text" class="inline-icon"></i> नीति</a></li>
           </ul>
         </nav>
@@ -212,53 +216,135 @@
 
   <main id="main-content">
   <section class="section" style="padding-top: 40px; padding-bottom: 60px; background-color: #f8fafc;">
-    <div class="container" style="max-width: 800px;">
-      
-      <div style="margin-bottom: 24px;">
-        <a href="./articles.html" style="color: #0ea5e9; text-decoration: none; display: flex; align-items: center; gap: 4px; font-weight: bold;">
-          <i data-lucide="arrow-left" style="width: 16px;"></i> वापस गाइड्स पर जाएं
-        </a>
+    <div class="container">
+      <div class="section__header text-center" style="margin-bottom: 40px;">
+        <h1 class="section__title"><i data-lucide="map-pin" class="inline-icon" style="color:var(--brand-teal);"></i> स्थानीय संपर्क (Local Contacts)</h1>
+        <p class="section__desc">हरदोई जिला ➔ संडीला ब्लॉक ➔ बड़ागांव</p>
+        <p style="font-size: 0.9rem; color: #64748b; margin-top: 8px;">अंतिम अद्यतन: 16 सितंबर 2026</p>
       </div>
 
-      <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); padding: 40px;">
-        <span style="background: #e2e8f0; color: #475569; padding: 6px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 16px; display: inline-block;">RTI (सूचना का अधिकार)</span>
-        
-        <h1 style="font-size: 2rem; color: #0f172a; margin-top: 0; margin-bottom: 24px; line-height: 1.3;">RTI (सूचना का अधिकार) कैसे दाखिल करें?</h1>
-        
-        <hr style="border:0; border-top: 1px solid #cbd5e1; margin-bottom: 32px;">
+      <!-- Main Officials Table -->
+      <h2 style="font-size: 1.5rem; color: #0f172a; margin-bottom: 16px;"><i data-lucide="users" class="inline-icon"></i> गाँव और ब्लॉक के अधिकारी</h2>
+      <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); margin-bottom: 48px; overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; min-width: 800px;">
+          <thead>
+            <tr style="background-color: #1e293b; color: white; text-align: left;">
+              <th style="padding: 16px; font-weight: 600;">पद (Role)</th>
+              <th style="padding: 16px; font-weight: 600;">ऑफ़िस (Address)</th>
+              <th style="padding: 16px; font-weight: 600;">समय (Hours)</th>
+              <th style="padding: 16px; font-weight: 600;">कौन सा काम? (Duties)</th>
+            </tr>
+          </thead>
+          <tbody style="font-size: 0.95rem; color: #334155;">
+            <tr style="border-bottom: 1px solid #e2e8f0;">
+              <td style="padding: 16px;"><strong>ग्राम सचिव (Gramsevak)</strong></td>
+              <td style="padding: 16px;">ग्राम पंचायत बड़ागांव, संडीला</td>
+              <td style="padding: 16px;">सुबह 9 - शाम 5 (रविवार बंद)</td>
+              <td style="padding: 16px;">आय/जाति प्रमाण पत्र, पेंशन, RTI आवेदन, राशन कार्ड।</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e2e8f0; background-color: #f8fafc;">
+              <td style="padding: 16px;"><strong>लेखपाल (Lekhpal)</strong></td>
+              <td style="padding: 16px;">तहसील संडीला</td>
+              <td style="padding: 16px;">सुबह 10 - शाम 5</td>
+              <td style="padding: 16px;">खतौनी, वरासत, खेत की पैमाइश, मेड़ विवाद।</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e2e8f0;">
+              <td style="padding: 16px;"><strong>समाज कल्याण (DSWO)</strong></td>
+              <td style="padding: 16px;">ब्लॉक ऑफिस, संडीला</td>
+              <td style="padding: 16px;">सुबह 9 - शाम 5</td>
+              <td style="padding: 16px;">विधवा/वृद्धा पेंशन, राशन कार्ड लिस्ट।</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e2e8f0; background-color: #f8fafc;">
+              <td style="padding: 16px;"><strong>ANM (आशा दीदी)</strong></td>
+              <td style="padding: 16px;">स्वास्थ्य उप-केंद्र, बड़ागांव</td>
+              <td style="padding: 16px;">सुबह 9-12, दोपहर 2-4</td>
+              <td style="padding: 16px;">आयुष्मान कार्ड, टीकाकरण, गर्भवती महिलाओं की जांच।</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e2e8f0;">
+              <td style="padding: 16px;"><strong>पुलिस थाना (Thana)</strong></td>
+              <td style="padding: 16px;">पुलिस थाना संडीला / चौकी बड़ागांव</td>
+              <td style="padding: 16px; color: #dc2626; font-weight: bold;">24 घंटे खुला</td>
+              <td style="padding: 16px;">FIR, शिकायत, मारपीट, सुरक्षा।</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e2e8f0; background-color: #f8fafc;">
+              <td style="padding: 16px;"><strong>BDO (ब्लॉक अधिकारी)</strong></td>
+              <td style="padding: 16px;">ब्लॉक ऑफिस, संडीला</td>
+              <td style="padding: 16px;">सुबह 9 - शाम 5</td>
+              <td style="padding: 16px;">मनरेगा (MGNREGA) मज़दूरी, आवास योजना, ब्लॉक की शिकायतें।</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e2e8f0;">
+              <td style="padding: 16px;"><strong>ग्राम प्रधान (Sarpanch)</strong></td>
+              <td style="padding: 16px;">प्रधान कार्यालय / निवास</td>
+              <td style="padding: 16px;">शाम के समय</td>
+              <td style="padding: 16px;">ग्राम सभा बैठक, ज़मीन के छोटे विवाद, गाँव का विकास।</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-        <div class="article-content" style="font-size: 1.1rem; line-height: 1.8; color: #334155;">
-          
-      <h3>RTI क्या है?</h3>
-      <p>सूचना का अधिकार (RTI) अधिनियम 2005 हर नागरिक को सरकारी विभागों से जानकारी मांगने का अधिकार देता है। आप अपने ग्राम पंचायत के खर्च, सड़क निर्माण का टेंडर, या किसी भी सरकारी योजना की जानकारी मांग सकते हैं।</p>
-      
-      <h3>RTI कैसे लगाएं? (ऑफलाइन तरीका)</h3>
-      <ol>
-        <li>एक सादे कागज पर अपना आवेदन लिखें। इसे 'जन सूचना अधिकारी (PIO)' को संबोधित करें।</li>
-        <li>आवेदन में स्पष्ट रूप से लिखें कि आपको क्या जानकारी चाहिए (बिंदुवार)।</li>
-        <li>10 रुपये का पोस्टल ऑर्डर (Post Office से मिलेगा) आवेदन के साथ संलग्न करें।</li>
-        <li>इसे संबंधित विभाग (जैसे BDO ऑफिस या पंचायत राज अधिकारी) में स्पीड पोस्ट या रजिस्टर्ड पोस्ट से भेजें।</li>
-      </ol>
+      <!-- Schemes Helplines Table -->
+      <h2 style="font-size: 1.5rem; color: #0f172a; margin-bottom: 16px;"><i data-lucide="phone-call" class="inline-icon"></i> योजनाओं के सीधे हेल्पलाइन नंबर</h2>
+      <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); margin-bottom: 48px; overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; min-width: 600px;">
+          <thead>
+            <tr style="background-color: #0f766e; color: white; text-align: left;">
+              <th style="padding: 16px; font-weight: 600;">योजना (Scheme)</th>
+              <th style="padding: 16px; font-weight: 600;">किससे मिलें?</th>
+              <th style="padding: 16px; font-weight: 600;">हेल्पलाइन नंबर</th>
+            </tr>
+          </thead>
+          <tbody style="font-size: 0.95rem; color: #334155;">
+            <tr style="border-bottom: 1px solid #e2e8f0;">
+              <td style="padding: 16px; font-weight: bold;">मनरेगा (MGNREGA)</td>
+              <td style="padding: 16px;">ब्लॉक ऑफिस (BDO)</td>
+              <td style="padding: 16px; font-weight: bold; color: #0f766e;">1800-180-5555</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e2e8f0; background-color: #f0fdf4;">
+              <td style="padding: 16px; font-weight: bold;">PM-किसान (PM-Kisan)</td>
+              <td style="padding: 16px;">ग्राम सचिव / जन सेवा केंद्र</td>
+              <td style="padding: 16px; font-weight: bold; color: #0f766e;">1800-115-526</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e2e8f0;">
+              <td style="padding: 16px; font-weight: bold;">आयुष्मान भारत</td>
+              <td style="padding: 16px;">स्वास्थ्य वर्कर (ANM)</td>
+              <td style="padding: 16px; font-weight: bold; color: #0f766e;">1967 (24 घंटे)</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e2e8f0; background-color: #f0fdf4;">
+              <td style="padding: 16px; font-weight: bold;">वृद्धा / विधवा पेंशन</td>
+              <td style="padding: 16px;">समाज कल्याण (DSWO) / बैंक</td>
+              <td style="padding: 16px; font-weight: bold; color: #0f766e;">1076 (CM हेल्पलाइन)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <h3>RTI का जवाब कितने दिन में आता है?</h3>
-      <p>नियम के अनुसार, जन सूचना अधिकारी को 30 दिनों के भीतर आपको जानकारी देनी होती है। यदि जानकारी जीवन या स्वतंत्रता से जुड़ी है, तो 48 घंटे में जवाब देना अनिवार्य है। यदि 30 दिन में जवाब नहीं आता है, तो आप 'प्रथम अपीलीय अधिकारी' के पास अपील कर सकते हैं।</p>
-    
-        </div>
+      <!-- Village Calendar -->
+      <h2 style="font-size: 1.5rem; color: #0f172a; margin-bottom: 16px;"><i data-lucide="calendar" class="inline-icon"></i> ज़रूरी तारीखें (Village Calendar)</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
         
-        <div style="margin-top: 48px; padding: 20px; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px;">
-          <p style="margin: 0; color: #166534; font-size: 0.95rem;"><strong>Disclaimer:</strong> यह लेख केवल सामान्य जागरूकता के लिए है। किसी भी कानूनी कार्यवाही के लिए संबंधित विभाग के आधिकारिक दिशा-निर्देशों का पालन करें।</p>
+        <div style="background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 8px; padding: 20px;">
+          <h3 style="color: #1e3a8a; margin-top: 0; font-size: 1.2rem; margin-bottom: 8px;">समाधान दिवस (Samadhan Diwas)</h3>
+          <p style="color: #1e40af; margin-bottom: 8px;"><strong>कब:</strong> महीने का पहला और तीसरा शनिवार (सुबह 10 बजे)</p>
+          <p style="color: #1e40af; margin-bottom: 0;"><strong>कहाँ:</strong> तहसील संडीला (DM/SDM खुद सुनते हैं)। जनसुनवाई की रसीद साथ लाएं।</p>
         </div>
+
+        <div style="background: #fef2f2; border: 1px solid #fecaca; border-radius: 8px; padding: 20px;">
+          <h3 style="color: #991b1b; margin-top: 0; font-size: 1.2rem; margin-bottom: 8px;">थाना दिवस (Thana Diwas)</h3>
+          <p style="color: #7f1d1d; margin-bottom: 8px;"><strong>कब:</strong> महीने का दूसरा और चौथा शनिवार</p>
+          <p style="color: #7f1d1d; margin-bottom: 0;"><strong>कहाँ:</strong> पुलिस थाना संडीला। (FIR या ज़मीन-कब्जे की पुलिस शिकायतों के लिए)।</p>
+        </div>
+
+        <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 20px;">
+          <h3 style="color: #166534; margin-top: 0; font-size: 1.2rem; margin-bottom: 8px;">ग्राम सभा बैठक</h3>
+          <p style="color: #15803d; margin-bottom: 8px;"><strong>कब:</strong> रबी और खरीफ फसल कटने के बाद (आमतौर पर रविवार)</p>
+          <p style="color: #15803d; margin-bottom: 0;"><strong>कहाँ:</strong> पंचायत भवन। (आवास योजना और पेंशन लिस्ट पास कराने के लिए)।</p>
+        </div>
+
       </div>
 
     </div>
   </section>
 </main>
-<style>
-  .article-content h3 { color: #0f172a; margin-top: 32px; margin-bottom: 16px; font-size: 1.4rem; }
-  .article-content p { margin-bottom: 20px; }
-  .article-content ul, .article-content ol { margin-bottom: 24px; padding-left: 24px; }
-  .article-content li { margin-bottom: 10px; }
-</style>
 
   <nav class="mobile-bottom-nav" aria-label="त्वरित नेविगेशन">
     <a  href="./index.html" aria-current="page"><i data-lucide="home" class="inline-icon"></i><span>होम</span></a>
