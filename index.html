@@ -41,6 +41,8 @@
   }
   </script>
 
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#065f46">
 </head>
 <body>
 
@@ -922,5 +924,15 @@
   <!-- Google Transliteration API -->
   <script type="text/javascript" src="https://www.google.com/jsapi"></script>
   <script src="./js/drafter.js"></script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+          .then(registration => console.log('SW registered'))
+          .catch(err => console.log('SW registration failed:', err));
+      });
+    }
+  </script>
 </body>
 </html>

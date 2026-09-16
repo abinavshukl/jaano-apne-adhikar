@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="./css/styles.css?v=20260914-ux7" />
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
   <link rel="canonical" href="https://abinavshukl.github.io/jaano-apne-adhikar/legal.html" />
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#065f46">
 </head>
 <body>
   <div id="headerSentinel" aria-hidden="true" style="height:1px;position:absolute;top:0;width:100%;pointer-events:none;"></div>
@@ -228,6 +230,11 @@
 
       <p class="footer-legal"><strong>विधिक सूचना:</strong> यह सरकारी पोर्टल या कानूनी सलाह नहीं है। <a href="./legal.html">नीति ऊपर पढ़ें</a></p>
       <div class="footer-meta">© <span id="footerYear">2025</span> जानो अपने अधिकार — एक निजी पहल।</div>
+
+      <div class="footer-meta" style="margin-top: 8px; color: var(--color-primary-light); font-weight: 600; font-size: 0.85rem;">
+        <i data-lucide="check-circle" class="inline-icon" style="width: 14px; height: 14px; margin-right: 4px;"></i> 
+        Last updated: 16 Sept 2026 | Sources verified from official UP Govt portals
+      </div>
     </div>
   </footer>
 
@@ -242,5 +249,15 @@
     });
   </script>
   <script src="./js/drafter.js"></script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+          .then(registration => console.log('SW registered'))
+          .catch(err => console.log('SW registration failed:', err));
+      });
+    }
+  </script>
 </body>
 </html>

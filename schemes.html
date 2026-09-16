@@ -22,6 +22,8 @@
   <meta name="twitter:title" content="सरकारी योजनाएँ — पात्रता, दस्तावेज और पोर्टल" />
   <meta name="twitter:description" content="PM किसान, PM आवास, पेंशन, आयुष्मान भारत, राशन कार्ड और जनसुनवाई की नागरिक जानकारी।" />
   <meta name="twitter:image" content="https://abinavshukl.github.io/jaano-apne-adhikar/assets/og-banner.jpg" />
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#065f46">
 </head>
 <body>
 
@@ -210,6 +212,11 @@
 
       <p class="footer-legal"><strong>विधिक सूचना:</strong> यह सरकारी पोर्टल या कानूनी सलाह नहीं है। कार्रवाई से पहले आधिकारिक स्रोत से पुष्टि करें। <a href="./legal.html">पूरी नीति पढ़ें</a></p>
       <div class="footer-meta">© <span id="footerYear">2025</span> जानो अपने अधिकार — एक निजी पहल।</div>
+
+      <div class="footer-meta" style="margin-top: 8px; color: var(--color-primary-light); font-weight: 600; font-size: 0.85rem;">
+        <i data-lucide="check-circle" class="inline-icon" style="width: 14px; height: 14px; margin-right: 4px;"></i> 
+        Last updated: 16 Sept 2026 | Sources verified from official UP Govt portals
+      </div>
     </div>
   </footer>
 
@@ -377,5 +384,15 @@
     });
   </script>
   <script src="./js/drafter.js"></script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+          .then(registration => console.log('SW registered'))
+          .catch(err => console.log('SW registration failed:', err));
+      });
+    }
+  </script>
 </body>
 </html>
