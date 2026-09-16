@@ -1,6 +1,6 @@
 # जानो अपने अधिकार (Know Your Rights)
 
-**A private civic awareness portal** for rural citizens in Uttar Pradesh — focused on Gram Panchayat **29-बड़ागांव**, विकास खण्ड **19-बेंहदर**, जिला **113-हरदोई** (Sandila / Beniganj region).
+**A private civic awareness portal** for rural citizens — focused on Gram Panchayat **29-बड़ागांव**, विकास खण्ड **19-बेंहदर**, जिला **113-हरदोई** (Sandila / Beniganj region).
 
 Live site: [https://abinavshukl.github.io/jaano-apne-adhikar/](https://abinavshukl.github.io/jaano-apne-adhikar/)
 

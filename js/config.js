@@ -1,6 +1,6 @@
 /**
  * js/config.js — Global Application Constants
- * Hardoi, Uttar Pradesh (A Private Initiative)
+ * Citizen Portal (A Private Initiative)
  *
  * This file is the single source of truth for public identity values and
  * labels shared by the HTML pages and client-side tools. It is loaded before
