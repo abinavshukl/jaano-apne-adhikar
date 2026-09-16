@@ -104,7 +104,11 @@
             <li><a href="./schemes.html"   class="nav__link"><i data-lucide="clipboard-list" class="inline-icon"></i> योजनाएँ</a></li>
             <li><a href="./directory.html" class="nav__link"><i data-lucide="phone" class="inline-icon"></i> संपर्क</a>
           <a href="./drafter.html" class="nav__link"><i data-lucide="file-text" class="inline-icon"></i> <span>AI Drafter</span></a>
-          <a href="./articles.html" class="nav__link nav__link--active"><i data-lucide="book-open" class="inline-icon"></i> <span>मार्गदर्शक (Guides)</span></a></li>
+          <a href="./articles.html" class="nav__link"><i data-lucide="book-open" class="inline-icon"></i> <span>मार्गदर्शक (Guides)</span></a>
+          <a href="./problem-to-remedy.html" class="nav__link"><i data-lucide="help-circle" class="inline-icon"></i> <span>समाधान (Remedy)</span></a>
+          <a href="./fee-transparency.html" class="nav__link"><i data-lucide="shield-alert" class="inline-icon"></i> <span>फीस (Fees)</span></a>
+          <a href="./escalation-guide.html" class="nav__link"><i data-lucide="trending-up" class="inline-icon"></i> <span>अपील (Appeals)</span></a>
+          <a href="./land-revenue-guide.html" class="nav__link"><i data-lucide="map" class="inline-icon"></i> <span>ज़मीन (Land)</span></a></li>
             <li><a href="./legal.html"     class="nav__link"><i data-lucide="file-text" class="inline-icon"></i> नीति</a></li>
           </ul>
         </nav>
@@ -212,48 +216,109 @@
 
   <main id="main-content">
   <section class="section" style="padding-top: 40px; padding-bottom: 60px; background-color: #f8fafc;">
-    <div class="container" style="max-width: 800px;">
-      
-      <div style="margin-bottom: 24px;">
-        <a href="./articles.html" style="color: #0ea5e9; text-decoration: none; display: flex; align-items: center; gap: 4px; font-weight: bold;">
-          <i data-lucide="arrow-left" style="width: 16px;"></i> वापस गाइड्स पर जाएं
-        </a>
+    <div class="container">
+      <div class="section__header text-center" style="margin-bottom: 40px;">
+        <h1 class="section__title"><i data-lucide="search" class="inline-icon" style="color:var(--brand-teal);"></i> आवेदन का स्टेटस चेक करें</h1>
+        <p class="section__desc">एजेंट को पैसे देने की ज़रूरत नहीं। अपने मोबाइल से खुद चेक करें कि आपका काम कहाँ तक पहुँचा है।</p>
+        <p style="font-size: 0.9rem; color: #64748b; margin-top: 8px;">अंतिम अद्यतन: 16 सितंबर 2026</p>
       </div>
 
-      <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); padding: 40px;">
-        <span style="background: #e2e8f0; color: #475569; padding: 6px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 16px; display: inline-block;">कानूनी अधिकार</span>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
         
-        <h1 style="font-size: 2rem; color: #0f172a; margin-top: 0; margin-bottom: 24px; line-height: 1.3;">अगर पुलिस FIR दर्ज न करे तो क्या करें?</h1>
-        
-        <hr style="border:0; border-top: 1px solid #cbd5e1; margin-bottom: 32px;">
-
-        <div class="article-content" style="font-size: 1.1rem; line-height: 1.8; color: #334155;">
-          
-      <h3>FIR दर्ज कराना आपका अधिकार है</h3>
-      <p>अगर आपके साथ कोई संज्ञेय अपराध (Cognizable Offence) हुआ है (जैसे मारपीट, चोरी, या धोखाधड़ी), तो CrPC की धारा 154 के तहत पुलिस को FIR दर्ज करनी ही होती है। लेकिन अगर थानेदार (SHO) FIR लिखने से मना कर दे, तो आपके पास निम्नलिखित विकल्प हैं:</p>
-      
-      <h3>विकल्प 1: SP (Superintendent of Police) को शिकायत</h3>
-      <p>CrPC की धारा 154(3) के अनुसार, आप अपनी शिकायत लिखित रूप में स्पीड पोस्ट या रजिस्टर्ड डाक के माध्यम से जिले के SP या SSP को भेज सकते हैं। अगर SP को लगता है कि अपराध गंभीर है, तो वह खुद जांच कर सकता है या थानेदार को FIR दर्ज करने का आदेश दे सकता है।</p>
-
-      <h3>विकल्प 2: मजिस्ट्रेट के पास शिकायत (CrPC 156(3))</h3>
-      <p>अगर SP भी कोई कार्रवाई नहीं करता है, तो आप एक वकील के माध्यम से सीधे संबंधित न्यायिक मजिस्ट्रेट (Judicial Magistrate) के समक्ष CrPC की धारा 156(3) के तहत प्रार्थना पत्र दे सकते हैं। मजिस्ट्रेट पुलिस को FIR दर्ज कर जांच करने का आदेश दे सकता है।</p>
-    
+        <!-- Jansunwai -->
+        <div style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); border-top: 4px solid #f97316;">
+          <h2 style="font-size: 1.4rem; color: #0f172a; margin-top: 0; margin-bottom: 16px;">1. जनसुनवाई (Jansunwai) शिकायत</h2>
+          <p style="color: #475569; font-size: 0.95rem; margin-bottom: 16px;">चेक करें कि अधिकारी ने आपकी शिकायत पर क्या जवाब दिया है।</p>
+          <div style="background: #fff7ed; padding: 12px; border-radius: 8px; margin-bottom: 16px;">
+            <strong>क्या चाहिए?</strong>
+            <ul style="margin: 8px 0 0 0; padding-left: 20px; font-size: 0.9rem;">
+              <li>शिकायत संख्या (Reference Number)</li>
+              <li>रजिस्टर्ड मोबाइल नंबर</li>
+            </ul>
+          </div>
+          <p style="font-size: 0.9rem; margin-bottom: 8px;"><strong>कैसे चेक करें:</strong> लिंक पर क्लिक करें ➔ 'शिकायत की स्थिति' चुनें ➔ नंबर डालें।</p>
+          <a href="https://jansunwai.up.nic.in/Track" target="_blank" class="btn btn--primary" style="display: block; text-align: center; width: 100%;"><i data-lucide="external-link" class="inline-icon"></i> जनसुनवाई पोर्टल पर जाएं</a>
         </div>
-        
-        <div style="margin-top: 48px; padding: 20px; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px;">
-          <p style="margin: 0; color: #166534; font-size: 0.95rem;"><strong>Disclaimer:</strong> यह लेख केवल सामान्य जागरूकता के लिए है। किसी भी कानूनी कार्यवाही के लिए संबंधित विभाग के आधिकारिक दिशा-निर्देशों का पालन करें।</p>
+
+        <!-- PM Kisan -->
+        <div style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); border-top: 4px solid #16a34a;">
+          <h2 style="font-size: 1.4rem; color: #0f172a; margin-top: 0; margin-bottom: 16px;">2. PM-किसान सम्मान निधि</h2>
+          <p style="color: #475569; font-size: 0.95rem; margin-bottom: 16px;">चेक करें कि ₹2000 की किश्त खाते में आई या नहीं।</p>
+          <div style="background: #f0fdf4; padding: 12px; border-radius: 8px; margin-bottom: 16px;">
+            <strong>क्या चाहिए?</strong>
+            <ul style="margin: 8px 0 0 0; padding-left: 20px; font-size: 0.9rem;">
+              <li>आधार कार्ड नंबर (Aadhaar)</li>
+              <li>या रजिस्ट्रेशन नंबर</li>
+            </ul>
+          </div>
+          <p style="font-size: 0.9rem; margin-bottom: 8px;"><strong>कैसे चेक करें:</strong> लिंक पर क्लिक करें ➔ 'Know Your Status' पर जाएं ➔ आधार नंबर डालें।</p>
+          <a href="https://pmkisan.gov.in/" target="_blank" class="btn btn--primary" style="display: block; text-align: center; width: 100%; background: #16a34a; border-color: #16a34a;"><i data-lucide="external-link" class="inline-icon"></i> PM-Kisan पोर्टल पर जाएं</a>
         </div>
+
+        <!-- MGNREGA -->
+        <div style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); border-top: 4px solid #0284c7;">
+          <h2 style="font-size: 1.4rem; color: #0f172a; margin-top: 0; margin-bottom: 16px;">3. मनरेगा (MGNREGA) मज़दूरी</h2>
+          <p style="color: #475569; font-size: 0.95rem; margin-bottom: 16px;">अपने गांव की लिस्ट में अपना जॉब कार्ड और हाजिरी चेक करें।</p>
+          <div style="background: #f0f9ff; padding: 12px; border-radius: 8px; margin-bottom: 16px;">
+            <strong>क्या चाहिए?</strong>
+            <ul style="margin: 8px 0 0 0; padding-left: 20px; font-size: 0.9rem;">
+              <li>राज्य (UP), जिला (हरदोई), ब्लॉक (संडीला)</li>
+              <li>अपना नाम / जॉब कार्ड नंबर</li>
+            </ul>
+          </div>
+          <p style="font-size: 0.9rem; margin-bottom: 8px;"><strong>कैसे चेक करें:</strong> लिंक पर क्लिक करें ➔ अपना राज्य चुनें ➔ 'Job Card' पर क्लिक करें।</p>
+          <a href="https://nrega.nic.in/MGNREGA_new/Nrega_home.aspx" target="_blank" class="btn btn--primary" style="display: block; text-align: center; width: 100%; background: #0284c7; border-color: #0284c7;"><i data-lucide="external-link" class="inline-icon"></i> मनरेगा पोर्टल पर जाएं</a>
+        </div>
+
+        <!-- Ration Card -->
+        <div style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); border-top: 4px solid #dc2626;">
+          <h2 style="font-size: 1.4rem; color: #0f172a; margin-top: 0; margin-bottom: 16px;">4. राशन कार्ड (Ration Card)</h2>
+          <p style="color: #475569; font-size: 0.95rem; margin-bottom: 16px;">चेक करें कि राशन कार्ड बना है या नहीं, और यूनिट (नाम) जुड़े हैं या नहीं।</p>
+          <div style="background: #fef2f2; padding: 12px; border-radius: 8px; margin-bottom: 16px;">
+            <strong>क्या चाहिए?</strong>
+            <ul style="margin: 8px 0 0 0; padding-left: 20px; font-size: 0.9rem;">
+              <li>राशन कार्ड नंबर (12 अंक का)</li>
+            </ul>
+          </div>
+          <p style="font-size: 0.9rem; margin-bottom: 8px;"><strong>कैसे चेक करें:</strong> लिंक पर क्लिक करें ➔ 'राशन कार्ड की पात्रता सूची' पर जाएं ➔ अपना ज़िला चुनें।</p>
+          <a href="https://fcs.up.gov.in/" target="_blank" class="btn btn--primary" style="display: block; text-align: center; width: 100%; background: #dc2626; border-color: #dc2626;"><i data-lucide="external-link" class="inline-icon"></i> UP राशन पोर्टल पर जाएं</a>
+        </div>
+
+        <!-- Ayushman -->
+        <div style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); border-top: 4px solid #8b5cf6;">
+          <h2 style="font-size: 1.4rem; color: #0f172a; margin-top: 0; margin-bottom: 16px;">5. आयुष्मान भारत कार्ड</h2>
+          <p style="color: #475569; font-size: 0.95rem; margin-bottom: 16px;">चेक करें कि ₹5 लाख के मुफ्त इलाज के लिए आपका नाम लिस्ट में है या नहीं।</p>
+          <div style="background: #f5f3ff; padding: 12px; border-radius: 8px; margin-bottom: 16px;">
+            <strong>क्या चाहिए?</strong>
+            <ul style="margin: 8px 0 0 0; padding-left: 20px; font-size: 0.9rem;">
+              <li>आधार कार्ड नंबर</li>
+              <li>या राशन कार्ड नंबर</li>
+            </ul>
+          </div>
+          <p style="font-size: 0.9rem; margin-bottom: 8px;"><strong>कैसे चेक करें:</strong> मोबाइल नंबर डालकर लॉगिन करें ➔ आधार से सर्च करें।</p>
+          <a href="https://beneficiary.nha.gov.in/" target="_blank" class="btn btn--primary" style="display: block; text-align: center; width: 100%; background: #8b5cf6; border-color: #8b5cf6;"><i data-lucide="external-link" class="inline-icon"></i> आयुष्मान पोर्टल पर जाएं</a>
+        </div>
+
+        <!-- Pension -->
+        <div style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); border-top: 4px solid #0f766e;">
+          <h2 style="font-size: 1.4rem; color: #0f172a; margin-top: 0; margin-bottom: 16px;">6. UP पेंशन योजना</h2>
+          <p style="color: #475569; font-size: 0.95rem; margin-bottom: 16px;">वृद्धावस्था, विधवा, या विकलांग पेंशन का स्टेटस चेक करें।</p>
+          <div style="background: #f0fdfa; padding: 12px; border-radius: 8px; margin-bottom: 16px;">
+            <strong>क्या चाहिए?</strong>
+            <ul style="margin: 8px 0 0 0; padding-left: 20px; font-size: 0.9rem;">
+              <li>रजिस्ट्रेशन नंबर (Registration ID)</li>
+              <li>रजिस्टर्ड मोबाइल नंबर</li>
+            </ul>
+          </div>
+          <p style="font-size: 0.9rem; margin-bottom: 8px;"><strong>कैसे चेक करें:</strong> अपनी पेंशन का प्रकार चुनें ➔ 'आवेदक लॉगिन' पर क्लिक करें।</p>
+          <a href="https://sspy-up.gov.in/" target="_blank" class="btn btn--primary" style="display: block; text-align: center; width: 100%; background: #0f766e; border-color: #0f766e;"><i data-lucide="external-link" class="inline-icon"></i> UP पेंशन पोर्टल पर जाएं</a>
+        </div>
+
       </div>
 
     </div>
   </section>
 </main>
-<style>
-  .article-content h3 { color: #0f172a; margin-top: 32px; margin-bottom: 16px; font-size: 1.4rem; }
-  .article-content p { margin-bottom: 20px; }
-  .article-content ul, .article-content ol { margin-bottom: 24px; padding-left: 24px; }
-  .article-content li { margin-bottom: 10px; }
-</style>
 
   <nav class="mobile-bottom-nav" aria-label="त्वरित नेविगेशन">
     <a  href="./index.html" aria-current="page"><i data-lucide="home" class="inline-icon"></i><span>होम</span></a>
