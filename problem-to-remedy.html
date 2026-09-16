@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="hi" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="उत्तर प्रदेश नागरिक जानकारी: सरकारी योजनाएँ, मतदाता और बूथ खोज, नागरिक अधिकार, संपर्क और शिकायत मसौदा। यह एक स्वतंत्र निजी जन-जागरूकता पहल है।" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="google-site-verification" content="Ftf0hppVZRFhVOI5QPGeNBmNCt0L_n2qzsALrn6NytU" />
+  <meta name="theme-color" content="#065f46" />
+  <meta name="keywords" content="गांव, a village, ग्राम पंचायत, हरदोई, बेंहदर, UP, voter booth, shikayat, gram panchayat portal" />
+  <meta property="og:title" content="जानो अपने अधिकार — UP नागरिक जानकारी" />
+  <meta property="og:description" content="उत्तर प्रदेश में योजनाएँ, मतदाता जानकारी, नागरिक अधिकार और शिकायत मसौदा एक जगह। स्वतंत्र निजी जन-जागरूकता पहल।" />
+    <title>UP नागरिक जानकारी, योजनाएँ और अधिकार — जानो अपने अधिकार</title>
+  <link rel="stylesheet" href="./css/styles.css?v=20260914-ux7" />
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+
+  <link rel="canonical" href="https://abinavshukl.github.io/jaano-apne-adhikar/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="hi_IN" />
+  <meta property="og:url" content="https://abinavshukl.github.io/jaano-apne-adhikar/" />
+  <meta property="og:image" content="https://abinavshukl.github.io/jaano-apne-adhikar/assets/og-banner.jpg" />
+  <meta property="og:site_name" content="जानो अपने अधिकार" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="जानो अपने अधिकार (Know Your Rights)" />
+  <meta name="twitter:description" content="कानूनी अधिकार एवं जागरूकता पोर्टल - हरदोई (एक निजी पहल)" />
+  <meta name="twitter:image" content="https://abinavshukl.github.io/jaano-apne-adhikar/assets/og-banner.jpg" />
+  <!-- Google Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "जानो अपने अधिकार (Know Your Rights)",
+    "alternateName": "Jaano Apne Adhikar A Private Initiative",
+    "url": "https://abinavshukl.github.io/jaano-apne-adhikar/",
+    "inLanguage": ["hi-IN", "en-IN"],
+    "publisher": {
+      "@type": "Person",
+      "name": "Abhinav Kumar"
+    },
+    "description": "Independent legal awareness and citizen information portal for Hardoi, Uttar Pradesh."
+  }
+  </script>
+
+</head>
+<body>
+
+  <!-- ════ LEGAL DISCLAIMER MODAL (First-Touch) ════ -->
+  <div id="disclaimerOverlay" class="disclaimer-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="disclaimerTitle">
+    <div class="disclaimer-modal">
+      <div class="disclaimer-modal__header">
+        <div class="disclaimer-modal__icon" aria-hidden="true"><i data-lucide="scale" class="inline-icon"></i></div>
+        <div>
+          <div class="disclaimer-modal__title">महत्वपूर्ण सूचना / Important Notice</div>
+          <div class="disclaimer-modal__subtitle">कृपया आगे बढ़ने से पहले पढ़ें / Please read before proceeding</div>
+        </div>
+      </div>
+      <div class="disclaimer-modal__body">
+        <div class="disclaimer-modal__text">
+          <strong>कानूनी अस्वीकरण (Legal Disclaimer):</strong><br/>
+          यह वेबसाइट नागरिकों को अधिकारों, योजनाओं और जन-सुविधाओं के बारे में सामान्य जानकारी देने वाली एक स्वतंत्र जन-जागरूकता पहल है।
+          <br/><br/>
+          <strong>कृपया ध्यान दें:</strong><br/>
+          🔴 यह कोई आधिकारिक सरकारी पोर्टल नहीं है।<br/>
+          🔴 यह कानूनी सलाह, सरकारी आदेश या सेवा की गारंटी नहीं है।<br/>
+          🔴 जानकारी को सटीक रखने का प्रयास किया गया है, फिर भी किसी कार्रवाई से पहले संबंधित आधिकारिक पोर्टल/विभाग से पुष्टि करें। वेबसाइट के निर्माता/डेवलपर किसी शिकायत, आवेदन, निर्णय या परिणाम के लिए उत्तरदायी नहीं हैं।
+          <br/><br/>
+          <em style="font-size:0.85em;color:#92400e;">This is an independent awareness initiative, not an official government portal or legal advice. Please verify details with official sources before taking action.</em>
+        </div>
+      </div>
+      <div class="disclaimer-modal__footer" style="justify-content: center;">
+        <button id="disclaimerAccept" class="btn btn--primary btn--full">
+          ✅ मैं सहमत हूँ / I Agree (Proceed)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Sentinel for sticky header shadow ── -->
+  <div id="headerSentinel" aria-hidden="true" style="height:1px;position:absolute;top:0;width:100%;pointer-events:none;"></div>
+
+  <!-- ════ SITE HEADER ════ -->
+  <header class="site-header" role="banner">
+  <div class="site-disclaimer" style="background-color: #fef2f2; color: #991b1b; text-align: center; padding: 8px 16px; font-size: 0.85rem; font-weight: 600; border-bottom: 1px solid #fca5a5; margin-bottom: 16px;">
+    विधिक अस्वीकरण (Legal Disclaimer): यह वेबसाइट स्वतंत्र, गैर-सरकारी जन-जागरूकता पहल है। यह कानूनी सलाह, सरकारी आदेश या सेवा की गारंटी नहीं है।
+  </div>
+    <div class="container">
+      <div class="header-inner">
+        <a href="./index.html" class="site-logo" aria-label="एक निजी पहल — होम पेज">
+          <div class="site-logo__emblem" aria-hidden="true"><i data-lucide="landmark" class="inline-icon"></i></div>
+          <span class="site-logo__text"><span class="site-logo__name">जानो अपने अधिकार</span><span class="site-logo__sub">नागरिक जानकारी • हरदोई</span></span>
+        </a>
+
+        <!-- Hamburger Button -->
+        <button class="menu-toggle" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="navMenu">
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+
+        <nav id="navMenu" class="site-nav" aria-label="मुख्य नेविगेशन">
+          <ul class="nav__list" role="list">
+            <li><a href="./index.html"     class="nav__link"><i data-lucide="home" class="inline-icon"></i> होम</a></li>
+            <li><a href="./rights.html"    class="nav__link"><i data-lucide="scale" class="inline-icon"></i> अधिकार</a></li>
+            <li><a href="./schemes.html"   class="nav__link"><i data-lucide="clipboard-list" class="inline-icon"></i> योजनाएँ</a></li>
+            <li><a href="./directory.html" class="nav__link"><i data-lucide="phone" class="inline-icon"></i> संपर्क</a>
+          <a href="./drafter.html" class="nav__link"><i data-lucide="file-text" class="inline-icon"></i> <span>AI Drafter</span></a>
+          <a href="./articles.html" class="nav__link"><i data-lucide="book-open" class="inline-icon"></i> <span>मार्गदर्शक (Guides)</span></a>
+          <a href="./problem-to-remedy.html" class="nav__link nav__link--active"><i data-lucide="help-circle" class="inline-icon"></i> <span>समाधान (Remedy)</span></a></li>
+            <li><a href="./legal.html"     class="nav__link"><i data-lucide="file-text" class="inline-icon"></i> नीति</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+  
+  <!-- ════ NOTICE TICKER ════ -->
+  <div class="notice-ticker" role="marquee" aria-label="नवीनतम अपडेट">
+    <div class="container" style="display: flex; align-items: center; width: 100%;">
+      <div class="notice-ticker__label"><i data-lucide="newspaper" class="inline-icon" aria-hidden="true"></i><span>खबरें</span></div>
+      <label class="notice-ticker__location" for="districtSelector">
+        <span>अपना जिला चुनें / District:</span>
+        <select id="districtSelector" aria-label="अपना जिला चुनें" data-basepath="." style="font-weight: 700; color: #0d5c50; border: none; background: transparent; cursor: pointer;">
+          <option value="">हरदोई (Hardoi)</option>
+          <option value="agra">आगरा (Agra)</option>
+          <option value="aligarh">अलीगढ़ (Aligarh)</option>
+          <option value="ambedkar-nagar">अम्बेडकर नगर (Ambedkar Nagar)</option>
+          <option value="amethi">अमेठी (Amethi)</option>
+          <option value="amroha">अमरोहा (Amroha)</option>
+          <option value="auraiya">औरैया (Auraiya)</option>
+          <option value="ayodhya">अयोध्या (Ayodhya)</option>
+          <option value="azamgarh">आजमगढ़ (Azamgarh)</option>
+          <option value="baghpat">बागपत (Baghpat)</option>
+          <option value="bahraich">बहराइच (Bahraich)</option>
+          <option value="ballia">बलिया (Ballia)</option>
+          <option value="balrampur">बलरामपुर (Balrampur)</option>
+          <option value="banda">बांदा (Banda)</option>
+          <option value="barabanki">बाराबंकी (Barabanki)</option>
+          <option value="bareilly">बरेली (Bareilly)</option>
+          <option value="basti">बस्ती (Basti)</option>
+          <option value="bhadohi">भदोही (Bhadohi)</option>
+          <option value="bijnor">बिजनौर (Bijnor)</option>
+          <option value="budaun">बदायूँ (Budaun)</option>
+          <option value="bulandshahr">बुलन्दशहर (Bulandshahr)</option>
+          <option value="chandauli">चंदौली (Chandauli)</option>
+          <option value="chitrakoot">चित्रकूट (Chitrakoot)</option>
+          <option value="deoria">देवरिया (Deoria)</option>
+          <option value="etah">एटा (Etah)</option>
+          <option value="etawah">इटावा (Etawah)</option>
+          <option value="farrukhabad">फर्रुखाबाद (Farrukhabad)</option>
+          <option value="fatehpur">फतेहपुर (Fatehpur)</option>
+          <option value="firozabad">फिरोजाबाद (Firozabad)</option>
+          <option value="gautam-buddha-nagar">गौतम बुद्ध नगर (Gautam Buddha Nagar)</option>
+          <option value="ghaziabad">गाज़ियाबाद (Ghaziabad)</option>
+          <option value="ghazipur">गाज़ीपुर (Ghazipur)</option>
+          <option value="gonda">गोण्डा (Gonda)</option>
+          <option value="gorakhpur">गोरखपुर (Gorakhpur)</option>
+          <option value="hamirpur">हमीरपुर (Hamirpur)</option>
+          <option value="hapur">हापुड़ (Hapur)</option>
+          <option value="hardoi">हरदोई (Hardoi)</option>
+          <option value="hathras">हाथरस (Hathras)</option>
+          <option value="jalaun">जालौन (Jalaun)</option>
+          <option value="jaunpur">जौनपुर (Jaunpur)</option>
+          <option value="jhansi">झाँसी (Jhansi)</option>
+          <option value="kannauj">कन्नौज (Kannauj)</option>
+          <option value="kanpur-dehat">कानपुर देहात (Kanpur Dehat)</option>
+          <option value="kanpur-nagar">कानपुर नगर (Kanpur Nagar)</option>
+          <option value="kasganj">कासगंज (Kasganj)</option>
+          <option value="kaushambi">कौशाम्बी (Kaushambi)</option>
+          <option value="kheri">खीरी (Kheri)</option>
+          <option value="kushinagar">कुशीनगर (Kushinagar)</option>
+          <option value="lalitpur">ललितपुर (Lalitpur)</option>
+          <option value="lucknow">लखनऊ (Lucknow)</option>
+          <option value="maharajganj">महराजगंज (Maharajganj)</option>
+          <option value="mahoba">महोबा (Mahoba)</option>
+          <option value="mainpuri">मैनपुरी (Mainpuri)</option>
+          <option value="mathura">मथुरा (Mathura)</option>
+          <option value="mau">मऊ (Mau)</option>
+          <option value="meerut">मेरठ (Meerut)</option>
+          <option value="mirzapur">मिर्ज़ापुर (Mirzapur)</option>
+          <option value="moradabad">मुरादाबाद (Moradabad)</option>
+          <option value="muzaffarnagar">मुज़फ़्फ़रनगर (Muzaffarnagar)</option>
+          <option value="pilibhit">पीलीभीत (Pilibhit)</option>
+          <option value="pratapgarh">प्रतापगढ़ (Pratapgarh)</option>
+          <option value="prayagraj">प्रयागराज (Prayagraj)</option>
+          <option value="raebareli">रायबरेली (Raebareli)</option>
+          <option value="rampur">रामपुर (Rampur)</option>
+          <option value="saharanpur">सहारनपुर (Saharanpur)</option>
+          <option value="sambhal">सम्भल (Sambhal)</option>
+          <option value="sant-kabir-nagar">संत कबीर नगर (Sant Kabir Nagar)</option>
+          <option value="shahjahanpur">शाहजहाँपुर (Shahjahanpur)</option>
+          <option value="shamli">शामली (Shamli)</option>
+          <option value="shravasti">श्रावस्ती (Shravasti)</option>
+          <option value="siddharthnagar">सिद्धार्थनगर (Siddharthnagar)</option>
+          <option value="sitapur">सीतापुर (Sitapur)</option>
+          <option value="sonbhadra">सोनभद्र (Sonbhadra)</option>
+          <option value="sultanpur">सुल्तानपुर (Sultanpur)</option>
+          <option value="unnao">उन्नाव (Unnao)</option>
+          <option value="varanasi">वाराणसी (Varanasi)</option>
+        </select>
+      </label>
+      <div style="overflow: hidden; flex-grow: 1;">
+        <div class="notice-ticker__content">
+          <span><i data-lucide="home" class="inline-icon"></i> <strong>आवास योजना:</strong> क्या आप जानते हैं? पीएम आवास योजना (ग्रामीण) के तहत पक्का घर बनाने के लिए ₹1.20 लाख की सहायता मिलती है।</span>
+          <span><i data-lucide="tractor" class="inline-icon"></i> <strong>किसान अपडेट:</strong> पीएम किसान सम्मान निधि की अगली किस्त के लिए अपना e-KYC तुरंत पूरा करें, यह अनिवार्य है!</span>
+          <span><i data-lucide="building" class="inline-icon"></i> <strong>ग्राम सचिवालय:</strong> अब आप आय, जाति और निवास प्रमाण पत्र सीधे अपने पंचायत भवन (पंचायत सहायक) से बनवा सकते हैं।</span>
+          <span><i data-lucide="wheat" class="inline-icon"></i> <strong>राशन योजना:</strong> पीएम गरीब कल्याण अन्न योजना के तहत मुफ्त राशन वितरण जारी है।</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+  <section class="section" style="padding-top: 40px; padding-bottom: 60px; background-color: #f8fafc;">
+    <div class="container">
+      <div class="section__header text-center" style="margin-bottom: 40px;">
+        <h1 class="section__title"><i data-lucide="help-circle" class="inline-icon" style="color:var(--brand-teal);"></i> मेरी समस्या ➔ मेरा समाधान</h1>
+        <p class="section__desc">अपनी परेशानी चुनें और जानें कि कानूनी रूप से आपको आगे क्या करना है।</p>
+        <p style="font-size: 0.9rem; color: #64748b; margin-top: 8px;">अंतिम अद्यतन: 16 सितंबर 2026 | Verified from official sources</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div id="remedy-filters" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 32px;">
+        <button class="btn btn--primary filter-btn active" data-filter="all">सभी (All)</button>
+        <button class="btn btn--outline filter-btn" data-filter="land">ज़मीन / Land</button>
+        <button class="btn btn--outline filter-btn" data-filter="wage">मज़दूरी / Wage</button>
+        <button class="btn btn--outline filter-btn" data-filter="scheme">योजना / Scheme</button>
+        <button class="btn btn--outline filter-btn" data-filter="legal">पुलिस शिकायत / Legal</button>
+        <button class="btn btn--outline filter-btn" data-filter="entitlement">राशन व पेंशन</button>
+      </div>
+
+      <!-- Cards Grid -->
+      <div class="remedy-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+        
+        <!-- LAND 1 -->
+        <div class="remedy-card land" style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+          <span style="background: #fef3c7; color: #92400e; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 12px; display: inline-block;">ज़मीन / Land</span>
+          <h3 style="font-size: 1.2rem; margin-bottom: 16px; color: #0f172a;">ज़मीन के कागज़ (खतौनी) में मेरा नाम नहीं है</h3>
+          <ol style="padding-left: 20px; color: #334155; margin-bottom: 16px; font-size: 0.95rem;">
+            <li style="margin-bottom: 8px;"><strong>पहला कदम:</strong> तहसील जाकर खतौनी की फ्री कॉपी लें या ऑनलाइन Bhulekh.up.nic.in पर खुद चेक करें।</li>
+            <li style="margin-bottom: 8px;"><strong>अगर गलती है:</strong> सबूत के साथ SDM को आवेदन दें।</li>
+            <li style="margin-bottom: 8px;"><strong>अगर SDM न सुने (Escalate):</strong> जनसुनवाई (Jansunwai) पर शिकायत दर्ज करें (धारा 24 के तहत)।</li>
+          </ol>
+          <div style="background: #f8fafc; padding: 12px; border-radius: 6px; font-size: 0.9rem;">
+            <div><strong>फीस:</strong> ₹0 (बिल्कुल मुफ्त)</div>
+            <div><strong>समय:</strong> 6 से 8 हफ्ते</div>
+          </div>
+        </div>
+
+        <!-- LAND 2 -->
+        <div class="remedy-card land" style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+          <span style="background: #fef3c7; color: #92400e; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 12px; display: inline-block;">ज़मीन / Land</span>
+          <h3 style="font-size: 1.2rem; margin-bottom: 16px; color: #0f172a;">मेरे खेत पर किसी और का नाम दर्ज़ है</h3>
+          <ol style="padding-left: 20px; color: #334155; margin-bottom: 16px; font-size: 0.95rem;">
+            <li style="margin-bottom: 8px;"><strong>पहला कदम:</strong> तहसील में आपत्ति (Objection) का फॉर्म भरें।</li>
+            <li style="margin-bottom: 8px;"><strong>दूसरा कदम:</strong> ग्राम सभा की बैठक में सबूत लेकर जाएं और लेखपाल से रिकॉर्ड अपडेट करवाएं।</li>
+            <li style="margin-bottom: 8px;"><strong>हरदोई संपर्क:</strong> संडीला तहसील में अपने क्षेत्र के लेखपाल से मिलें।</li>
+          </ol>
+          <div style="background: #f8fafc; padding: 12px; border-radius: 6px; font-size: 0.9rem;">
+            <div><strong>फीस:</strong> ₹0 (यह आपका कानूनी अधिकार है)</div>
+            <div><strong>समय:</strong> 4 से 8 हफ्ते</div>
+          </div>
+        </div>
+
+        <!-- LAND 3 -->
+        <div class="remedy-card land" style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+          <span style="background: #fef3c7; color: #92400e; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 12px; display: inline-block;">ज़मीन / Land</span>
+          <h3 style="font-size: 1.2rem; margin-bottom: 16px; color: #0f172a;">ज़मीन "सरकारी" दिख रही है पर मैं खेती करता हूँ</h3>
+          <ol style="padding-left: 20px; color: #334155; margin-bottom: 16px; font-size: 0.95rem;">
+            <li style="margin-bottom: 8px;"><strong>पहला कदम:</strong> धारा 24 (सरकारी ज़मीन के विरुद्ध आवेदन) के तहत शिकायत दर्ज़ करें।</li>
+            <li style="margin-bottom: 8px;"><strong>प्रक्रिया:</strong> ग्राम सभा जांच करेगी और SDM को रिपोर्ट भेजेगी, फिर यह आपके नाम प्राइवेट हो जाएगी।</li>
+          </ol>
+          <div style="background: #f8fafc; padding: 12px; border-radius: 6px; font-size: 0.9rem;">
+            <div><strong>फीस:</strong> ₹0 (एजेंट को पैसे न दें)</div>
+            <div><strong>समय:</strong> 3 महीने (प्रक्रिया धीमी है पर पक्की है)</div>
+          </div>
+        </div>
+
+        <!-- WAGE 1 -->
+        <div class="remedy-card wage" style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+          <span style="background: #e0f2fe; color: #0369a1; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 12px; display: inline-block;">मज़दूरी / Wage</span>
+          <h3 style="font-size: 1.2rem; margin-bottom: 16px; color: #0f172a;">मनरेगा (MGNREGA) की मज़दूरी 7 दिन से नहीं मिली</h3>
+          <ol style="padding-left: 20px; color: #334155; margin-bottom: 16px; font-size: 0.95rem;">
+            <li style="margin-bottom: 8px;"><strong>आपका अधिकार:</strong> 7 दिन के बाद हर दिन का ₹100 बेरोजगारी भत्ता मांगें।</li>
+            <li style="margin-bottom: 8px;"><strong>पहला कदम:</strong> ब्लॉक ऑफिस में मनरेगा अधिकारी से शिकायत करें और 9730991947 पर SMS भेजें।</li>
+            <li style="margin-bottom: 8px;"><strong>अगर 14 दिन तक कुछ न हो:</strong> 1800-180-5555 पर फोन करें।</li>
+          </ol>
+          <div style="background: #f8fafc; padding: 12px; border-radius: 6px; font-size: 0.9rem;">
+            <div><strong>फीस:</strong> ₹0</div>
+            <div><strong>स्टेटस चेक:</strong> mgnrega.nic.in पर</div>
+          </div>
+        </div>
+
+        <!-- WAGE 2 -->
+        <div class="remedy-card wage" style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+          <span style="background: #e0f2fe; color: #0369a1; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 12px; display: inline-block;">मज़दूरी / Wage</span>
+          <h3 style="font-size: 1.2rem; margin-bottom: 16px; color: #0f172a;">ठेकेदार ने मज़दूरी काट ली / कम पैसे दिए</h3>
+          <ol style="padding-left: 20px; color: #334155; margin-bottom: 16px; font-size: 0.95rem;">
+            <li style="margin-bottom: 8px;"><strong>कानूनी अधिकार:</strong> यह मज़दूरी की चोरी (Wage Theft) है। आप ठेकेदार के खिलाफ FIR कर सकते हैं।</li>
+            <li style="margin-bottom: 8px;"><strong>पहला कदम:</strong> थाने जाकर लिखित शिकायत दें और रसीद लें।</li>
+            <li style="margin-bottom: 8px;"><strong>अगर थानेदार मना करे:</strong> SDM या मजिस्ट्रेट को शिकायत दें।</li>
+          </ol>
+          <div style="background: #f8fafc; padding: 12px; border-radius: 6px; font-size: 0.9rem;">
+            <div><strong>फीस:</strong> ₹0</div>
+            <div><strong>कानून:</strong> BNS धारा 378</div>
+          </div>
+        </div>
+
+        <!-- WAGE 3 -->
+        <div class="remedy-card wage" style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+          <span style="background: #e0f2fe; color: #0369a1; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 12px; display: inline-block;">मज़दूरी / Wage</span>
+          <h3 style="font-size: 1.2rem; margin-bottom: 16px; color: #0f172a;">जॉब कार्ड कट गया या बना ही नहीं</h3>
+          <ol style="padding-left: 20px; color: #334155; margin-bottom: 16px; font-size: 0.95rem;">
+            <li style="margin-bottom: 8px;"><strong>पहला कदम:</strong> ब्लॉक ऑफिस जाकर नए जॉब कार्ड के लिए फॉर्म भरें। (आधार और ज़मीन के कागज़ साथ ले जाएं)।</li>
+            <li style="margin-bottom: 8px;"><strong>आपका अधिकार:</strong> हर साल 100 दिन का रोज़गार आपका हक़ है।</li>
+            <li style="margin-bottom: 8px;"><strong>शिकायत:</strong> जिला नोडल अधिकारी या 1800-180-5555 पर फोन करें।</li>
+          </ol>
+          <div style="background: #f8fafc; padding: 12px; border-radius: 6px; font-size: 0.9rem;">
+            <div><strong>फीस:</strong> ₹0</div>
+          </div>
+        </div>
+
+        <!-- SCHEME 1 -->
+        <div class="remedy-card scheme" style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+          <span style="background: #dcfce7; color: #166534; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 12px; display: inline-block;">योजना / Scheme</span>
+          <h3 style="font-size: 1.2rem; margin-bottom: 16px; color: #0f172a;">क्या PM-Kisan के लिए मेरी आय (Income) ज्यादा है?</h3>
+          <ol style="padding-left: 20px; color: #334155; margin-bottom: 16px; font-size: 0.95rem;">
+            <li style="margin-bottom: 8px;"><strong>सच क्या है:</strong> खेती करने वाले सभी किसान योग्य हैं। खेती की आय की कोई सीमा नहीं है।</li>
+            <li style="margin-bottom: 8px;"><strong>किसे नहीं मिलेगा:</strong> सिर्फ उन्हें जिनकी खेती के अलावा (जैसे व्यापार या नौकरी) आय ₹2 लाख सालाना से ज्यादा है।</li>
+            <li style="margin-bottom: 8px;"><strong>पहला कदम:</strong> pmkisan.gov.in पर तुरंत अपनी पात्रता (Eligibility) चेक करें।</li>
+          </ol>
+          <div style="background: #f8fafc; padding: 12px; border-radius: 6px; font-size: 0.9rem;">
+            <div><strong>फीस:</strong> ₹0</div>
+          </div>
+        </div>
+
+        <!-- SCHEME 2 -->
+        <div class="remedy-card scheme" style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+          <span style="background: #dcfce7; color: #166534; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 12px; display: inline-block;">योजना / Scheme</span>
+          <h3 style="font-size: 1.2rem; margin-bottom: 16px; color: #0f172a;">क्या पति के बिना पत्नी का आयुष्मान कार्ड बन सकता है?</h3>
+          <ol style="padding-left: 20px; color: #334155; margin-bottom: 16px; font-size: 0.95rem;">
+            <li style="margin-bottom: 8px;"><strong>सच क्या है:</strong> हाँ! हर सदस्य का कार्ड अलग बनता है।</li>
+            <li style="margin-bottom: 8px;"><strong>पहला कदम:</strong> अपनी ANM दीदी (आशा वर्कर) के पास जाएं या स्वास्थ्य कैंप में जाएं।</li>
+          </ol>
+          <div style="background: #f8fafc; padding: 12px; border-radius: 6px; font-size: 0.9rem;">
+            <div><strong>फीस:</strong> 100% मुफ्त</div>
+          </div>
+        </div>
+
+        <!-- LEGAL 1 -->
+        <div class="remedy-card legal" style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+          <span style="background: #fee2e2; color: #991b1b; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 12px; display: inline-block;">पुलिस शिकायत / Legal</span>
+          <h3 style="font-size: 1.2rem; margin-bottom: 16px; color: #0f172a;">थानेदार (Police) मेरी FIR लिखने से मना कर दे</h3>
+          <ol style="padding-left: 20px; color: #334155; margin-bottom: 16px; font-size: 0.95rem;">
+            <li style="margin-bottom: 8px;"><strong>आपका अधिकार:</strong> यह कोई एहसान नहीं है। SP और मजिस्ट्रेट को आपकी बात सुननी ही होगी।</li>
+            <li style="margin-bottom: 8px;"><strong>पहला कदम:</strong> SP (पुलिस अधीक्षक) को लिखित आवेदन दें और रसीद मांगें। (ज़ुबानी शिकायत न करें)।</li>
+            <li style="margin-bottom: 8px;"><strong>अगर SP न सुने:</strong> मजिस्ट्रेट को शिकायत दें। उन्हें आदेश देना ही पड़ेगा।</li>
+          </ol>
+          <div style="background: #f8fafc; padding: 12px; border-radius: 6px; font-size: 0.9rem;">
+            <div><strong>फीस:</strong> ₹0</div>
+          </div>
+        </div>
+
+        <!-- LEGAL 2 -->
+        <div class="remedy-card legal" style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+          <span style="background: #fee2e2; color: #991b1b; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 12px; display: inline-block;">पुलिस शिकायत / Legal</span>
+          <h3 style="font-size: 1.2rem; margin-bottom: 16px; color: #0f172a;">जनसुनवाई (Jansunwai) की शिकायत पर कोई जवाब नहीं आ रहा</h3>
+          <ol style="padding-left: 20px; color: #334155; margin-bottom: 16px; font-size: 0.95rem;">
+            <li style="margin-bottom: 8px;"><strong>पहला कदम:</strong> jansunwai.up.nic.in पर अपनी शिकायत का नंबर (Reference No.) डालकर स्टेटस चेक करें।</li>
+            <li style="margin-bottom: 8px;"><strong>अगर 15 दिन से अटकी है:</strong> तहसील में 'समाधान दिवस' (पहले और तीसरे शनिवार) पर जाएं और अपनी रसीद दिखाएं।</li>
+            <li style="margin-bottom: 8px;"><strong>अगर फिर भी काम न हो:</strong> 1076 (CM Helpline) पर फोन करें।</li>
+          </ol>
+          <div style="background: #f8fafc; padding: 12px; border-radius: 6px; font-size: 0.9rem;">
+            <div><strong>फीस:</strong> ₹0</div>
+            <div><strong>समय:</strong> पहला जवाब 15 दिन में, पूरा समाधान 30 दिन में।</div>
+          </div>
+        </div>
+
+        <!-- ENTITLEMENT 1 -->
+        <div class="remedy-card entitlement" style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+          <span style="background: #f3e8ff; color: #6b21a8; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 12px; display: inline-block;">राशन व पेंशन</span>
+          <h3 style="font-size: 1.2rem; margin-bottom: 16px; color: #0f172a;">राशन कार्ड में नाम गलत है या राशन नहीं मिल रहा</h3>
+          <ol style="padding-left: 20px; color: #334155; margin-bottom: 16px; font-size: 0.95rem;">
+            <li style="margin-bottom: 8px;"><strong>पहला कदम:</strong> ब्लॉक ऑफिस में DSWO (समाज कल्याण अधिकारी) से मिलें, अपना कार्ड और आधार लेकर जाएं।</li>
+            <li style="margin-bottom: 8px;"><strong>अगर वहां काम न हो:</strong> DM (ज़िलाधिकारी) के कार्यालय में शिकायत दें।</li>
+          </ol>
+          <div style="background: #f8fafc; padding: 12px; border-radius: 6px; font-size: 0.9rem;">
+            <div><strong>फीस:</strong> ₹0 (नाम सुधारने के कोई पैसे नहीं लगते)</div>
+            <div><strong>समय:</strong> हर स्तर पर 15 दिन</div>
+          </div>
+        </div>
+
+        <!-- ENTITLEMENT 2 -->
+        <div class="remedy-card entitlement" style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+          <span style="background: #f3e8ff; color: #6b21a8; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 12px; display: inline-block;">राशन व पेंशन</span>
+          <h3 style="font-size: 1.2rem; margin-bottom: 16px; color: #0f172a;">पेंशन (विधवा / वृद्धावस्था) खाते में नहीं आ रही है</h3>
+          <ol style="padding-left: 20px; color: #334155; margin-bottom: 16px; font-size: 0.95rem;">
+            <li style="margin-bottom: 8px;"><strong>पहला कदम:</strong> बैंक में जाकर पूछें कि क्या आपका खाता आधार से जुड़ा (NPCI linked) है। हो सकता है पेंशन किसी और खाते में जा रही हो।</li>
+            <li style="margin-bottom: 8px;"><strong>अगर बैंक में सब सही है:</strong> ब्लॉक ऑफिस में DSWO को शिकायत दें।</li>
+            <li style="margin-bottom: 8px;"><strong>अगर काम न हो:</strong> 1076 (CM Helpline) पर कॉल करें।</li>
+          </ol>
+          <div style="background: #f8fafc; padding: 12px; border-radius: 6px; font-size: 0.9rem;">
+            <div><strong>फीस:</strong> ₹0</div>
+            <div><strong>समय:</strong> बैंक (5 दिन), DSWO (15 दिन)</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Simple filter logic
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const cards = document.querySelectorAll('.remedy-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Remove active class from all
+          filterBtns.forEach(b => {
+            b.classList.remove('btn--primary', 'active');
+            b.classList.add('btn--outline');
+          });
+          
+          // Add active class to clicked
+          btn.classList.remove('btn--outline');
+          btn.classList.add('btn--primary', 'active');
+
+          const filterValue = btn.getAttribute('data-filter');
+
+          cards.forEach(card => {
+            if (filterValue === 'all') {
+              card.style.display = 'block';
+            } else if (card.classList.contains(filterValue)) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</main>
+
+  <nav class="mobile-bottom-nav" aria-label="त्वरित नेविगेशन">
+    <a  href="./index.html" aria-current="page"><i data-lucide="home" class="inline-icon"></i><span>होम</span></a>
+    <a href="./rights.html"><i data-lucide="scale" class="inline-icon"></i><span>अधिकार</span></a>
+    <a href="./schemes.html"><i data-lucide="clipboard-list" class="inline-icon"></i><span>योजनाएँ</span></a>
+    <a href="./directory.html"><i data-lucide="phone" class="inline-icon"></i><span>संपर्क</span></a>
+    <a href="./drafter.html"><i data-lucide="file-text" class="inline-icon"></i><span>Drafter</span></a>
+    <a href="./articles.html"><i data-lucide="book-open" class="inline-icon"></i><span>Guides</span></a>
+    <a href="./problem-to-remedy.html"><i data-lucide="help-circle" class="inline-icon"></i><span>Remedy</span></a>
+  </nav>
+
+  <!-- ════ SITE FOOTER ════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Column 1: Brand & Mission -->
+        <div class="footer-brand">
+          <div class="footer-brand__name"><i data-lucide="landmark" class="inline-icon"></i> जानो अपने अधिकार</div>
+          <p class="footer-brand__desc" style="margin-top: 12px; line-height: 1.6;">
+            स्वतंत्र नागरिक-जागरूकता पहल<br/>
+            उत्तर प्रदेश • विधिक साक्षरता और नागरिक सशक्तिकरण
+          </p>
+          <p class="footer-brand__creator">निर्माता / Created by <a href="https://abinavshukl.github.io/Abhinav-s-Portfolio/" target="_blank" rel="noopener noreferrer">Abhinav Kumar</a></p>
+        </div>
+
+      </div>
+
+      <hr class="footer-divider" style="margin: 40px 0 24px;" />
+
+      <p class="footer-legal"><strong>विधिक सूचना:</strong> यह सरकारी पोर्टल या कानूनी सलाह नहीं है। कार्रवाई से पहले आधिकारिक स्रोत से पुष्टि करें। <a href="./legal.html">पूरी नीति पढ़ें</a></p>
+      <div class="footer-meta">© <span id="footerYear">2025</span> जानो अपने अधिकार — एक निजी पहल।</div>
+    </div>
+  </footer>
+
+
+
+  <!-- ── Scripts ── -->
+  <script src="./js/config.js"></script>
+  <script src="./js/main.js?v=1789393113538"></script>
+  <script src="./js/booth-finder.js"></script>
+  <script src="./js/voter-search.js?v=2"></script>
+  <script src="./js/grievance.js"></script>
+  <script>
+    /* ── Disclaimer Modal Logic ── */
+    (function () {
+      var overlay = document.getElementById('disclaimerOverlay');
+      
+      // Check if user already accepted in this session
+      if (sessionStorage.getItem('disclaimerAccepted') === 'true') {
+        overlay.classList.add('hidden');
+        return;
+      }
+      
+      var acceptBtn = document.getElementById('disclaimerAccept');
+      // Show modal; trap focus inside
+      acceptBtn.focus();
+      acceptBtn.addEventListener('click', function () {
+        overlay.classList.add('hidden');
+        document.body.style.overflow = '';
+        sessionStorage.setItem('disclaimerAccepted', 'true');
+      });
+      document.body.style.overflow = 'hidden';
+      // Close on overlay click (outside modal box)
+      overlay.addEventListener('click', function (e) {
+        if (e.target === overlay) {
+          overlay.classList.add('hidden');
+          document.body.style.overflow = '';
+          sessionStorage.setItem('disclaimerAccepted', 'true');
+        }
+      });
+    })();
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+    });
+  </script>
+  <!-- Google Transliteration API -->
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script src="./js/drafter.js"></script>
+</body>
+</html>
