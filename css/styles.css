@@ -1900,7 +1900,8 @@ body {
     bottom: 10px;
     z-index: 120;
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    overflow-x: auto;
     gap: 4px;
     padding: 7px;
     border: 1px solid rgba(220,230,223,0.95);
