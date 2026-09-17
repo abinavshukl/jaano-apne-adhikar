@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="नागरिक जानकारी: सरकारी योजनाएँ, मतदाता और बूथ खोज, नागरिक अधिकार, संपर्क और शिकायत मसौदा। यह एक स्वतंत्र निजी जन-जागरूकता पहल है।" />
+  <meta name="description" content="नागरिक जानकारी: सरकारी योजनाएँ, मतदाता स्थिति, शिकायत समाधान, नागरिक अधिकार, संपर्क और शिकायत मसौदा। यह एक स्वतंत्र निजी जन-जागरूकता पहल है।" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="google-site-verification" content="Ftf0hppVZRFhVOI5QPGeNBmNCt0L_n2qzsALrn6NytU" />
   <meta name="theme-color" content="#065f46" />
-  <meta name="keywords" content="गांव, a village, ग्राम पंचायत, हरदोई, बेंहदर, UP, voter booth, shikayat, gram panchayat portal" />
+  <meta name="keywords" content="नागरिक अधिकार, सरकारी योजना, जनसुनवाई, RTI, विधिक साक्षरता, शिकायत प्रारूप, citizen rights, government schemes, public grievance" />
   <meta property="og:title" content="जानो अपने अधिकार — नागरिक जानकारी" />
   <meta property="og:description" content="आपके राज्य में योजनाएँ, मतदाता जानकारी, नागरिक अधिकार और शिकायत मसौदा एक जगह। स्वतंत्र निजी जन-जागरूकता पहल।" />
     <title>नागरिक जानकारी, योजनाएँ और अधिकार — जानो अपने अधिकार</title>
-  <link rel="stylesheet" href="./css/styles.css?v=20260914-ux7" />
+  <link rel="stylesheet" href="./css/styles.css?v=20260917-r3" />
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
 
   <link rel="canonical" href="https://abinavshukl.github.io/jaano-apne-adhikar/" />
@@ -82,9 +82,9 @@
 
   <!-- ════ SITE HEADER ════ -->
   <header class="site-header" role="banner">
-  <div class="site-disclaimer" style="background-color: #fef2f2; color: #991b1b; text-align: center; padding: 8px 16px; font-size: 0.85rem; font-weight: 600; border-bottom: 1px solid #fca5a5; margin-bottom: 16px;">
-    विधिक अस्वीकरण (Legal Disclaimer): यह वेबसाइट स्वतंत्र, गैर-सरकारी जन-जागरूकता पहल है। यह कानूनी सलाह, सरकारी आदेश या सेवा की गारंटी नहीं है।
-  </div>
+      <div class="site-disclaimer">
+      विधिक अस्वीकरण: यह स्वतंत्र, गैर-सरकारी जन-जागरूकता पहल है। कानूनी सलाह या सेवा की गारंटी नहीं है।
+    </div>
     <div class="container">
       <div class="header-inner">
         <a href="./index.html" class="site-logo" aria-label="एक निजी पहल — होम पेज">
@@ -99,120 +99,32 @@
           <span class="menu-toggle__bar"></span>
         </button>
 
-        <nav id="navMenu" class="site-nav" aria-label="मुख्य नेविगेशन">
+                <nav id="navMenu" class="site-nav" aria-label="मुख्य नेविगेशन">
           <ul class="nav__list" role="list">
-            <li><a href="./index.html"     class="nav__link"><i data-lucide="home" class="inline-icon"></i> होम</a></li>
-            <li><a href="./rights.html"    class="nav__link"><i data-lucide="scale" class="inline-icon"></i> अधिकार</a></li>
-            <li><a href="./schemes.html"   class="nav__link"><i data-lucide="clipboard-list" class="inline-icon"></i> योजनाएँ</a></li>
-            <li><a href="./directory.html" class="nav__link"><i data-lucide="phone" class="inline-icon"></i> संपर्क</a>
-          <a href="./drafter.html" class="nav__link"><i data-lucide="file-text" class="inline-icon"></i> <span>AI Drafter</span></a>
-          <a href="./articles.html" class="nav__link"><i data-lucide="book-open" class="inline-icon"></i> <span>मार्गदर्शक (Guides)</span></a>
-          <a href="./problem-to-remedy.html" class="nav__link"><i data-lucide="help-circle" class="inline-icon"></i> <span>समाधान (Remedy)</span></a>
-          <a href="./fee-transparency.html" class="nav__link nav__link--active"><i data-lucide="shield-alert" class="inline-icon"></i> <span>फीस (Fees)</span></a></li>
-            <li><a href="./legal.html"     class="nav__link"><i data-lucide="file-text" class="inline-icon"></i> नीति</a></li>
+            <li><a href="./index.html" class="nav__link"><i data-lucide="home" class="inline-icon"></i> होम</a></li>
+            <li><a href="./rights.html" class="nav__link"><i data-lucide="scale" class="inline-icon"></i> अधिकार</a></li>
+            <li><a href="./schemes.html" class="nav__link"><i data-lucide="clipboard-list" class="inline-icon"></i> योजनाएँ</a></li>
+            <li><a href="./articles.html" class="nav__link"><i data-lucide="book-open" class="inline-icon"></i> मार्गदर्शक</a></li>
+            <li><a href="./problem-to-remedy.html" class="nav__link"><i data-lucide="help-circle" class="inline-icon"></i> समाधान</a></li>
+            <li><a href="./official-contacts.html" class="nav__link"><i data-lucide="phone" class="inline-icon"></i> संपर्क</a></li>
+            <li><a href="./drafter.html" class="nav__link"><i data-lucide="file-text" class="inline-icon"></i> Drafter</a></li>
+            <li><a href="./fee-transparency.html" class="nav__link"><i data-lucide="shield-alert" class="inline-icon"></i> फीस</a></li>
+            <li><a href="./escalation-guide.html" class="nav__link"><i data-lucide="trending-up" class="inline-icon"></i> अपील</a></li>
+            <li><a href="./land-revenue-guide.html" class="nav__link"><i data-lucide="map" class="inline-icon"></i> ज़मीन</a></li>
+            <li><a href="./legal.html" class="nav__link"><i data-lucide="file-text" class="inline-icon"></i> नीति</a></li>
           </ul>
         </nav>
       </div>
     </div>
   </header>
 
-
-  
-  <!-- ════ NOTICE TICKER ════ -->
-  <div class="notice-ticker" role="marquee" aria-label="नवीनतम अपडेट">
-    <div class="container" style="display: flex; align-items: center; width: 100%;">
-      <div class="notice-ticker__label"><i data-lucide="newspaper" class="inline-icon" aria-hidden="true"></i><span>खबरें</span></div>
-      <label class="notice-ticker__location" for="districtSelector">
-        <span>अपना जिला चुनें / District:</span>
-        <select id="districtSelector" aria-label="अपना जिला चुनें" data-basepath="." style="font-weight: 700; color: #0d5c50; border: none; background: transparent; cursor: pointer;">
-          <option value="">हरदोई (Hardoi)</option>
-          <option value="agra">आगरा (Agra)</option>
-          <option value="aligarh">अलीगढ़ (Aligarh)</option>
-          <option value="ambedkar-nagar">अम्बेडकर नगर (Ambedkar Nagar)</option>
-          <option value="amethi">अमेठी (Amethi)</option>
-          <option value="amroha">अमरोहा (Amroha)</option>
-          <option value="auraiya">औरैया (Auraiya)</option>
-          <option value="ayodhya">अयोध्या (Ayodhya)</option>
-          <option value="azamgarh">आजमगढ़ (Azamgarh)</option>
-          <option value="baghpat">बागपत (Baghpat)</option>
-          <option value="bahraich">बहराइच (Bahraich)</option>
-          <option value="ballia">बलिया (Ballia)</option>
-          <option value="balrampur">बलरामपुर (Balrampur)</option>
-          <option value="banda">बांदा (Banda)</option>
-          <option value="barabanki">बाराबंकी (Barabanki)</option>
-          <option value="bareilly">बरेली (Bareilly)</option>
-          <option value="basti">बस्ती (Basti)</option>
-          <option value="bhadohi">भदोही (Bhadohi)</option>
-          <option value="bijnor">बिजनौर (Bijnor)</option>
-          <option value="budaun">बदायूँ (Budaun)</option>
-          <option value="bulandshahr">बुलन्दशहर (Bulandshahr)</option>
-          <option value="chandauli">चंदौली (Chandauli)</option>
-          <option value="chitrakoot">चित्रकूट (Chitrakoot)</option>
-          <option value="deoria">देवरिया (Deoria)</option>
-          <option value="etah">एटा (Etah)</option>
-          <option value="etawah">इटावा (Etawah)</option>
-          <option value="farrukhabad">फर्रुखाबाद (Farrukhabad)</option>
-          <option value="fatehpur">फतेहपुर (Fatehpur)</option>
-          <option value="firozabad">फिरोजाबाद (Firozabad)</option>
-          <option value="gautam-buddha-nagar">गौतम बुद्ध नगर (Gautam Buddha Nagar)</option>
-          <option value="ghaziabad">गाज़ियाबाद (Ghaziabad)</option>
-          <option value="ghazipur">गाज़ीपुर (Ghazipur)</option>
-          <option value="gonda">गोण्डा (Gonda)</option>
-          <option value="gorakhpur">गोरखपुर (Gorakhpur)</option>
-          <option value="hamirpur">हमीरपुर (Hamirpur)</option>
-          <option value="hapur">हापुड़ (Hapur)</option>
-          <option value="hardoi">हरदोई (Hardoi)</option>
-          <option value="hathras">हाथरस (Hathras)</option>
-          <option value="jalaun">जालौन (Jalaun)</option>
-          <option value="jaunpur">जौनपुर (Jaunpur)</option>
-          <option value="jhansi">झाँसी (Jhansi)</option>
-          <option value="kannauj">कन्नौज (Kannauj)</option>
-          <option value="kanpur-dehat">कानपुर देहात (Kanpur Dehat)</option>
-          <option value="kanpur-nagar">कानपुर नगर (Kanpur Nagar)</option>
-          <option value="kasganj">कासगंज (Kasganj)</option>
-          <option value="kaushambi">कौशाम्बी (Kaushambi)</option>
-          <option value="kheri">खीरी (Kheri)</option>
-          <option value="kushinagar">कुशीनगर (Kushinagar)</option>
-          <option value="lalitpur">ललितपुर (Lalitpur)</option>
-          <option value="lucknow">लखनऊ (Lucknow)</option>
-          <option value="maharajganj">महराजगंज (Maharajganj)</option>
-          <option value="mahoba">महोबा (Mahoba)</option>
-          <option value="mainpuri">मैनपुरी (Mainpuri)</option>
-          <option value="mathura">मथुरा (Mathura)</option>
-          <option value="mau">मऊ (Mau)</option>
-          <option value="meerut">मेरठ (Meerut)</option>
-          <option value="mirzapur">मिर्ज़ापुर (Mirzapur)</option>
-          <option value="moradabad">मुरादाबाद (Moradabad)</option>
-          <option value="muzaffarnagar">मुज़फ़्फ़रनगर (Muzaffarnagar)</option>
-          <option value="pilibhit">पीलीभीत (Pilibhit)</option>
-          <option value="pratapgarh">प्रतापगढ़ (Pratapgarh)</option>
-          <option value="prayagraj">प्रयागराज (Prayagraj)</option>
-          <option value="raebareli">रायबरेली (Raebareli)</option>
-          <option value="rampur">रामपुर (Rampur)</option>
-          <option value="saharanpur">सहारनपुर (Saharanpur)</option>
-          <option value="sambhal">सम्भल (Sambhal)</option>
-          <option value="sant-kabir-nagar">संत कबीर नगर (Sant Kabir Nagar)</option>
-          <option value="shahjahanpur">शाहजहाँपुर (Shahjahanpur)</option>
-          <option value="shamli">शामली (Shamli)</option>
-          <option value="shravasti">श्रावस्ती (Shravasti)</option>
-          <option value="siddharthnagar">सिद्धार्थनगर (Siddharthnagar)</option>
-          <option value="sitapur">सीतापुर (Sitapur)</option>
-          <option value="sonbhadra">सोनभद्र (Sonbhadra)</option>
-          <option value="sultanpur">सुल्तानपुर (Sultanpur)</option>
-          <option value="unnao">उन्नाव (Unnao)</option>
-          <option value="varanasi">वाराणसी (Varanasi)</option>
-        </select>
-      </label>
-      <div style="overflow: hidden; flex-grow: 1;">
-        <div class="notice-ticker__content">
-          <span><i data-lucide="home" class="inline-icon"></i> <strong>आवास योजना:</strong> क्या आप जानते हैं? पीएम आवास योजना (ग्रामीण) के तहत पक्का घर बनाने के लिए ₹1.20 लाख की सहायता मिलती है।</span>
-          <span><i data-lucide="tractor" class="inline-icon"></i> <strong>किसान अपडेट:</strong> पीएम किसान सम्मान निधि की अगली किस्त के लिए अपना e-KYC तुरंत पूरा करें, यह अनिवार्य है!</span>
-          <span><i data-lucide="building" class="inline-icon"></i> <strong>ग्राम सचिवालय:</strong> अब आप आय, जाति और निवास प्रमाण पत्र सीधे अपने पंचायत भवन (पंचायत सहायक) से बनवा सकते हैं।</span>
-          <span><i data-lucide="wheat" class="inline-icon"></i> <strong>राशन योजना:</strong> पीएम गरीब कल्याण अन्न योजना के तहत मुफ्त राशन वितरण जारी है।</span>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!-- ── Nav Overlay (for closing mobile menu on outside click) ── -->
+  <div id="navOverlay" class="nav-overlay" aria-hidden="true"></div>
+  <nav class="breadcrumb container" aria-label="Breadcrumb">
+    <a href="./index.html">होम</a>
+    <span class="breadcrumb__sep" aria-hidden="true">›</span>
+    <span class="breadcrumb__current" aria-current="page">फीस पारदर्शिता</span>
+  </nav>
 
   <main id="main-content">
   <section class="section" style="padding-top: 40px; padding-bottom: 60px; background-color: #f8fafc;">
@@ -331,20 +243,13 @@
   </section>
 </main>
 
-  <nav class="mobile-bottom-nav" aria-label="त्वरित नेविगेशन">
-    <a  href="./index.html" aria-current="page"><i data-lucide="home" class="inline-icon"></i><span>होम</span></a>
+    <nav class="mobile-bottom-nav" aria-label="त्वरित नेविगेशन">
+    <a href="./index.html"><i data-lucide="home" class="inline-icon"></i><span>होम</span></a>
     <a href="./rights.html"><i data-lucide="scale" class="inline-icon"></i><span>अधिकार</span></a>
     <a href="./schemes.html"><i data-lucide="clipboard-list" class="inline-icon"></i><span>योजनाएँ</span></a>
-    <a href="./fraud-warning.html"><i data-lucide="alert-octagon" class="inline-icon"></i><span>Fraud</span></a>
-    <a href="./templates.html"><i data-lucide="file-edit" class="inline-icon"></i><span>Forms</span></a>
-    <a href="./status-check.html"><i data-lucide="search" class="inline-icon"></i><span>Status</span></a>
-    <a href="./official-contacts.html"><i data-lucide="phone" class="inline-icon"></i><span>संपर्क</span></a>
     <a href="./drafter.html"><i data-lucide="file-text" class="inline-icon"></i><span>Drafter</span></a>
     <a href="./articles.html"><i data-lucide="book-open" class="inline-icon"></i><span>Guides</span></a>
-    <a href="./problem-to-remedy.html"><i data-lucide="help-circle" class="inline-icon"></i><span>Remedy</span></a>
-    <a href="./fee-transparency.html"><i data-lucide="shield-alert" class="inline-icon"></i><span>Fees</span></a>
-    <a href="./escalation-guide.html"><i data-lucide="trending-up" class="inline-icon"></i><span>Appeals</span></a>
-    <a href="./land-revenue-guide.html"><i data-lucide="map" class="inline-icon"></i><span>Land</span></a>
+    <a href="./official-contacts.html"><i data-lucide="phone" class="inline-icon"></i><span>संपर्क</span></a>
   </nav>
 
   <!-- ════ SITE FOOTER ════ -->
@@ -379,8 +284,7 @@
 
   <!-- ── Scripts ── -->
   <script src="./js/config.js"></script>
-  <script src="./js/main.js?v=1789393113538"></script>
-  <script src="./js/booth-finder.js"></script>
+  <script src="./js/main.js?v=20260917-r3"></script>
   <script src="./js/voter-search.js?v=2"></script>
   <script src="./js/grievance.js"></script>
   <script>
@@ -428,8 +332,7 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js')
-          .then(registration => console.log('SW registered'))
+        navigator.serviceWorker.register('./sw.js').then(r => { r.update(); })
           .catch(err => console.log('SW registration failed:', err));
       });
     }

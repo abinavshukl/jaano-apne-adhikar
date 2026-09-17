@@ -1,14 +1,12 @@
 /**
- * Voter search deliberately does not search a local voter file. It opens the
- * official UP State Election Commission Panchayat search instead.
- *
- * HTML contract in index.html:
- * #findVoterBtn and #voterResult.
+ * js/voter-search.js — National & State Voter Search Gateway
+ * Location-neutral civic gateway for Electoral Roll verification.
  */
 (function () {
   "use strict";
 
-  const SEC_VOTER_SEARCH_URL = "https://sec.up.nic.in/site/PRIVoters.aspx";
+  const ECI_SEARCH_URL = "https://electoralsearch.eci.gov.in/";
+  const SEC_UP_URL = "https://sec.up.nic.in/site/PRIVoters.aspx";
 
   function initVoterSearch() {
     const searchBtn = document.getElementById("findVoterBtn");
@@ -17,35 +15,33 @@
     if (!searchBtn || !resultDiv) return;
 
     searchBtn.addEventListener("click", () => {
-      // The SEC form requires location dropdowns and a captcha, so its
-      // cross-origin ASP.NET form cannot be submitted by this static site.
       resultDiv.innerHTML = `
-        <div class="booth-card animate-in" style="margin-bottom:12px;text-align:left;border:1px solid #10b981;">
-          <div class="booth-card__header" style="padding:12px;background:#10b981;color:#fff;border-radius:8px 8px 0 0;">
-            <div style="font-weight:700;font-size:1.1rem;display:flex;align-items:center;gap:8px;">
-              <i data-lucide="external-link" class="inline-icon"></i> आधिकारिक पंचायत मतदाता खोज
-            </div>
+        <div class="result-card animate-in" style="margin-top:16px;text-align:left;border:1px solid #10b981;border-radius:10px;background:#fff;overflow:hidden;box-shadow:var(--shadow-sm);">
+          <div style="padding:12px 16px;background:#0f766e;color:#fff;font-weight:700;display:flex;align-items:center;gap:8px;">
+            <i data-lucide="check-circle" class="inline-icon"></i> आधिकारिक मतदाता सत्यापन पोर्टल
           </div>
-          <div class="booth-card__body" style="padding:16px;background:#fff;border-radius:0 0 8px 8px;">
-            <p style="margin:0 0 12px 0;font-size:0.9rem;color:#374151;line-height:1.6;">
-              अगले सरकारी पेज पर <strong>हरदोई → बेंहदर → बड़ागांव</strong> चुनें। अपना नाम, पिता / पति का नाम और captcha वहीं भरें।
-              यह वेबसाइट आपकी व्यक्तिगत जानकारी नहीं मांगती या सहेजती नहीं है।
+          <div style="padding:16px;">
+            <p style="margin:0 0 12px 0;font-size:0.92rem;color:#334155;line-height:1.6;">
+              भारत निर्वाचन आयोग (ECI) के राष्ट्रीय पोर्टल पर अपना EPIC (वोटर आईडी) नंबर या नाम, राज्य और जिला चुनकर खोजें:
             </p>
-            <a href="${SEC_VOTER_SEARCH_URL}" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--full" style="justify-content:center;">
-              SEC पंचायत मतदाता खोज खोलें ↗
-            </a>
+            <div style="display:flex;flex-direction:column;gap:10px;">
+              <a href="${ECI_SEARCH_URL}" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--full" style="justify-content:center;">
+                राष्ट्रीय मतदाता खोज (ECI Portal) ↗
+              </a>
+              <a href="${SEC_UP_URL}" target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--full" style="justify-content:center;font-size:0.85rem;">
+                राज्य पंचायत मतदाता सूची [उदा. उत्तर प्रदेश SEC] ↗
+              </a>
+            </div>
+            <p style="margin:10px 0 0 0;font-size:0.8rem;color:#64748b;">
+              सुरक्षा सूचना: यह वेबसाइट कोई व्यक्तिगत डेटा नहीं मांगती या सहेजती नहीं है। सत्यापन सीधे आधिकारिक पोर्टल पर होता है।
+            </p>
           </div>
         </div>
       `;
 
-      // The result card was inserted with innerHTML, so initialize its icon
-      // placeholder again after the new markup enters the DOM.
       if (typeof lucide !== 'undefined') {
         lucide.createIcons();
       }
-
-      // Open from the click handler to preserve the browser's user gesture.
-      window.open(SEC_VOTER_SEARCH_URL, "_blank", "noopener,noreferrer");
     });
   }
 
@@ -55,3 +51,4 @@
     initVoterSearch();
   }
 })();
+

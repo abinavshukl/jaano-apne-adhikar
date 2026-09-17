@@ -1,7 +1,7 @@
 {
   "name": "website-for-village",
   "version": "1.0.0",
-  "description": "**A private civic awareness portal** for rural citizens — focused on Gram Panchayat **29-बड़ागांव**, विकास खण्ड **19-बेंहदर**, जिला **113-हरदोई** (Sandila / Beniganj region).",
+  "description": "जानो अपने अधिकार (Jaano Apne Adhikar) — A private civic awareness and legal literacy platform for citizens.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

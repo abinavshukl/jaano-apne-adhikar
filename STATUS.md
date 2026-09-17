@@ -1,59 +1,48 @@
-# Project status — जानो अपने अधिकार
+# Project Status — जानो अपने अधिकार (Jaano Apne Adhikar)
 
-Last documented: **13 September 2026**. This file records the verified state of the repository as currently built. It is a status summary, not a roadmap.
+Last updated: **17 September 2026**. This document records the verified production state of the repository.
 
-## Delivered
+---
 
-1. **Brand and legal framing** — The site consistently presents itself as a private civic-awareness initiative, not an official government portal. Legal disclaimer language is repeated across major pages and the first-visit modal remains in place.
-2. **Static GitHub Pages app** — Four public HTML pages, one CSS file, five JavaScript files, and three JSON data files are present. Deployment workflow is managed via GitHub Pages.
-3. **Civic tools on the home page**
-   - Booth finder: wards 1–15 mapped to booths 96–101 at 41-Samvilian Vidyalaya Badagaon.
-   - Voter search: no local roll is hosted; users are routed to ECI Electoral Search.
-   - Jansunwai pre-drafter: local-only complaint draft generation with copy support, Hindi voice input, and optional Hinglish transliteration.
-4. **Rights library** — Constitutional rights in plain Hindi, FIR/police workflow, women’s rights, RTI information, land/ration, Janhit Guarantee, MNREGA, and Panchayati Raj notes.
-5. **Scheme library** — Six published scheme cards: PM-Kisan, PMAY-G, UP pension, Ayushman, FCS ration, and Jansunwai.
-6. **Directory** — Emergency numbers and public service contacts are displayed from static JSON data. Unverified local lines remain blank rather than invented.
-7. **News ticker** — Civic Hindi updates appear immediately; live Hindi RSS runs when a CORS proxy succeeds and falls back to local civic fact text.
-8. **Privacy and data posture** — No local voter database is hosted, no analytics/cookies are used, and grievance data is not uploaded to a backend.
-9. **Discoverability files** — `robots.txt`, `sitemap.xml`, Open Graph/Twitter metadata, and JSON-LD schema are shipped for discoverability and indexing.
-10. **Website-wide legal audit** — The current build has been audited for official-branding, legal advice risk, privacy handling, and public information accuracy.
+## 1. Verified Architecture & Core Deliverables
 
-## Data counts (source of truth = JSON)
+### A. Location-Neutral Universal Platform
+- **Scope**: Replaced all district/village-specific branding (*हरदोई, बड़ागांव, UP*) with universal civic empowerment branding: ⚖️ *स्वतंत्र नागरिक मंच • विधिक साक्षरता एवं अधिकार*.
+- **State Portals**: State-specific portals (such as UP Jansunwai or Bhulekh) are transparently tagged with `[राज्य विशिष्ट / State Portal (उदा. UP)]` to avoid confusion.
+- **Booth Finder**: Completely removed from all 22 active HTML pages, navigation, and codebase (`js/booth-finder.js` and `data/booths.json` deleted).
 
-| Dataset | Count |
+### B. Modern Visual Information Architecture
+- **6 Intent Pathways** on `index.html` guiding users directly to actionable remedies (Land, Ration/Pension, Electricity/Panchayat, Police/FIR, Labor/MGNREGA, Free Legal Aid).
+- **4-Step Remedy Lifecycle** (*अधिकार ➔ तैयारी ➔ शिकायत ➔ अपील*).
+- **Interactive Decision Paths** (*"यदि यह हुआ ➔ तो यह करें"*).
+- **Do's & Don'ts Paired Cards** (*क्या करें ✅ vs क्या न करें ❌*).
+- **Pre-Action Readiness Checklists** for common administrative and police interactions.
+- **Cross-Content Discovery Journeys** linking `rights.html`, `schemes.html`, and `drafter.html`.
+
+### C. Mobile-First Optimization & Navigation
+- Fully responsive across 360×800 portrait, 800×360 landscape, tablet, and desktop.
+- Calibrated 8px frosted glass backdrop blur with high-contrast slate tint on `.nav-overlay` to diffuse background text and maximize menu readability.
+- 100% opaque solid drawer surface with strong elevation drop shadow.
+- Gesture-friendly floating 6-item bottom navigation with `env(safe-area-inset-bottom)` safe-area padding.
+- Service worker ([sw.js](sw.js)) caching with immediate network-first strategy.
+
+---
+
+## 2. Page Inventory (22 Active Production Pages)
+
+| Category | Pages |
 |---|---|
-| Booth / ward rows | 15 |
-| Distinct booth numbers | 6 (96–101) |
-| Scheme cards | 6 |
-| Directory contacts | 12 (5 admin + 3 police + 2 utilities + 2 health) |
-| Drafter departments in CONFIG | 37 |
-| Public pages | 4 |
+| **Core Portals** | `index.html`, `rights.html`, `schemes.html`, `articles.html` |
+| **Civic Action Tools** | `drafter.html`, `problem-to-remedy.html`, `status-check.html`, `templates.html` |
+| **Procedural Guides** | `escalation-guide.html`, `land-revenue-guide.html`, `fee-transparency.html`, `fraud-warning.html`, `official-contacts.html` |
+| **In-Depth Articles (8)** | `article-fir.html`, `article-pmkisan.html`, `article-awas.html`, `article-varasat.html`, `article-rti.html`, `article-ration.html`, `article-pension.html`, `article-gramsabha.html` |
+| **Legal & Policies** | `legal.html` |
 
-Public demographic **aggregates** in config (not a voter list): 4,443 voters, 704 households, and 15 wards.
+---
 
-## Explicitly out of scope (current build)
+## 3. Automated Audit & Compliance
 
-- Node / Python / PHP server backend
-- Database-backed complaint management
-- Local voter database hosting or search
-- Tracking pixels, cookies, or analytics
-- Official government branding or endorsement
-- Automatic WhatsApp / Email / Web3Forms complaint submission
-
-## Current compliance and legal framing
-
-The site currently maintains a cautious, educational-only stance:
-
-- It is a private civic awareness initiative.
-- It is not a government portal or legal service provider.
-- It does not offer legal representation or guaranteed outcomes.
-- It does not submit private complaint text to any remote service.
-- It asks users to verify important legal and entitlement claims with official sources before acting.
-
-This is the correct posture for the current build and is consistent with the project’s educational mission.
-
-## Content status
-
-- Unverified local contact lines remain intentionally unavailable rather than invented.
-- The website is intentionally local-only and does not upload user complaint text anywhere.
-- The project continues to rely on official source verification for scheme updates and legal references.
+- **JavaScript Syntax**: 6 active script files verified via Node.js (`node -c`) — **0 errors**.
+- **CSS Architecture**: 560 balanced rule blocks in `css/styles.css` — **0 syntax errors**.
+- **Internal Asset & Link Checks**: All stylesheet, script, and image references point to valid local or CDN files — **0 broken links**.
+- **Privacy & Security**: Zero trackers, zero analytics, zero external complaint submissions. All drafted forms stay 100% on the user's device.

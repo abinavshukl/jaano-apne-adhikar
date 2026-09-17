@@ -10,9 +10,17 @@
   function setActiveNavLink() {
     const currentPage = window.location.pathname.split("/").pop() || "index.html";
     document.querySelectorAll(".nav__link").forEach((link) => {
-      const href = link.getAttribute("href");
-      if (href === currentPage || (currentPage === "" && href === "index.html")) {
+      const rawHref = (link.getAttribute("href") || "").split("?")[0].replace(/^\.\//, "");
+      if (rawHref === currentPage || (currentPage === "" && rawHref === "index.html")) {
         link.classList.add("nav__link--active");
+        link.setAttribute("aria-current", "page");
+      }
+    });
+
+    document.querySelectorAll(".mobile-bottom-nav a").forEach((link) => {
+      const rawHref = (link.getAttribute("href") || "").split("?")[0].replace(/^\.\//, "");
+      if (rawHref === currentPage || (currentPage === "" && rawHref === "index.html")) {
+        link.classList.add("mobile-bottom-nav__active");
         link.setAttribute("aria-current", "page");
       }
     });
@@ -123,21 +131,48 @@
   function initMobileNav() {
     const toggle = document.querySelector(".menu-toggle");
     const nav = document.getElementById("navMenu");
-    
+    const overlay = document.getElementById("navOverlay");
+
+    function closeNav() {
+      if (!toggle || !nav) return;
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.classList.remove("toggle--active");
+      nav.classList.remove("nav--open");
+      if (overlay) overlay.classList.remove("overlay--visible");
+      document.body.style.overflow = "";
+    }
+
+    function openNav() {
+      if (!toggle || !nav) return;
+      toggle.setAttribute("aria-expanded", "true");
+      toggle.classList.add("toggle--active");
+      nav.classList.add("nav--open");
+      if (overlay) overlay.classList.add("overlay--visible");
+      document.body.style.overflow = "hidden";
+    }
+
     if (toggle && nav) {
       toggle.addEventListener("click", () => {
         const isExpanded = toggle.getAttribute("aria-expanded") === "true";
-        toggle.setAttribute("aria-expanded", !isExpanded);
-        toggle.classList.toggle("toggle--active");
-        nav.classList.toggle("nav--open");
+        if (isExpanded) {
+          closeNav();
+        } else {
+          openNav();
+        }
       });
 
-      nav.querySelectorAll(".nav__link").forEach(link => {
-        link.addEventListener("click", () => {
-          toggle.setAttribute("aria-expanded", "false");
-          toggle.classList.remove("toggle--active");
-          nav.classList.remove("nav--open");
-        });
+      if (overlay) {
+        overlay.addEventListener("click", closeNav);
+      }
+
+      nav.querySelectorAll(".nav__link").forEach((link) => {
+        link.addEventListener("click", closeNav);
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && nav.classList.contains("nav--open")) {
+          closeNav();
+        }
       });
     }
   }
@@ -161,7 +196,7 @@
     { icon: 'users', label: 'नागरिक अपडेट', text: 'पंचायतों में डिजिटल शिकायत प्रणाली को सरल बनाने की पहल जारी है।', link: 'https://jansunwai.up.nic.in', linkLabel: 'शिकायत पोर्टल' },
     { icon: 'shield-check', label: 'नागरिक अपडेट', text: 'नागरिकों के लिए RTI, FIR और सेवा-प्राप्ति से जुड़े नियम आसानी से समझे जा रहे हैं।', link: 'rights.html', linkLabel: 'अधिकार पढ़ें' },
     { icon: 'briefcase', label: 'नागरिक अपडेट', text: 'कृषि, रोजगार और पेंशन से जुड़े लाभार्थी दस्तावेज़ों की सत्यापन प्रक्रिया ऑनलाइन की जा रही है।', link: 'schemes.html', linkLabel: 'योजनाएँ पढ़ें' },
-    { icon: 'phone', label: 'नागरिक अपडेट', text: 'स्थानीय हेल्पलाइन और आपातकालीन नए दिशा-निर्देशों के अनुसार कार्यरत हैं।', link: 'directory.html', linkLabel: 'संपर्क देखें' },
+    { icon: 'phone', label: 'नागरिक अपडेट', text: 'स्थानीय हेल्पलाइन और आपातकालीन नए दिशा-निर्देशों के अनुसार कार्यरत हैं।', link: 'official-contacts.html', linkLabel: 'संपर्क देखें' },
     { icon: 'map', label: 'नागरिक अपडेट', text: 'ग्राम पंचायत स्तर पर निर्वाचन, योजनाओं और सुविधाओं की सूचना को आसान भाषा में उपलब्ध कराया जा रहा है।', link: 'index.html', linkLabel: 'विस्तार से पढ़ें' },
   ];
 
@@ -296,6 +331,9 @@
   }
 
   async function initNewsTicker() {
+    const tickerContent = document.querySelector('.notice-ticker__content');
+    if (!tickerContent) return;
+
     // Show civic fallback immediately — never empty
     tickerItems = [...CIVIC_FALLBACK];
     renderMarquee();

@@ -14,7 +14,7 @@
   <meta name="twitter:title" content="Privacy Policy और Terms of Use — जानो अपने अधिकार" />
   <meta name="twitter:description" content="गोपनीयता, उपयोग की शर्तें, बाहरी सेवाएँ और developer responsibility की जानकारी।" />
   <title>Privacy Policy और Terms of Use — जानो अपने अधिकार</title>
-  <link rel="stylesheet" href="./css/styles.css?v=20260914-ux7" />
+  <link rel="stylesheet" href="./css/styles.css?v=20260917-r3" />
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
   <link rel="canonical" href="https://abinavshukl.github.io/jaano-apne-adhikar/legal.html" />
   <link rel="manifest" href="./manifest.json">
@@ -24,8 +24,8 @@
   <div id="headerSentinel" aria-hidden="true" style="height:1px;position:absolute;top:0;width:100%;pointer-events:none;"></div>
 
   <header class="site-header" role="banner">
-    <div class="site-disclaimer" style="background-color: #fef2f2; color: #991b1b; text-align: center; padding: 8px 16px; font-size: 0.85rem; font-weight: 600; border-bottom: 1px solid #fca5a5; margin-bottom: 16px;">
-      विधिक सूचना (Legal Notice): यह वेबसाइट एक स्वतंत्र, गैर-सरकारी जन-जागरूकता पहल है। यहाँ दी गई जानकारी सामान्य सूचना के लिए है, कानूनी सलाह नहीं है।
+        <div class="site-disclaimer">
+      विधिक अस्वीकरण: यह स्वतंत्र, गैर-सरकारी जन-जागरूकता पहल है। कानूनी सलाह या सेवा की गारंटी नहीं है।
     </div>
     <div class="container">
       <div class="header-inner">
@@ -40,24 +40,32 @@
           <span class="menu-toggle__bar"></span>
         </button>
 
-        <nav id="navMenu" class="site-nav" aria-label="मुख्य नेविगेशन">
+                <nav id="navMenu" class="site-nav" aria-label="मुख्य नेविगेशन">
           <ul class="nav__list" role="list">
             <li><a href="./index.html" class="nav__link"><i data-lucide="home" class="inline-icon"></i> होम</a></li>
             <li><a href="./rights.html" class="nav__link"><i data-lucide="scale" class="inline-icon"></i> अधिकार</a></li>
             <li><a href="./schemes.html" class="nav__link"><i data-lucide="clipboard-list" class="inline-icon"></i> योजनाएँ</a></li>
-            <li><a href="./directory.html" class="nav__link"><i data-lucide="phone" class="inline-icon"></i> संपर्क</a>
-          <a href="./drafter.html" class="nav__link"><i data-lucide="file-text" class="inline-icon"></i> <span>AI Drafter</span></a>
-          <a href="./articles.html" class="nav__link"><i data-lucide="book-open" class="inline-icon"></i> <span>मार्गदर्शक (Guides)</span></a>
-          <a href="./problem-to-remedy.html" class="nav__link"><i data-lucide="help-circle" class="inline-icon"></i> <span>समाधान (Remedy)</span></a>
-          <a href="./fee-transparency.html" class="nav__link"><i data-lucide="shield-alert" class="inline-icon"></i> <span>फीस (Fees)</span></a>
-          <a href="./escalation-guide.html" class="nav__link"><i data-lucide="trending-up" class="inline-icon"></i> <span>अपील (Appeals)</span></a>
-          <a href="./land-revenue-guide.html" class="nav__link"><i data-lucide="map" class="inline-icon"></i> <span>ज़मीन (Land)</span></a></li>
-            <li><a href="./legal.html" class="nav__link nav__link--active" aria-current="page"><i data-lucide="file-text" class="inline-icon"></i> नीति</a></li>
+            <li><a href="./articles.html" class="nav__link"><i data-lucide="book-open" class="inline-icon"></i> मार्गदर्शक</a></li>
+            <li><a href="./problem-to-remedy.html" class="nav__link"><i data-lucide="help-circle" class="inline-icon"></i> समाधान</a></li>
+            <li><a href="./official-contacts.html" class="nav__link"><i data-lucide="phone" class="inline-icon"></i> संपर्क</a></li>
+            <li><a href="./drafter.html" class="nav__link"><i data-lucide="file-text" class="inline-icon"></i> Drafter</a></li>
+            <li><a href="./fee-transparency.html" class="nav__link"><i data-lucide="shield-alert" class="inline-icon"></i> फीस</a></li>
+            <li><a href="./escalation-guide.html" class="nav__link"><i data-lucide="trending-up" class="inline-icon"></i> अपील</a></li>
+            <li><a href="./land-revenue-guide.html" class="nav__link"><i data-lucide="map" class="inline-icon"></i> ज़मीन</a></li>
+            <li><a href="./legal.html" class="nav__link"><i data-lucide="file-text" class="inline-icon"></i> नीति</a></li>
           </ul>
         </nav>
       </div>
     </div>
   </header>
+
+  <!-- ── Nav Overlay (for closing mobile menu on outside click) ── -->
+  <div id="navOverlay" class="nav-overlay" aria-hidden="true"></div>
+  <nav class="breadcrumb container" aria-label="Breadcrumb">
+    <a href="./index.html">होम</a>
+    <span class="breadcrumb__sep" aria-hidden="true">›</span>
+    <span class="breadcrumb__current" aria-current="page">विधिक नीति</span>
+  </nav>
 
   <main id="main-content">
     <section class="page-header" aria-labelledby="legalPageTitle">
@@ -199,20 +207,13 @@
     </section>
   </main>
 
-  <nav class="mobile-bottom-nav" aria-label="त्वरित नेविगेशन">
+    <nav class="mobile-bottom-nav" aria-label="त्वरित नेविगेशन">
     <a href="./index.html"><i data-lucide="home" class="inline-icon"></i><span>होम</span></a>
     <a href="./rights.html"><i data-lucide="scale" class="inline-icon"></i><span>अधिकार</span></a>
     <a href="./schemes.html"><i data-lucide="clipboard-list" class="inline-icon"></i><span>योजनाएँ</span></a>
-    <a href="./fraud-warning.html"><i data-lucide="alert-octagon" class="inline-icon"></i><span>Fraud</span></a>
-    <a href="./templates.html"><i data-lucide="file-edit" class="inline-icon"></i><span>Forms</span></a>
-    <a href="./status-check.html"><i data-lucide="search" class="inline-icon"></i><span>Status</span></a>
-    <a href="./official-contacts.html"><i data-lucide="phone" class="inline-icon"></i><span>संपर्क</span></a>
     <a href="./drafter.html"><i data-lucide="file-text" class="inline-icon"></i><span>Drafter</span></a>
     <a href="./articles.html"><i data-lucide="book-open" class="inline-icon"></i><span>Guides</span></a>
-    <a href="./problem-to-remedy.html"><i data-lucide="help-circle" class="inline-icon"></i><span>Remedy</span></a>
-    <a href="./fee-transparency.html"><i data-lucide="shield-alert" class="inline-icon"></i><span>Fees</span></a>
-    <a href="./escalation-guide.html"><i data-lucide="trending-up" class="inline-icon"></i><span>Appeals</span></a>
-    <a href="./land-revenue-guide.html"><i data-lucide="map" class="inline-icon"></i><span>Land</span></a>
+    <a href="./official-contacts.html"><i data-lucide="phone" class="inline-icon"></i><span>संपर्क</span></a>
   </nav>
 
   <footer class="site-footer" role="contentinfo">
@@ -239,7 +240,7 @@
   </footer>
 
   <script src="./js/config.js"></script>
-  <script src="./js/main.js?v=1789393113550"></script>
+  <script src="./js/main.js?v=20260917-r3"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -253,8 +254,7 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js')
-          .then(registration => console.log('SW registered'))
+        navigator.serviceWorker.register('./sw.js').then(r => { r.update(); })
           .catch(err => console.log('SW registration failed:', err));
       });
     }
