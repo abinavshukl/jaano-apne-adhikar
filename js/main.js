@@ -437,6 +437,37 @@
     statCards.forEach(card => observer.observe(card));
   }
 
+  function initInteractiveChecklists() {
+    const items = document.querySelectorAll('.check-toggle-item');
+    if (!items.length) return;
+
+    items.forEach((item) => {
+      const toggle = () => {
+        const isChecked = item.classList.toggle('checked');
+        item.setAttribute('aria-checked', isChecked ? 'true' : 'false');
+
+        const container = item.closest('.checklist-interactive');
+        if (container) {
+          const allItems = container.querySelectorAll('.check-toggle-item');
+          const checkedItems = container.querySelectorAll('.check-toggle-item.checked');
+          if (allItems.length > 0 && allItems.length === checkedItems.length) {
+            if (typeof window.showToast === 'function') {
+              window.showToast('बहुत बढ़िया! आपके सभी अनिवार्य दस्तावेज़ तैयार हैं। ✅');
+            }
+          }
+        }
+      };
+
+      item.addEventListener('click', toggle);
+      item.addEventListener('keydown', (e) => {
+        if (e.key === ' ' || e.key === 'Enter') {
+          e.preventDefault();
+          toggle();
+        }
+      });
+    });
+  }
+
   function init() {
     setActiveNavLink();
     updateFooterYear();
@@ -446,6 +477,7 @@
     initDistrictSelector();
     initNewsTicker();
     initImpactStats();
+    initInteractiveChecklists();
   }
 
   if (document.readyState === "loading") {

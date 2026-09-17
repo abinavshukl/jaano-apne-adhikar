@@ -11,7 +11,7 @@
   <meta property="og:title" content="शिकायत व प्रार्थना पत्र जनरेटर (Legal Drafter) — जानो अपने अधिकार" />
   <meta property="og:description" content="अधिकारियों को देने के लिए औपचारिक प्रार्थना पत्र और नोटिस मिनटों में तैयार करें।" />
     <title>शिकायत व प्रार्थना पत्र जनरेटर (Legal Drafter) — जानो अपने अधिकार</title>
-  <link rel="stylesheet" href="./css/styles.css?v=20260917-r3" />
+  <link rel="stylesheet" href="./css/styles.css?v=20260917-r12" />
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
 
   <link rel="canonical" href="https://abinavshukl.github.io/jaano-apne-adhikar/" />
@@ -134,16 +134,49 @@
         <p class="section__desc">अपनी समस्या चुनें और अधिकारियों को देने के लिए एक सटीक, औपचारिक प्रार्थना पत्र (Application) तुरंत तैयार करें।</p>
       </div>
       
-      <div style="background: white; padding: 24px; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); max-width: 800px; margin: 0 auto;">
+      <div style="background: white; padding: 28px; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); max-width: 800px; margin: 0 auto; border: 1px solid var(--color-border);">
         
+        <!-- 3-Step Visual Progress Stepper -->
+        <div class="stepper-nav" aria-label="प्रार्थना पत्र चरण">
+          <div class="stepper-step active" id="step1Indicator">
+            <div class="stepper-circle">1</div>
+            <span class="stepper-label">समस्या चुनें</span>
+          </div>
+          <div class="stepper-step" id="step2Indicator">
+            <div class="stepper-circle">2</div>
+            <span class="stepper-label">विवरण भरें</span>
+          </div>
+          <div class="stepper-step" id="step3Indicator">
+            <div class="stepper-circle">3</div>
+            <span class="stepper-label">मसौदा तैयार</span>
+          </div>
+        </div>
+
+        <!-- Live Legal Strength Indicator (Visual Psychology) -->
+        <div class="strength-meter-box" id="legalStrengthBox">
+          <div class="strength-meter-label">
+            <span>कानूनी प्रभाव शक्ति: <strong id="strengthScoreText" style="color:#ef4444;">प्रारंभिक (25%)</strong></span>
+            <span id="strengthBadge" class="benefit-chip benefit-chip--amber">अपूर्ण</span>
+          </div>
+          <div class="strength-meter-bar">
+            <div id="strengthMeterBar" class="strength-meter-fill" style="width:25%;"></div>
+          </div>
+          <div class="strength-meter-hints">
+            <span class="strength-hint" id="hintName"><i data-lucide="circle-dot" class="inline-icon" style="width:12px;height:12px;"></i> प्रार्थी का नाम</span>
+            <span class="strength-hint" id="hintIssue"><i data-lucide="circle-dot" class="inline-icon" style="width:12px;height:12px;"></i> समस्या श्रेणी</span>
+            <span class="strength-hint" id="hintDetails"><i data-lucide="circle-dot" class="inline-icon" style="width:12px;height:12px;"></i> ठोस विवरण / तिथि</span>
+            <span class="strength-hint completed" id="hintReceiving"><i data-lucide="check" class="inline-icon" style="width:12px;height:12px;"></i> कानूनी प्रारूप व पावती मांग</span>
+          </div>
+        </div>
+
         <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 24px;">
           <div>
             <label style="font-weight: 700; margin-bottom: 8px; display: block; color: var(--text-dark);">आपका नाम (Name):</label>
-            <input type="text" id="drafterName" class="input-field" placeholder="अपना पूरा नाम लिखें..." style="width:100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px;">
+            <input type="text" id="drafterName" class="input-field" placeholder="अपना पूरा नाम लिखें..." style="width:100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px;">
           </div>
           <div>
             <label style="font-weight: 700; margin-bottom: 8px; display: block; color: var(--text-dark);">समस्या का प्रकार (Issue):</label>
-            <select id="drafterIssue" class="input-field" style="width:100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px;">
+            <select id="drafterIssue" class="input-field" style="width:100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px;">
               <option value="">-- कृपया एक समस्या चुनें --</option>
               <option value="ration">राशन कार्ड कट जाना / नया बनवाना</option>
               <option value="land">जमीन/खेत पर अवैध कब्जा (Land Dispute)</option>
@@ -154,7 +187,7 @@
           </div>
           <div>
             <label style="font-weight: 700; margin-bottom: 8px; display: block; color: var(--text-dark);">विवरण (Details - Optional):</label>
-            <textarea id="drafterDetails" class="input-field" placeholder="समस्या के बारे में कुछ और जानकारी (जैसे तारीख, पता, या लोगों के नाम)..." style="width:100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; min-height: 80px;"></textarea>
+            <textarea id="drafterDetails" class="input-field" placeholder="समस्या के बारे में कुछ और जानकारी (जैसे तारीख, पता, या लोगों के नाम)..." style="width:100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; min-height: 80px;"></textarea>
           </div>
           
           <button id="generateDraftBtn" class="btn btn--primary btn--lg" style="width: 100%; display: flex; justify-content: center; align-items: center; gap: 8px;">
@@ -165,13 +198,32 @@
         <!-- Output Area -->
         <div id="draftOutputArea" style="display: none;">
           <hr style="border:0; border-top: 1px solid #cbd5e1; margin: 24px 0;">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-            <h3 style="margin:0; font-size:1.1rem; color:var(--text-dark);">आपका प्रार्थना पत्र:</h3>
-            <button id="printDraftBtn" class="btn btn--outline" style="padding: 6px 12px; font-size: 0.9rem;">
-              <i data-lucide="printer" class="inline-icon"></i> Print / PDF
-            </button>
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; flex-wrap:wrap; gap:8px;">
+            <h3 style="margin:0; font-size:1.1rem; color:var(--text-dark);">आपका कानूनी प्रार्थना पत्र:</h3>
+            <div style="display:flex; gap:8px;">
+              <button id="copyDraftBtn" class="btn btn--secondary" style="padding: 8px 16px; font-size: 0.88rem; display:inline-flex; align-items:center; gap:6px;">
+                <i data-lucide="copy" class="inline-icon"></i> कॉपी करें (Copy)
+              </button>
+              <button id="printDraftBtn" class="btn btn--outline" style="padding: 8px 16px; font-size: 0.88rem; display:inline-flex; align-items:center; gap:6px;">
+                <i data-lucide="printer" class="inline-icon"></i> Print / PDF
+              </button>
+            </div>
           </div>
-          <div id="draftContent" style="padding: 32px; border: 1px solid #cbd5e1; border-radius: 8px; background: #f8fafc; font-family: 'Times New Roman', serif; white-space: pre-wrap; font-size: 1.1rem; line-height: 1.6; color: #000;">
+          <div id="draftContent" style="padding: 28px; border: 1px solid #cbd5e1; border-radius: 8px; background: #f8fafc; font-family: 'Times New Roman', serif; white-space: pre-wrap; font-size: 1.05rem; line-height: 1.7; color: #000;">
+          </div>
+
+          <!-- Psychological Assurance & What to Say -->
+          <div class="speech-bubble" style="margin-top:20px;">
+            <div class="speech-bubble__header">
+              <i data-lucide="shield-check" class="inline-icon"></i>
+              <span>कार्यालय में जमा करते समय — कानूनी पावती अवश्य लें</span>
+            </div>
+            <div class="speech-bubble__quote">
+              "इस प्रार्थना पत्र की 2 प्रतियां साथ ले जाएं। एक प्रति संबंधित अधिकारी को सौंपें और दूसरी प्रति पर तारीख, मुहर और हस्ताक्षर सहित पावती (Receiving) अवश्य लें।"
+            </div>
+            <div class="speech-bubble__hint">
+              💡 ₹0 सरकारी शुल्क: औपचारिक जनशिकायत का कोई शुल्क नहीं होता। किसी भी बिचौलिए या दलाल को पैसे न दें।
+            </div>
           </div>
         </div>
 
@@ -222,30 +274,27 @@
     <a href="./official-contacts.html"><i data-lucide="phone" class="inline-icon"></i><span>संपर्क</span></a>
   </nav>
 
-  <!-- ════ SITE FOOTER ════ -->
+    <!-- ════ SITE FOOTER (Centered Single-Section) ════ -->
   <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <div class="footer-grid">
-        <!-- Column 1: Brand & Mission -->
-        <div class="footer-brand">
-          <div class="footer-brand__name"><i data-lucide="landmark" class="inline-icon"></i> जानो अपने अधिकार</div>
-          <p class="footer-brand__desc" style="margin-top: 12px; line-height: 1.6;">
-            स्वतंत्र नागरिक-जागरूकता पहल<br/>
-            विधिक साक्षरता और नागरिक सशक्तिकरण
-          </p>
-          <p class="footer-brand__creator">निर्माता / Created by <a href="https://abinavshukl.github.io/Abhinav-s-Portfolio/" target="_blank" rel="noopener noreferrer">Abhinav Kumar</a></p>
-        </div>
-
+    <div class="container site-footer__container">
+      <div class="footer-brand">
+        <i data-lucide="scale" class="inline-icon footer-brand__icon"></i>
+        <span class="footer-brand__name">जानो अपने अधिकार</span>
       </div>
-
-      <hr class="footer-divider" style="margin: 40px 0 24px;" />
-
-      <p class="footer-legal"><strong>विधिक सूचना:</strong> यह सरकारी पोर्टल या कानूनी सलाह नहीं है। कार्रवाई से पहले आधिकारिक स्रोत से पुष्टि करें। <a href="./legal.html">पूरी नीति पढ़ें</a></p>
-      <div class="footer-meta">© <span id="footerYear">2025</span> जानो अपने अधिकार — एक निजी पहल।</div>
-
-      <div class="footer-meta" style="margin-top: 8px; color: var(--color-primary-light); font-weight: 600; font-size: 0.85rem;">
-        <i data-lucide="check-circle" class="inline-icon" style="width: 14px; height: 14px; margin-right: 4px;"></i> 
-        अंतिम अपडेट: 16 Sept 2026 | जानकारी सार्वजनिक पोर्टलों से ली गई है। यह एक स्वतंत्र पहल है, आधिकारिक सरकारी वेबसाइट नहीं। (Independent initiative, not a govt portal)
+      <p class="footer-mission">
+        स्वतंत्र नागरिक विधिक साक्षरता मंच • सार्वजनिक सूचनाओं पर आधारित • गैर-सरकारी
+      </p>
+      <div class="footer-links-inline">
+        <a href="./legal.html">विधिक सूचना व नीतियाँ</a>
+        <span class="footer-dot" aria-hidden="true">•</span>
+        <a href="./legal.html#privacy">गोपनीयता नीति</a>
+        <span class="footer-dot" aria-hidden="true">•</span>
+        <a href="./official-contacts.html">सुझाव व संपर्क</a>
+        <span class="footer-dot" aria-hidden="true">•</span>
+        <span class="footer-year">© <span id="footerYear">2026</span> जानो अपने अधिकार</span>
+      </div>
+      <div class="footer-creator">
+        Conceptualized and Built by <a href="https://abinavshukl.github.io/Abhinav-s-Portfolio/" target="_blank" rel="noopener noreferrer">Abhinav Kumar <span class="external-arrow" aria-hidden="true">↗</span></a>
       </div>
     </div>
   </footer>
@@ -254,7 +303,7 @@
 
   <!-- ── Scripts ── -->
   <script src="./js/config.js"></script>
-  <script src="./js/main.js?v=20260917-r3"></script>
+  <script src="./js/main.js?v=20260917-r8"></script>
   <script src="./js/voter-search.js?v=2"></script>
   <script src="./js/grievance.js"></script>
   <script>

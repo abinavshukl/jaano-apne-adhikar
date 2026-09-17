@@ -1,4 +1,4 @@
-const CACHE_NAME = 'adhikar-cache-v20260917-r4';
+const CACHE_NAME = 'adhikar-cache-v20260917-r12';
 const urlsToCache = [
   './',
   './index.html',
@@ -23,8 +23,8 @@ const urlsToCache = [
   './article-ration.html',
   './article-rti.html',
   './article-varasat.html',
-  './css/styles.css?v=20260917-r3',
-  './js/main.js?v=20260917-r3',
+  './css/styles.css?v=20260917-r12',
+  './js/main.js?v=20260917-r8',
   './js/config.js',
   './js/drafter.js',
   './data/schemes.json'

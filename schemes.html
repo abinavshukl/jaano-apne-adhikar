@@ -9,7 +9,7 @@
   <title>सरकारी योजनाएँ — पात्रता, दस्तावेज और आवेदन मार्गदर्शिका — जानो अपने अधिकार</title>
   <meta property="og:title" content="सरकारी योजनाएँ — पात्रता, दस्तावेज और आवेदन मार्गदर्शिका — जानो अपने अधिकार">
   <meta property="og:description" content="PM किसान, PM आवास, पेंशन, आयुष्मान भारत और राशन योजनाओं की पात्रता व प्रक्रिया।">
-  <link rel="stylesheet" href="./css/styles.css?v=20260917-r3" />
+  <link rel="stylesheet" href="./css/styles.css?v=20260917-r12" />
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
 
   <link rel="canonical" href="https://abinavshukl.github.io/jaano-apne-adhikar/schemes.html" />
@@ -226,37 +226,34 @@
     <a href="./official-contacts.html"><i data-lucide="phone" class="inline-icon"></i><span>संपर्क</span></a>
   </nav>
 
-  <!-- ════ SITE FOOTER ════ -->
+    <!-- ════ SITE FOOTER (Centered Single-Section) ════ -->
   <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <div class="footer-grid">
-        <!-- Column 1: Brand & Mission -->
-        <div class="footer-brand">
-          <div class="footer-brand__name"><i data-lucide="landmark" class="inline-icon"></i> जानो अपने अधिकार</div>
-          <p class="footer-brand__desc" style="margin-top: 12px; line-height: 1.6;">
-            स्वतंत्र नागरिक-जागरूकता पहल<br/>
-            विधिक साक्षरता और नागरिक सशक्तिकरण
-          </p>
-          <p class="footer-brand__creator">निर्माता / Created by <a href="https://abinavshukl.github.io/Abhinav-s-Portfolio/" target="_blank" rel="noopener noreferrer">Abhinav Kumar</a></p>
-        </div>
-
+    <div class="container site-footer__container">
+      <div class="footer-brand">
+        <i data-lucide="scale" class="inline-icon footer-brand__icon"></i>
+        <span class="footer-brand__name">जानो अपने अधिकार</span>
       </div>
-
-      <hr class="footer-divider" style="margin: 40px 0 24px;" />
-
-      <p class="footer-legal"><strong>विधिक सूचना:</strong> यह सरकारी पोर्टल या कानूनी सलाह नहीं है। कार्रवाई से पहले आधिकारिक स्रोत से पुष्टि करें। <a href="./legal.html">पूरी नीति पढ़ें</a></p>
-      <div class="footer-meta">© <span id="footerYear">2025</span> जानो अपने अधिकार — एक निजी पहल।</div>
-
-      <div class="footer-meta" style="margin-top: 8px; color: var(--color-primary-light); font-weight: 600; font-size: 0.85rem;">
-        <i data-lucide="check-circle" class="inline-icon" style="width: 14px; height: 14px; margin-right: 4px;"></i> 
-        अंतिम अपडेट: 16 Sept 2026 | जानकारी सार्वजनिक पोर्टलों से ली गई है। यह एक स्वतंत्र पहल है, आधिकारिक सरकारी वेबसाइट नहीं। (Independent initiative, not a govt portal)
+      <p class="footer-mission">
+        स्वतंत्र नागरिक विधिक साक्षरता मंच • सार्वजनिक सूचनाओं पर आधारित • गैर-सरकारी
+      </p>
+      <div class="footer-links-inline">
+        <a href="./legal.html">विधिक सूचना व नीतियाँ</a>
+        <span class="footer-dot" aria-hidden="true">•</span>
+        <a href="./legal.html#privacy">गोपनीयता नीति</a>
+        <span class="footer-dot" aria-hidden="true">•</span>
+        <a href="./official-contacts.html">सुझाव व संपर्क</a>
+        <span class="footer-dot" aria-hidden="true">•</span>
+        <span class="footer-year">© <span id="footerYear">2026</span> जानो अपने अधिकार</span>
+      </div>
+      <div class="footer-creator">
+        Conceptualized and Built by <a href="https://abinavshukl.github.io/Abhinav-s-Portfolio/" target="_blank" rel="noopener noreferrer">Abhinav Kumar <span class="external-arrow" aria-hidden="true">↗</span></a>
       </div>
     </div>
   </footer>
 
 
   <script src="./js/config.js"></script>
-  <script src="./js/main.js?v=20260917-r3"></script>
+  <script src="./js/main.js?v=20260917-r8"></script>
   <script>
     /* ── Schemes page: load JSON and render cards ────────────────────── */
     (function () {
@@ -271,8 +268,21 @@
         grievance:   { hi: 'शिकायत', en: 'Grievance',   color: '#065f46' }
       };
 
+      const BENEFIT_FALLBACK = {
+        'pm-kisan': { text: '₹6,000 / वर्ष', type: 'benefit-chip' },
+        'pm-awas': { text: '₹1.20 लाख सहायता', type: 'benefit-chip benefit-chip--amber' },
+        'ayushman': { text: '₹5 लाख मुफ़्त इलाज', type: 'benefit-chip' },
+        'ujjwala': { text: 'मुफ़्त गैस कनेक्शन', type: 'benefit-chip benefit-chip--blue' },
+        'kanya': { text: '₹15,000 सहायता', type: 'benefit-chip' },
+        'shramik': { text: '16+ सरकारी लाभ', type: 'benefit-chip benefit-chip--blue' },
+      };
+
       function renderSchemeCard(scheme) {
         const cat = CATEGORY_LABELS[scheme.category] || { hi: scheme.category, en: '', color: '#065f46' };
+        const fallback = BENEFIT_FALLBACK[scheme.id] || { text: '', type: 'benefit-chip' };
+        const benefitText = scheme.benefitHighlight || fallback.text;
+        const benefitType = scheme.benefitType || fallback.type;
+
         const eligibilityItems = (scheme.eligibility || [])
           .map(item => `<li>${item}</li>`)
           .join('');
@@ -291,9 +301,12 @@
             <div class="scheme-card__header">
               <div class="scheme-card__icon">${scheme.icon}</div>
               <div class="scheme-card__meta">
-                <span class="scheme-card__category" style="background:${cat.color};">
-                  ${cat.hi} / ${cat.en}
-                </span>
+                <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:4px;">
+                  <span class="scheme-card__category" style="background:${cat.color};">
+                    ${cat.hi} / ${cat.en}
+                  </span>
+                  ${benefitText ? `<span class="${benefitType}">${benefitText}</span>` : ''}
+                </div>
                 <div class="scheme-card__name" id="scheme-title-${scheme.id}">${scheme.name}</div>
                 <div class="scheme-card__name-en">${scheme.nameEn}</div>
               </div>
@@ -385,7 +398,7 @@
         const emptyState = document.getElementById('schemesEmpty');
 
         try {
-          const response = await fetch('./data/schemes.json');
+          const response = await fetch('./data/schemes.json?v=20260917-r8');
           if (!response.ok) throw new Error('Network error');
           const schemes = await response.json();
 

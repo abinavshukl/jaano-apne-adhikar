@@ -8,14 +8,16 @@
     "portal": "https://pmkisan.gov.in",
     "badge": "#16a34a",
     "icon": "🌾",
-    "description": "<strong>हम हैं योग्य?</strong> हाँ, जिनके नाम पर खेती की ज़मीन है।<br><strong>फायदे क्या हैं?</strong> साल में ₹6000।<br><strong>अगला कदम?</strong> pmkisan.gov.in या CSC पर जाएं।<br><strong>क्या-क्या चाहिए?</strong> आधार, पासबुक, खतौनी।<br><strong>शिकायत कहाँ?</strong> हेल्पलाइन: 1800-115-526",
+    "benefitHighlight": "₹6,000 / वर्ष",
+    "benefitType": "benefit-chip",
+    "description": "<strong>हम हैं योग्य?</strong> हाँ, जिनके नाम पर खेती की ज़मीन है।<br><strong>फायदे क्या हैं?</strong> साल में ₹6000 तीन किस्तों में सीधे बैंक खाते में।<br><strong>अगला कदम?</strong> pmkisan.gov.in या CSC पर e-KYC कराएं।<br><strong>क्या-क्या चाहिए?</strong> आधार, पासबुक, खतौनी।<br><strong>शिकायत कहाँ?</strong> हेल्पलाइन: 1800-115-526",
     "descriptionEn": "₹6000 per year for farmers.",
     "tags": [
       "farmer"
     ],
     "eligibility": [
       "भूमि धारक किसान परिवार (2 हेक्टेयर तक)",
-      "आधार कार्ड अनिवार्य"
+      "आधार व NPCI लिंक बैंक खाता अनिवार्य"
     ],
     "steps": [
       {
@@ -33,7 +35,9 @@
     "portal": "https://pmayg.nic.in",
     "badge": "#d97706",
     "icon": "🏠",
-    "description": "<strong>हम हैं योग्य?</strong> जिनके पास पक्का मकान नहीं है।<br><strong>फायदे क्या हैं?</strong> पक्का घर बनाने के लिए ₹1.20 लाख।<br><strong>अगला कदम?</strong> ग्राम प्रधान या सचिव से मिलें।<br><strong>क्या-क्या चाहिए?</strong> आधार, जॉब कार्ड, बैंक पासबुक।<br><strong>शिकायत कहाँ?</strong> BDO या CM हेल्पलाइन 1076",
+    "benefitHighlight": "₹1.20 लाख सहायता",
+    "benefitType": "benefit-chip benefit-chip--amber",
+    "description": "<strong>हम हैं योग्य?</strong> जिनके पास पक्का मकान नहीं है।<br><strong>फायदे क्या हैं?</strong> पक्का घर बनाने के लिए ₹1.20 लाख (3 किस्तों में)।<br><strong>अगला कदम?</strong> ग्राम प्रधान या पंचायत सचिव से मिलें।<br><strong>क्या-क्या चाहिए?</strong> आधार, जॉब कार्ड, बैंक पासबुक।<br><strong>शिकायत कहाँ?</strong> BDO या CM हेल्पलाइन 1076",
     "descriptionEn": "₹1.20 lakh for house construction.",
     "tags": [
       "homeless",
@@ -41,7 +45,7 @@
     ],
     "eligibility": [
       "SECC 2011 सूची में नाम",
-      "कच्चा मकान"
+      "कच्चा मकान या बेघर परिवार"
     ],
     "steps": [
       {
@@ -59,13 +63,15 @@
     "portal": "https://beneficiary.nha.gov.in",
     "badge": "#ef4444",
     "icon": "🏥",
-    "description": "<strong>हम हैं योग्य?</strong> SECC-2011 लिस्ट या अंत्योदय राशन कार्ड धारक।<br><strong>फायदे क्या हैं?</strong> ₹5 लाख तक का मुफ्त इलाज।<br><strong>अगला कदम?</strong> सरकारी अस्पताल या आशा दीदी से मिलें।<br><strong>क्या-क्या चाहिए?</strong> आधार, राशन कार्ड, मोबाइल।<br><strong>शिकायत कहाँ?</strong> हेल्पलाइन: 1967",
+    "benefitHighlight": "₹5 लाख मुफ़्त इलाज",
+    "benefitType": "benefit-chip",
+    "description": "<strong>हम हैं योग्य?</strong> SECC-2011 लिस्ट या अंत्योदय राशन कार्ड धारक।<br><strong>फायदे क्या हैं?</strong> प्रतिवर्ष ₹5 लाख तक का कैशलेस मुफ्त इलाज।<br><strong>अगला कदम?</strong> सरकारी अस्पताल या आशा दीदी से मिलें।<br><strong>क्या-क्या चाहिए?</strong> आधार, राशन कार्ड, मोबाइल।<br><strong>शिकायत कहाँ?</strong> टोल-फ्री हेल्पलाइन: 14555",
     "descriptionEn": "₹5 lakh free medical treatment.",
     "tags": [
       "bpl"
     ],
     "eligibility": [
-      "SECC 2011 में नाम",
+      "SECC 2011 में नाम या अंत्योदय कार्ड धारक",
       "BPL परिवार"
     ],
     "steps": [
@@ -84,13 +90,15 @@
     "portal": "https://www.pmuy.gov.in/",
     "badge": "#f97316",
     "icon": "🔥",
-    "description": "<strong>हम हैं योग्य?</strong> BPL या अंत्योदय कार्ड धारक महिलाएं।<br><strong>फायदे क्या हैं?</strong> मुफ्त गैस कनेक्शन।<br><strong>अगला कदम?</strong> गैस एजेंसी पर जाएं।<br><strong>क्या-क्या चाहिए?</strong> आधार, राशन कार्ड, पासबुक।<br><strong>शिकायत कहाँ?</strong> टोल-फ्री: 1906",
+    "benefitHighlight": "मुफ़्त गैस कनेक्शन",
+    "benefitType": "benefit-chip benefit-chip--blue",
+    "description": "<strong>हम हैं योग्य?</strong> BPL या अंत्योदय कार्ड धारक महिलाएं।<br><strong>फायदे क्या हैं?</strong> मुफ्त एलपीजी गैस कनेक्शन व पहला सिलेंडर।<br><strong>अगला कदम?</strong> नजदीकी गैस एजेंसी पर जाएं।<br><strong>क्या-क्या चाहिए?</strong> आधार, राशन कार्ड, पासबुक।<br><strong>शिकायत कहाँ?</strong> टोल-फ्री: 1906",
     "descriptionEn": "Free LPG connection for BPL women.",
     "tags": [
       "bpl"
     ],
     "eligibility": [
-      "BPL परिवार की महिला"
+      "BPL परिवार की 18+ महिला मुखिया"
     ],
     "steps": [
       {
@@ -108,13 +116,15 @@
     "portal": "https://mksy.up.gov.in/",
     "badge": "#ec4899",
     "icon": "👶",
-    "description": "<strong>हम हैं योग्य?</strong> UP के निवासी (आय ₹3 लाख से कम)।<br><strong>फायदे क्या हैं?</strong> बेटी को ₹15,000।<br><strong>अगला कदम?</strong> mksy.up.gov.in पर ऑनलाइन।<br><strong>क्या-क्या चाहिए?</strong> आय, जन्म प्रमाण पत्र, पासबुक।<br><strong>शिकायत कहाँ?</strong> DSWO (ब्लॉक ऑफिस)",
+    "benefitHighlight": "₹15,000 सहायता",
+    "benefitType": "benefit-chip",
+    "description": "<strong>हम हैं योग्य?</strong> UP के निवासी (वार्षिक आय ₹3 लाख से कम)।<br><strong>फायदे क्या हैं?</strong> बेटी के जन्म से उच्च शिक्षा तक कुल ₹15,000 की वित्तीय सहायता।<br><strong>अगला कदम?</strong> mksy.up.gov.in पर ऑनलाइन आवेदन करें।<br><strong>क्या-क्या चाहिए?</strong> आय, जन्म प्रमाण पत्र, पासबुक।<br><strong>शिकायत कहाँ?</strong> DSWO (ब्लॉक ऑफिस)",
     "descriptionEn": "Financial help for girl child.",
     "tags": [
       "bpl"
     ],
     "eligibility": [
-      "आय ₹3 लाख से कम"
+      "वार्षिक पारिवारिक आय ₹3 लाख से कम"
     ],
     "steps": [
       {
@@ -125,21 +135,23 @@
   },
   {
     "id": "shramik",
-    "name": "श्रमिक कार्ड",
+    "name": "श्रमिक कार्ड (BOCW)",
     "nameEn": "Labour Card",
     "category": "grievance",
     "categoryLabel": "मज़दूर",
     "portal": "https://upbocw.in/",
     "badge": "#eab308",
     "icon": "👷",
-    "description": "<strong>हम हैं योग्य?</strong> मज़दूर या मनरेगा में 90 दिन काम करने वाले।<br><strong>फायदे क्या हैं?</strong> 16 तरह की योजनाओं का लाभ।<br><strong>अगला कदम?</strong> upbocw.in या CSC पर जाएं।<br><strong>क्या-क्या चाहिए?</strong> 90 दिन काम का प्रमाण, आधार।<br><strong>शिकायत कहाँ?</strong> श्रम विभाग",
+    "benefitHighlight": "16+ सरकारी लाभ",
+    "benefitType": "benefit-chip benefit-chip--blue",
+    "description": "<strong>हम हैं योग्य?</strong> निर्माण मज़दूर या मनरेगा में 90 दिन काम करने वाले।<br><strong>फायदे क्या हैं?</strong> कन्या विवाह, साइकिल, औजार सहायता सहित 16 योजनाओं का लाभ।<br><strong>अगला कदम?</strong> upbocw.in या CSC पर जाएं।<br><strong>क्या-क्या चाहिए?</strong> 90 दिन कार्य का प्रमाण पत्र, आधार।<br><strong>शिकायत कहाँ?</strong> जिला श्रम विभाग",
     "descriptionEn": "Benefits for labourers.",
     "tags": [
       "farmer",
       "bpl"
     ],
     "eligibility": [
-      "90 दिन मजदूरी"
+      "वर्ष में 90 दिन निर्माण/मनरेगा मजदूरी"
     ],
     "steps": [
       {
