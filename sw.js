@@ -1,20 +1,32 @@
-const CACHE_NAME = 'adhikar-cache-v20260917-r3';
+const CACHE_NAME = 'adhikar-cache-v20260917-r4';
 const urlsToCache = [
   './',
   './index.html',
   './rights.html',
   './schemes.html',
-  './official-contacts.html',
-  './fraud-warning.html',
+  './articles.html',
+  './drafter.html',
   './problem-to-remedy.html',
-  './fee-transparency.html',
-  './escalation-guide.html',
-  './land-revenue-guide.html',
+  './official-contacts.html',
   './status-check.html',
   './templates.html',
+  './escalation-guide.html',
+  './land-revenue-guide.html',
+  './fee-transparency.html',
+  './fraud-warning.html',
+  './legal.html',
+  './article-awas.html',
+  './article-fir.html',
+  './article-gramsabha.html',
+  './article-pension.html',
+  './article-pmkisan.html',
+  './article-ration.html',
+  './article-rti.html',
+  './article-varasat.html',
   './css/styles.css?v=20260917-r3',
   './js/main.js?v=20260917-r3',
   './js/config.js',
+  './js/drafter.js',
   './data/schemes.json'
 ];
 

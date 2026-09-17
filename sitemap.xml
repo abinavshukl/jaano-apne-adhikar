@@ -6,22 +6,112 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://abinavshukl.github.io/jaano-apne-adhikar/article-awas.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://abinavshukl.github.io/jaano-apne-adhikar/article-fir.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://abinavshukl.github.io/jaano-apne-adhikar/article-gramsabha.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://abinavshukl.github.io/jaano-apne-adhikar/article-pension.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://abinavshukl.github.io/jaano-apne-adhikar/article-pmkisan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://abinavshukl.github.io/jaano-apne-adhikar/article-ration.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://abinavshukl.github.io/jaano-apne-adhikar/article-rti.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://abinavshukl.github.io/jaano-apne-adhikar/article-varasat.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://abinavshukl.github.io/jaano-apne-adhikar/articles.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://abinavshukl.github.io/jaano-apne-adhikar/drafter.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://abinavshukl.github.io/jaano-apne-adhikar/escalation-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://abinavshukl.github.io/jaano-apne-adhikar/fee-transparency.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://abinavshukl.github.io/jaano-apne-adhikar/fraud-warning.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://abinavshukl.github.io/jaano-apne-adhikar/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://abinavshukl.github.io/jaano-apne-adhikar/rights.html</loc>
+    <loc>https://abinavshukl.github.io/jaano-apne-adhikar/land-revenue-guide.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://abinavshukl.github.io/jaano-apne-adhikar/legal.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://abinavshukl.github.io/jaano-apne-adhikar/official-contacts.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://abinavshukl.github.io/jaano-apne-adhikar/problem-to-remedy.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://abinavshukl.github.io/jaano-apne-adhikar/rights.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://abinavshukl.github.io/jaano-apne-adhikar/schemes.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://abinavshukl.github.io/jaano-apne-adhikar/status-check.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://abinavshukl.github.io/jaano-apne-adhikar/directory.html</loc>
+    <loc>https://abinavshukl.github.io/jaano-apne-adhikar/templates.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
