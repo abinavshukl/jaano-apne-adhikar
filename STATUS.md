@@ -17,6 +17,7 @@ Last updated: **17 September 2026**. This document records the verified producti
 - **Interactive Decision Paths** (*"यदि यह हुआ ➔ तो यह करें"*).
 - **Do's & Don'ts Paired Cards** (*क्या करें ✅ vs क्या न करें ❌*).
 - **Pre-Action Readiness Checklists** for common administrative and police interactions.
+- **Before / After Comparison** (*अपेक्षा बनाम विधिक वास्तविकता*).
 - **Cross-Content Discovery Journeys** linking `rights.html`, `schemes.html`, and `drafter.html`.
 
 ### C. Mobile-First Optimization & Navigation
@@ -24,7 +25,8 @@ Last updated: **17 September 2026**. This document records the verified producti
 - Calibrated 8px frosted glass backdrop blur with high-contrast slate tint on `.nav-overlay` to diffuse background text and maximize menu readability.
 - 100% opaque solid drawer surface with strong elevation drop shadow.
 - Gesture-friendly floating 6-item bottom navigation with `env(safe-area-inset-bottom)` safe-area padding.
-- Service worker ([sw.js](sw.js)) caching with immediate network-first strategy.
+- Service worker ([sw.js](sw.js)) caching with immediate network-first strategy (v20260917-r4).
+- Complete [sitemap.xml](sitemap.xml) with 23 indexed URLs.
 
 ---
 
@@ -42,7 +44,7 @@ Last updated: **17 September 2026**. This document records the verified producti
 
 ## 3. Automated Audit & Compliance
 
-- **JavaScript Syntax**: 6 active script files verified via Node.js (`node -c`) — **0 errors**.
-- **CSS Architecture**: 560 balanced rule blocks in `css/styles.css` — **0 syntax errors**.
+- **JavaScript Syntax**: 5 active script files verified via Node.js (`node -c`) — **0 errors**.
+- **CSS Architecture**: 544 balanced rule blocks in `css/styles.css` (pruned 140 lines of dead booth CSS) — **0 syntax errors**.
 - **Internal Asset & Link Checks**: All stylesheet, script, and image references point to valid local or CDN files — **0 broken links**.
 - **Privacy & Security**: Zero trackers, zero analytics, zero external complaint submissions. All drafted forms stay 100% on the user's device.

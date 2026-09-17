@@ -19,7 +19,14 @@ Live site: [https://abinavshukl.github.io/jaano-apne-adhikar/](https://abinavshu
    - 💼 मजदूरी, मनरेगा व असंगठित कामगार अधिकार (Job card, 15-day delayed wage compensation)
    - ⚖️ मुफ्त विधिक सहायता व लोक अदालत (NALSA/DLSA free legal aid, Pre-litigation settlement)
 
-2. **इंटरैक्टिव विधिक टूल्स (Interactive Civic Tools):**
+2. **विजुअल सूचना संरचना व निर्णय मॉडल (Visual Decision Models):**
+   - 🔄 **4-चरणीय विधिक चक्र:** अधिकार समझें ➔ पूर्व तैयारी ➔ औपचारिक शिकायत ➔ अपील व लोक अदालत
+   - 🔀 **निर्णय मार्ग (Decision Paths):** "यदि यह समस्या है ➔ तो यह विधिक कार्रवाई करें" (राशन, पुलिस, जमीन, पेंशन)
+   - ⚖️ **अपेक्षा बनाम विधिक वास्तविकता (Before / After):** आम जनधारणा बनाम वास्तविक कानूनी प्रक्रिया
+   - 📋 **डूज़ व डोंट्स (Do's & Don'ts):** सरकारी दफ्तरों में क्या करें और क्या न करें
+   - ☑️ **दस्तावेज चेकलिस्ट:** किसी भी सरकारी कार्यालय जाने से पूर्व आवश्यक तैयारी
+
+3. **इंटरैक्टिव विधिक टूल्स (Interactive Civic Tools):**
    - 📄 **प्रार्थना पत्र ड्राफ्टर (Legal Drafter):** औपचारिक शिकायती पत्र व नोटिस जनरेटर ([drafter.html](drafter.html))
    - 🔍 **समाधान खोजक (Remedy Finder):** समस्या के आधार पर उचित विभाग व प्रक्रिया ([problem-to-remedy.html](problem-to-remedy.html))
    - 🧭 **सोपानिक अपील मैट्रिक्स (Escalation Matrix):** ब्लॉक से लेकर हाईकोर्ट तक अपील के चरण ([escalation-guide.html](escalation-guide.html))
@@ -27,7 +34,7 @@ Live site: [https://abinavshukl.github.io/jaano-apne-adhikar/](https://abinavshu
    - 🛡️ **सरकारी फीस व पारदर्शिता (Fee Transparency):** सरकारी प्रक्रियाओं की वास्तविक फीस व दलाली से बचाव ([fee-transparency.html](fee-transparency.html))
    - ⚠️ **साइबर व ठगी से बचाव (Fraud Warning):** नागरिक सुरक्षा दिशा-निर्देश ([fraud-warning.html](fraud-warning.html))
 
-3. **विस्तृत मार्गदर्शिकाएँ (8 Dedicated In-Depth Guides):**
+4. **विस्तृत मार्गदर्शिकाएँ (8 Dedicated In-Depth Guides):**
    - 📝 [article-fir.html](article-fir.html) — एफआईआर दर्ज कराने की पूरी प्रक्रिया और पुलिस इनकार पर उपाय
    - 🌾 [article-pmkisan.html](article-pmkisan.html) — पीएम किसान सम्मान निधि ई-केवाईसी व रुकी हुई किस्त समाधान
    - 🏠 [article-awas.html](article-awas.html) — प्रधानमंत्री आवास योजना ग्रामीण पात्रता व सूची सत्यापन
@@ -37,7 +44,7 @@ Live site: [https://abinavshukl.github.io/jaano-apne-adhikar/](https://abinavshu
    - 👴 [article-pension.html](article-pension.html) — वृद्धा, विधवा व दिव्यांग पेंशन स्थिति व समाधान
    - 🏛️ [article-gramsabha.html](article-gramsabha.html) — ग्राम सभा बैठक, खुली बैठक व बजट निगरानी
 
-4. **मोबाइल-प्रथम अनुभव (Mobile-First Experience):**
+5. **मोबाइल-प्रथम अनुभव (Mobile-First Experience):**
    - 1080×2400 (20:9) और 360×800 स्क्रीन पर पूर्ण अनुकूलन
    - जेस्चर नेविगेशन के लिए सेफ-एरिया सपोर्ट (`env(safe-area-inset-bottom)`)
    - 6-टैब फ्लोटिंग बॉटम बार व लैंडस्केप रेस्पॉन्सिव साइड-ड्रॉअर
