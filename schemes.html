@@ -9,7 +9,7 @@
   <title>सरकारी योजनाएँ — पात्रता, दस्तावेज और आवेदन मार्गदर्शिका — जानो अपने अधिकार</title>
   <meta property="og:title" content="सरकारी योजनाएँ — पात्रता, दस्तावेज और आवेदन मार्गदर्शिका — जानो अपने अधिकार">
   <meta property="og:description" content="PM किसान, PM आवास, पेंशन, आयुष्मान भारत और राशन योजनाओं की पात्रता व प्रक्रिया।">
-  <link rel="stylesheet" href="./css/styles.css?v=20260917-r12" />
+  <link rel="stylesheet" href="./css/styles.css?v=20260918-r21" />
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
 
   <link rel="canonical" href="https://abinavshukl.github.io/jaano-apne-adhikar/schemes.html" />
@@ -31,9 +31,6 @@
 
   <!-- ════ SITE HEADER ════ -->
   <header class="site-header" role="banner">
-      <div class="site-disclaimer">
-      विधिक अस्वीकरण: यह स्वतंत्र, गैर-सरकारी जन-जागरूकता पहल है। कानूनी सलाह या सेवा की गारंटी नहीं है।
-    </div>
     <div class="container">
       <div class="header-inner">
         <a href="./index.html" class="site-logo" aria-label="एक निजी पहल — होम पेज">
@@ -69,29 +66,39 @@
 
   <!-- ── Nav Overlay (for closing mobile menu on outside click) ── -->
   <div id="navOverlay" class="nav-overlay" aria-hidden="true"></div>
-  <nav class="breadcrumb container" aria-label="Breadcrumb">
-    <a href="./index.html">होम</a>
-    <span class="breadcrumb__sep" aria-hidden="true">›</span>
-    <span class="breadcrumb__current" aria-current="page">सरकारी योजनाएँ</span>
-  </nav>
+  
 
 
   <main id="main-content">
 
-    <!-- ════ PAGE HEADER ════ -->
-    <section class="page-header" aria-labelledby="schemesPageTitle">
-      <div class="container">
-        <p class="page-header__kicker">सरकारी योजनाएँ / Government Schemes</p>
-        <h1 id="schemesPageTitle" class="page-header__title"><i data-lucide="clipboard-list" class="inline-icon"></i> सरकारी योजनाएँ</h1>
-        <p class="page-header__sub">Government Schemes for Citizens — Eligibility, Steps & Portals</p>
-        <p style="margin-top: 12px; color: var(--color-neutral-mid); font-size: 0.95rem; line-height: 1.6; max-width: 920px; margin-left: auto; margin-right: auto;">
-          <strong>शैक्षिक सूचना:</strong> योजना की जानकारी सामान्य संदर्भ के लिए है; पात्रता, राशि, दस्तावेज़ और अंतिम तिथि की पुष्टि आधिकारिक पोर्टल से करें।
-        </p>
+    <!-- ════ UNIFIED SUBPAGE HERO BANNER (Full-Bleed Panoramic - Zero Boxes) ════ -->
+    <section class="sub-hero" aria-labelledby="schemesPageTitle">
+      <div class="sub-hero__backdrop" aria-hidden="true">
+        <img src="./assets/hero_schemes_farmer.jpg" alt="" class="sub-hero__backdrop-img" loading="eager" />
+        <div class="sub-hero__scrim"></div>
+      </div>
+      <div class="container sub-hero__container">
+        <div class="sub-hero__content">
+          <nav class="sub-hero__breadcrumb" aria-label="Breadcrumb">
+            <a href="./index.html"><i data-lucide="home" class="inline-icon" style="width:12px;height:12px;"></i> होम</a>
+            <span class="sub-hero__breadcrumb-sep" aria-hidden="true">›</span>
+            <span class="sub-hero__breadcrumb-current" aria-current="page">सरकारी योजनाएँ</span>
+          </nav>
+
+          <span class="sub-hero__badge"><i data-lucide="sprout" class="inline-icon" style="width:15px;height:15px;color:#16a34a;"></i> ग्रामीण कल्याण • Rural Empowerment</span>
+          <h1 id="schemesPageTitle" class="sub-hero__title">सरकारी योजनाएँ • पात्रता व प्रत्यक्ष लाभ</h1>
+          <p class="sub-hero__subtitle">PM-किसान सम्मान निधि, PM आवास, आयुष्मान कार्ड, पेंशन व राशन योजनाओं की सम्पूर्ण पात्रता, आवश्यक दस्तावेज व सीधे आवेदन के आधिकारिक लिंक।</p>
+          <div class="sub-hero__meta">
+            <a href="#schemesGrid" class="sub-hero__chip"><i data-lucide="clipboard-list" class="inline-icon" style="width:14px;height:14px;"></i> सभी योजनाएँ</a>
+            <span class="sub-hero__tag"><i data-lucide="check-circle" class="inline-icon" style="width:14px;height:14px;color:#059669;"></i> DBT प्रत्यक्ष बैंक लाभ</span>
+            <span class="sub-hero__tag"><i data-lucide="shield-check" class="inline-icon" style="width:14px;height:14px;color:#0284c7;"></i> 100% निःशुल्क</span>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- ════ FILTER + SCHEMES ════ -->
-    <section class="section" aria-labelledby="schemesGridTitle">
+    <section class="section" aria-labelledby="schemesGridTitle" style="padding-top:16px;">
       <div class="container">
         <div class="section__header" style="margin-bottom:28px;">
           <h2 class="sr-only" id="schemesGridTitle">योजना सूची</h2>
@@ -155,29 +162,53 @@
       </div>
     </section>
 
-    <!-- ════ HELPLINE CALLOUT ════ -->
-    <section class="section section--alt" aria-labelledby="helpCalloutTitle">
-      <div class="container" style="text-align:center;">
-        <div class="section__header">
-          <div class="section__kicker">सहायता / Help</div>
-          <h2 class="section__title" id="helpCalloutTitle">
-            <span class="hi">योजना आवेदन में सहायता चाहिए?</span>
-            <span class="en">Need help applying for a scheme?</span>
-          </h2>
-          <p class="section__subtitle">
-            ग्राम पंचायत सचिव या ANM/ASHA सेविका से सहायता लें। CM हेल्पलाइन पर कॉल करें।
-          </p>
-        </div>
-        <div class="flex-center gap-4" style="flex-wrap:wrap;">
-          <a href="./official-contacts.html" class="btn btn--primary btn--lg">
-            <i data-lucide="phone" class="inline-icon"></i> संपर्क सूची देखें
-          </a>
-          <a href="tel:1076" class="btn btn--secondary btn--lg">
-            <i data-lucide="phone" class="inline-icon"></i> CM हेल्पलाइन — 1076
-          </a>
-          <a href="https://jansunwai.up.nic.in" target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--lg">
-            🌐 जनसुनवाई पोर्टल
-          </a>
+    <!-- ════ HELPLINE CALLOUT (Daylight 1-Tap Emergency Calling) ════ -->
+    <section class="section section--alt" aria-labelledby="helpCalloutTitle" style="padding: 48px 0; background: #f8fafc;">
+      <div class="container">
+        <div style="background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%); border: 1.5px solid #bbf7d0; border-radius: 20px; padding: 36px 24px; box-shadow: 0 4px 16px rgba(16, 185, 129, 0.08);">
+          <div style="text-align:center; max-width:680px; margin:0 auto 28px auto;">
+            <div style="display:inline-flex; align-items:center; gap:6px; background:#dcfce7; color:#166534; font-size:0.78rem; font-weight:800; padding:4px 12px; border-radius:999px; margin-bottom:8px;">
+              <i data-lucide="zap" style="width:13px; height:13px;"></i> निःशुल्क सरकारी सहायता
+            </div>
+            <h2 class="section__title" id="helpCalloutTitle" style="margin:0 0 8px 0; font-size:1.6rem; color:#0f172a; font-weight:800;">
+              योजना आवेदन में रुकावट या समस्या? सीधे कॉल करें
+            </h2>
+            <p class="section__subtitle" style="margin:0; font-size:0.95rem; color:#475569;">
+              दलाल को एक रुपया न दें। यदि कोई अधिकारी काम अटकाए तो संबंधित टोल-फ्री नंबर पर अपने फोन से तुरंत कॉल करें।
+            </p>
+          </div>
+
+          <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap:16px;">
+            <!-- CM Helpline 1076 -->
+            <a href="tel:1076" class="btn" style="background:#16a34a; color:#fff; border:none; padding:14px; border-radius:12px; font-weight:700; display:flex; flex-direction:column; align-items:center; gap:4px; text-decoration:none; box-shadow:0 2px 8px rgba(22, 163, 74, 0.2);">
+              <span style="font-size:0.8rem; opacity:0.9;">शिकायत व सुनवाई</span>
+              <span style="font-size:1.1rem; display:flex; align-items:center; gap:6px;"><i data-lucide="phone" style="width:16px;height:16px;"></i> 1076 (CM हेल्पलाइन)</span>
+            </a>
+
+            <!-- PM-Kisan 1800-115-526 -->
+            <a href="tel:1800115526" class="btn" style="background:#ea580c; color:#fff; border:none; padding:14px; border-radius:12px; font-weight:700; display:flex; flex-direction:column; align-items:center; gap:4px; text-decoration:none; box-shadow:0 2px 8px rgba(234, 88, 12, 0.2);">
+              <span style="font-size:0.8rem; opacity:0.9;">किसान सम्मान निधि</span>
+              <span style="font-size:1.1rem; display:flex; align-items:center; gap:6px;"><i data-lucide="phone" style="width:16px;height:16px;"></i> 1800-115-526</span>
+            </a>
+
+            <!-- Ayushman 14555 -->
+            <a href="tel:14555" class="btn" style="background:#0284c7; color:#fff; border:none; padding:14px; border-radius:12px; font-weight:700; display:flex; flex-direction:column; align-items:center; gap:4px; text-decoration:none; box-shadow:0 2px 8px rgba(2, 132, 199, 0.2);">
+              <span style="font-size:0.8rem; opacity:0.9;">आयुष्मान भारत (मुफ्त इलाज)</span>
+              <span style="font-size:1.1rem; display:flex; align-items:center; gap:6px;"><i data-lucide="phone" style="width:16px;height:16px;"></i> 14555 (आयुष्मान)</span>
+            </a>
+
+            <!-- Ration 1967 -->
+            <a href="tel:1967" class="btn" style="background:#0d9488; color:#fff; border:none; padding:14px; border-radius:12px; font-weight:700; display:flex; flex-direction:column; align-items:center; gap:4px; text-decoration:none; box-shadow:0 2px 8px rgba(13, 148, 136, 0.2);">
+              <span style="font-size:0.8rem; opacity:0.9;">राशन कार्ड व आपूर्ति</span>
+              <span style="font-size:1.1rem; display:flex; align-items:center; gap:6px;"><i data-lucide="phone" style="width:16px;height:16px;"></i> 1967 (राशन हेल्पलाइन)</span>
+            </a>
+          </div>
+
+          <div style="text-align:center; margin-top:20px;">
+            <a href="./official-contacts.html" style="font-size:0.9rem; color:#0369a1; font-weight:700; text-decoration:underline;">
+              सभी ज़िला व ब्लॉक अधिकारियों के संपर्क देखने के लिए यहाँ क्लिक करें ➔
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -277,11 +308,24 @@
         'shramik': { text: '16+ सरकारी लाभ', type: 'benefit-chip benefit-chip--blue' },
       };
 
+      const SCHEME_HELPLINES = {
+        'pm-kisan': { number: '1800-115-526', tel: '1800115526', label: 'किसान सेंटर' },
+        'pm-awas':  { number: '1076',         tel: '1076',       label: 'CM जनसुनवाई' },
+        'ayushman': { number: '14555',        tel: '14555',      label: 'आयुष्मान' },
+        'ujjwala':  { number: '1906',         tel: '1906',       label: 'गैस हेल्पलाइन' },
+        'pension':  { number: '1076',         tel: '1076',       label: 'पेंशन सहायता' },
+        'shramik':  { number: '14434',        tel: '14434',      label: 'श्रम हेल्पलाइन' },
+        'kanya':    { number: '1098',         tel: '1098',       label: 'बाल हेल्पलाइन' },
+        'ration':   { number: '1967',         tel: '1967',       label: 'राशन हेल्पलाइन' },
+        'nrega':    { number: '1800-180-5555',tel: '18001805555',label: 'मनरेगा' }
+      };
+
       function renderSchemeCard(scheme) {
         const cat = CATEGORY_LABELS[scheme.category] || { hi: scheme.category, en: '', color: '#065f46' };
         const fallback = BENEFIT_FALLBACK[scheme.id] || { text: '', type: 'benefit-chip' };
         const benefitText = scheme.benefitHighlight || fallback.text;
         const benefitType = scheme.benefitType || fallback.type;
+        const helpline = SCHEME_HELPLINES[scheme.id];
 
         const eligibilityItems = (scheme.eligibility || [])
           .map(item => `<li>${item}</li>`)
@@ -301,11 +345,14 @@
             <div class="scheme-card__header">
               <div class="scheme-card__icon">${scheme.icon}</div>
               <div class="scheme-card__meta">
-                <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:4px;">
+                <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:6px;">
                   <span class="scheme-card__category" style="background:${cat.color};">
                     ${cat.hi} / ${cat.en}
                   </span>
                   ${benefitText ? `<span class="${benefitType}">${benefitText}</span>` : ''}
+                  <span style="display:inline-flex; align-items:center; gap:4px; font-size:0.75rem; font-weight:700; background:#ecfdf5; color:#047857; padding:3px 8px; border-radius:999px; border:1px solid #a7f3d0;">
+                    ✓ ₹0 सरकारी फीस
+                  </span>
                 </div>
                 <div class="scheme-card__name" id="scheme-title-${scheme.id}">${scheme.name}</div>
                 <div class="scheme-card__name-en">${scheme.nameEn}</div>
@@ -326,16 +373,27 @@
                 </div>
               ` : ''}
             </div>
-            <div class="scheme-card__footer">
+            <div class="scheme-card__footer" style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
               <a
                 href="${scheme.portal}"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="btn btn--primary btn--sm"
+                style="flex:1; min-width:140px; justify-content:center; padding:10px 14px; font-weight:700;"
                 aria-label="${scheme.nameEn} पोर्टल खोलें"
               >
-                🌐 पोर्टल खोलें / Open Portal ↗
+                🌐 पोर्टल खोलें ↗
               </a>
+              ${helpline ? `
+                <a
+                  href="tel:${helpline.tel}"
+                  class="btn btn--outline btn--sm"
+                  style="background:#f0fdf4; border-color:#86efac; color:#166534; font-weight:700; display:inline-flex; align-items:center; gap:6px; padding:10px 14px;"
+                  aria-label="${helpline.label} ${helpline.number} पर कॉल करें"
+                >
+                  📞 ${helpline.label}: ${helpline.number}
+                </a>
+              ` : ''}
             </div>
           </article>
         `;

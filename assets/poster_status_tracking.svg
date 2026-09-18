@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="trackBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="50%" stop-color="#eff6ff"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="tabletBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="progressGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="70%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Clean Canvas -->
+  <rect width="1280" height="720" fill="url(#trackBg)"/>
+
+  <!-- Large Digital Tablet Device in Center-Right -->
+  <rect x="700" y="110" width="500" height="500" rx="32" fill="url(#tabletBody)" filter="drop-shadow(0 16px 36px rgba(15,23,42,0.15))"/>
+  <rect x="720" y="130" width="460" height="460" rx="20" fill="#ffffff"/>
+
+  <!-- Tablet Top Camera Dot -->
+  <circle cx="950" cy="120" r="4" fill="#64748b"/>
+
+  <!-- Status Dashboard Interface on Tablet -->
+  <!-- Search Reference Bar -->
+  <rect x="750" y="160" width="400" height="52" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+  <circle cx="780" cy="186" r="12" fill="#e2e8f0"/>
+  <path d="M 776 186 L 788 186 M 784 180 L 790 186 L 784 192" stroke="#0284c7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Reference Number Simulation -->
+  <line x1="805" y1="186" x2="940" y2="186" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
+  <!-- Track Button -->
+  <rect x="1040" y="168" width="95" height="36" rx="8" fill="#0284c7"/>
+  <line x1="1065" y1="186" x2="1110" y2="186" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Status Card: Approved / Under Process -->
+  <rect x="750" y="235" width="400" height="150" rx="16" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="2"/>
+  
+  <circle cx="800" cy="285" r="28" fill="#16a34a"/>
+  <path d="M 788 285 L 796 293 L 812 277" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <line x1="845" y1="275" x2="1060" y2="275" stroke="#166534" stroke-width="6" stroke-linecap="round"/>
+  <line x1="845" y1="298" x2="980" y2="298" stroke="#4ade80" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- 4-Step Progress Tracking Timeline -->
+  <g transform="translate(750, 420)">
+    <!-- Connecting Bar -->
+    <rect x="40" y="22" width="320" height="6" rx="3" fill="url(#progressGrad)"/>
+
+    <!-- Step 1: आवेदन दर्ज़ (Done) -->
+    <circle cx="40" cy="25" r="16" fill="#0284c7"/>
+    <path d="M 34 25 L 38 29 L 46 21" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="15" y1="55" x2="65" y2="55" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Step 2: जांच जारी (Done) -->
+    <circle cx="145" cy="25" r="16" fill="#0284c7"/>
+    <path d="M 139 25 L 143 29 L 151 21" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="120" y1="55" x2="170" y2="55" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Step 3: रिपोर्ट प्रस्तुत (Done) -->
+    <circle cx="255" cy="25" r="16" fill="#16a34a"/>
+    <path d="M 249 25 L 253 29 L 261 21" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="230" y1="55" x2="280" y2="55" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Step 4: निस्तारण / प्रमाणपत्र तैयार (Active Success) -->
+    <circle cx="360" cy="25" r="18" fill="#22c55e" stroke="#bbf7d0" stroke-width="4"/>
+    <path d="M 353 25 L 358 30 L 368 20" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="335" y1="55" x2="385" y2="55" stroke="#16a34a" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Live Verified Badge in Foreground -->
+  <g transform="translate(680, 480)">
+    <rect x="0" y="0" width="130" height="46" rx="23" fill="#ffffff" stroke="#cbd5e1" stroke-width="2.5" filter="drop-shadow(0 8px 18px rgba(0,0,0,0.08))"/>
+    <circle cx="23" cy="23" r="8" fill="#22c55e"/>
+    <line x1="42" y1="18" x2="105" y2="18" stroke="#0f172a" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="42" y1="28" x2="85" y2="28" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+</svg>

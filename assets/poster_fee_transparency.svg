@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="feeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="50%" stop-color="#f0fdf4"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="boardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="counterGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Clean Canvas -->
+  <rect width="1280" height="720" fill="url(#feeBg)"/>
+
+  <!-- Transparent Digital Fee Board on Wall -->
+  <rect x="720" y="80" width="500" height="300" rx="16" fill="url(#boardGrad)" stroke="#334155" stroke-width="4" filter="drop-shadow(0 10px 24px rgba(0,0,0,0.12))"/>
+  
+  <!-- Board Title: सरकारी फीस दर सूची -->
+  <rect x="740" y="100" width="460" height="40" rx="8" fill="#166534"/>
+  <line x1="770" y1="120" x2="980" y2="120" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+  <line x1="1020" y1="120" x2="1140" y2="120" stroke="#86efac" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Fee Table Rows -->
+  <!-- Row 1: Khatauni Copy -> ₹0 Free -->
+  <rect x="740" y="155" width="460" height="44" rx="6" fill="#334155" opacity="0.6"/>
+  <line x1="760" y1="177" x2="920" y2="177" stroke="#f8fafc" stroke-width="4" stroke-linecap="round"/>
+  <rect x="1080" y="163" width="95" height="28" rx="6" fill="#16a34a"/>
+  <line x1="1105" y1="177" x2="1150" y2="177" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Row 2: Caste / Income Certificate -> ₹0 Free -->
+  <rect x="740" y="210" width="460" height="44" rx="6" fill="#1e293b"/>
+  <line x1="760" y1="232" x2="940" y2="232" stroke="#f8fafc" stroke-width="4" stroke-linecap="round"/>
+  <rect x="1080" y="218" width="95" height="28" rx="6" fill="#16a34a"/>
+  <line x1="1105" y1="232" x2="1150" y2="232" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Row 3: RTI Application Fee -> ₹10 Nominal -->
+  <rect x="740" y="265" width="460" height="44" rx="6" fill="#334155" opacity="0.6"/>
+  <line x1="760" y1="287" x2="900" y2="287" stroke="#f8fafc" stroke-width="4" stroke-linecap="round"/>
+  <rect x="1080" y="273" width="95" height="28" rx="6" fill="#0284c7"/>
+  <line x1="1105" y1="287" x2="1150" y2="287" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Service Desk Counter -->
+  <path d="M 540 440 L 1280 440 L 1280 720 L 540 720 Z" fill="url(#counterGrad)"/>
+  <line x1="540" y1="440" x2="1280" y2="440" stroke="#cbd5e1" stroke-width="3"/>
+
+  <!-- Official Receipt Printer Machine -->
+  <rect x="680" y="390" width="130" height="90" rx="10" fill="#334155"/>
+  <rect x="700" y="410" width="90" height="12" rx="4" fill="#0f172a"/>
+  <circle cx="790" cy="450" r="6" fill="#22c55e"/>
+
+  <!-- Clean Official Printed Receipt coming out -->
+  <path d="M 710 422 L 710 590 L 720 580 L 730 590 L 740 580 L 750 590 L 760 580 L 770 590 L 780 580 L 780 422 Z" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" filter="drop-shadow(0 6px 14px rgba(0,0,0,0.08))"/>
+  <line x1="725" y1="445" x2="765" y2="445" stroke="#16a34a" stroke-width="4" stroke-linecap="round"/>
+  <line x1="725" y1="465" x2="765" y2="465" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+  <line x1="725" y1="480" x2="760" y2="480" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round"/>
+  <line x1="725" y1="495" x2="765" y2="495" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round"/>
+  <!-- Official Verified Stamp on Receipt -->
+  <ellipse cx="745" cy="535" rx="20" ry="14" fill="none" stroke="#16a34a" stroke-width="2" stroke-dasharray="3 2"/>
+  <path d="M 738 535 L 743 540 L 752 531" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Zero-Bribe Shield Verification Token -->
+  <g transform="translate(1000, 480)">
+    <circle cx="0" cy="0" r="65" fill="#ffffff" stroke="#bbf7d0" stroke-width="4" filter="drop-shadow(0 10px 24px rgba(22,163,74,0.15))"/>
+    <circle cx="0" cy="0" r="54" fill="#f0fdf4"/>
+    <path d="M 0 -35 L 30 -20 C 30 15 0 35 0 35 C 0 35 -30 15 -30 -20 Z" fill="#16a34a"/>
+    <path d="M -10 0 L -3 7 L 12 -8" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="ladderBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="50%" stop-color="#f0f9ff"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="stepGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="stepGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <linearGradient id="stepGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Clean Canvas -->
+  <rect width="1280" height="720" fill="url(#ladderBg)"/>
+
+  <!-- Rising Civic Escalation Staircase -->
+  <!-- Step 1: Base / Gram & Block Level -->
+  <path d="M 640 540 L 820 540 L 820 680 L 640 680 Z" fill="#ffffff" stroke="#cbd5e1" stroke-width="3" filter="drop-shadow(0 6px 16px rgba(0,0,0,0.06))"/>
+  <rect x="660" y="560" width="140" height="40" rx="8" fill="url(#stepGrad1)"/>
+  <circle cx="685" cy="580" r="12" fill="#ffffff"/>
+  <text x="685" y="585" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle">1</text>
+  <line x1="710" y1="580" x2="780" y2="580" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <line x1="660" y1="620" x2="770" y2="620" stroke="#64748b" stroke-width="3" stroke-linecap="round"/>
+  <line x1="660" y1="638" x2="740" y2="638" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Step 2: Mid / Tehsil & SDM Level -->
+  <path d="M 820 380 L 1000 380 L 1000 680 L 820 680 Z" fill="#ffffff" stroke="#cbd5e1" stroke-width="3" filter="drop-shadow(0 8px 20px rgba(0,0,0,0.07))"/>
+  <rect x="840" y="400" width="140" height="40" rx="8" fill="url(#stepGrad2)"/>
+  <circle cx="865" cy="420" r="12" fill="#ffffff"/>
+  <text x="865" y="425" font-family="sans-serif" font-size="14" font-weight="bold" fill="#0284c7" text-anchor="middle">2</text>
+  <line x1="890" y1="420" x2="960" y2="420" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <line x1="840" y1="460" x2="950" y2="460" stroke="#64748b" stroke-width="3" stroke-linecap="round"/>
+  <line x1="840" y1="478" x2="920" y2="478" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Step 3: Top / DM, Jansunwai & Commissioner Level -->
+  <path d="M 1000 220 L 1180 220 L 1180 680 L 1000 680 Z" fill="#ffffff" stroke="#cbd5e1" stroke-width="3" filter="drop-shadow(0 12px 28px rgba(0,0,0,0.09))"/>
+  <rect x="1020" y="240" width="140" height="40" rx="8" fill="url(#stepGrad3)"/>
+  <circle cx="1045" cy="260" r="12" fill="#ffffff"/>
+  <text x="1045" y="265" font-family="sans-serif" font-size="14" font-weight="bold" fill="#059669" text-anchor="middle">3</text>
+  <line x1="1070" y1="260" x2="1140" y2="260" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <line x1="1020" y1="300" x2="1130" y2="300" stroke="#64748b" stroke-width="3" stroke-linecap="round"/>
+  <line x1="1020" y1="318" x2="1100" y2="318" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Connecting Ascending Arrow Line -->
+  <path d="M 730 520 L 910 360 L 1090 200" fill="none" stroke="#f59e0b" stroke-width="6" stroke-linecap="round" stroke-dasharray="10 10"/>
+  <polygon points="1090,180 1105,215 1070,205" fill="#f59e0b"/>
+
+  <!-- Top Resolution Crown Badge -->
+  <g transform="translate(1090, 140)">
+    <circle cx="0" cy="0" r="45" fill="#ffffff" stroke="#10b981" stroke-width="3.5" filter="drop-shadow(0 6px 18px rgba(16,185,129,0.25))"/>
+    <circle cx="0" cy="0" r="36" fill="#ecfdf5"/>
+    <path d="M -16 2 L -5 13 L 16 -8" fill="none" stroke="#059669" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

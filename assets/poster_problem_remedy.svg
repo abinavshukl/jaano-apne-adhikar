@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="remedySky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f0fdfa"/>
+      <stop offset="60%" stop-color="#ccfbf1"/>
+      <stop offset="100%" stop-color="#e0f2fe"/>
+    </linearGradient>
+    <linearGradient id="sunGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fed7aa"/>
+      <stop offset="100%" stop-color="#fef08a" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="pathGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="signGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky & Landscape -->
+  <rect width="1280" height="720" fill="url(#remedySky)"/>
+  <circle cx="1080" cy="220" r="180" fill="url(#sunGlow)" opacity="0.6"/>
+
+  <!-- Distant Rolling Hills -->
+  <path d="M 600 480 Q 820 340 1020 440 T 1280 400 L 1280 720 L 600 720 Z" fill="#99f6e4" opacity="0.4"/>
+  <path d="M 520 520 Q 760 410 980 480 T 1280 460 L 1280 720 L 520 720 Z" fill="#5eead4" opacity="0.3"/>
+
+  <!-- Winding Path towards Light / Resolution -->
+  <path d="M 720 720 Q 860 620 920 540 T 1060 460 L 1110 460 Q 980 540 910 620 T 820 720 Z" fill="url(#pathGrad)" opacity="0.7"/>
+
+  <!-- Civic Destination Help Building in Distance -->
+  <rect x="1050" y="390" width="100" height="70" rx="8" fill="#ffffff" stroke="#0d9488" stroke-width="3"/>
+  <polygon points="1040,390 1100,340 1160,390" fill="#0d9488"/>
+  <rect x="1090" y="420" width="20" height="40" rx="4" fill="#0d9488"/>
+  <circle cx="1100" cy="370" r="8" fill="#fef08a"/>
+
+  <!-- Guiding Roadpost / Signpost in Foreground -->
+  <rect x="780" y="240" width="22" height="380" rx="4" fill="#64748b"/>
+  <ellipse cx="791" cy="620" rx="40" ry="12" fill="#94a3b8" opacity="0.5"/>
+
+  <!-- Arrow Signs on the Post -->
+  <!-- Top Sign: समाधान ➔ Solution -->
+  <path d="M 710 260 L 980 260 L 1020 295 L 980 330 L 710 330 Z" fill="url(#signGrad)" filter="drop-shadow(0 6px 12px rgba(13, 148, 136, 0.25))"/>
+  <circle cx="750" cy="295" r="16" fill="#ffffff"/>
+  <path d="M 744 295 L 756 295 M 751 289 L 757 295 L 751 301" stroke="#0d9488" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Sign Text Simulation -->
+  <line x1="785" y1="285" x2="940" y2="285" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <line x1="785" y1="305" x2="890" y2="305" stroke="#ccfbf1" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Second Sign: अधिकार ➔ Rights -->
+  <path d="M 850 360 L 620 360 L 580 395 L 620 430 L 850 430 Z" fill="#0284c7" filter="drop-shadow(0 4px 10px rgba(2, 132, 199, 0.2))"/>
+  <circle cx="810" cy="395" r="14" fill="#ffffff"/>
+  <line x1="630" y1="385" x2="770" y2="385" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <line x1="660" y1="405" x2="770" y2="405" stroke="#e0f2fe" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Compass / Direction Indicator -->
+  <g transform="translate(1100, 160)">
+    <circle cx="0" cy="0" r="55" fill="#ffffff" stroke="#cbd5e1" stroke-width="3" filter="drop-shadow(0 8px 16px rgba(0,0,0,0.06))"/>
+    <circle cx="0" cy="0" r="44" fill="none" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="4 4"/>
+    <polygon points="0,-36 8,-6 0,0 -8,-6" fill="#ef4444"/>
+    <polygon points="0,36 8,6 0,0 -8,6" fill="#64748b"/>
+    <circle cx="0" cy="0" r="6" fill="#0d9488"/>
+  </g>
+</svg>

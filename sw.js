@@ -1,4 +1,4 @@
-const CACHE_NAME = 'adhikar-cache-v20260917-r12';
+const CACHE_NAME = 'adhikar-cache-v20260918-r21';
 const urlsToCache = [
   './',
   './index.html',
@@ -23,11 +23,25 @@ const urlsToCache = [
   './article-ration.html',
   './article-rti.html',
   './article-varasat.html',
-  './css/styles.css?v=20260917-r12',
-  './js/main.js?v=20260917-r8',
+  './css/styles.css?v=20260918-r21',
+  './js/main.js?v=20260918-r1',
   './js/config.js',
   './js/drafter.js',
-  './data/schemes.json'
+  './data/schemes.json',
+  './assets/hero_village_panoramic.jpg',
+  './assets/hero_rights_justice.jpg',
+  './assets/hero_schemes_farmer.jpg',
+  './assets/hero_articles_study.jpg',
+  './assets/hero_drafter_desk.jpg',
+  './assets/hero_problem_remedy.jpg',
+  './assets/hero_status_track.jpg',
+  './assets/hero_official_contacts.jpg',
+  './assets/hero_templates_forms.jpg',
+  './assets/hero_escalation_steps.jpg',
+  './assets/hero_land_survey.jpg',
+  './assets/hero_fee_transparency.jpg',
+  './assets/hero_fraud_warning.jpg',
+  './assets/poster_legal_policy.svg'
 ];
 
 self.addEventListener('install', event => {

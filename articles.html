@@ -11,7 +11,7 @@
   <meta property="og:title" content="नागरिक मार्गदर्शक व विधिक लेख — जानो अपने अधिकार" />
   <meta property="og:description" content="RTI, FIR, आवास, पेंशन, राशन और वरासत की चरण-दर-चरण विधिक मार्गदर्शिकाएँ।" />
     <title>नागरिक मार्गदर्शक व विधिक लेख — जानो अपने अधिकार</title>
-  <link rel="stylesheet" href="./css/styles.css?v=20260917-r12" />
+  <link rel="stylesheet" href="./css/styles.css?v=20260918-r21" />
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
 
   <link rel="canonical" href="https://abinavshukl.github.io/jaano-apne-adhikar/" />
@@ -46,45 +46,12 @@
 </head>
 <body>
 
-  <!-- ════ LEGAL DISCLAIMER MODAL (First-Touch) ════ -->
-  <div id="disclaimerOverlay" class="disclaimer-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="disclaimerTitle">
-    <div class="disclaimer-modal">
-      <div class="disclaimer-modal__header">
-        <div class="disclaimer-modal__icon" aria-hidden="true"><i data-lucide="scale" class="inline-icon"></i></div>
-        <div>
-          <div class="disclaimer-modal__title">महत्वपूर्ण सूचना / Important Notice</div>
-          <div class="disclaimer-modal__subtitle">कृपया आगे बढ़ने से पहले पढ़ें / Please read before proceeding</div>
-        </div>
-      </div>
-      <div class="disclaimer-modal__body">
-        <div class="disclaimer-modal__text">
-          <strong>कानूनी अस्वीकरण (Legal Disclaimer):</strong><br/>
-          यह वेबसाइट नागरिकों को अधिकारों, योजनाओं और जन-सुविधाओं के बारे में सामान्य जानकारी देने वाली एक स्वतंत्र जन-जागरूकता पहल है।
-          <br/><br/>
-          <strong>कृपया ध्यान दें:</strong><br/>
-          🔴 यह कोई आधिकारिक सरकारी पोर्टल नहीं है।<br/>
-          🔴 यह कानूनी सलाह, सरकारी आदेश या सेवा की गारंटी नहीं है।<br/>
-          🔴 जानकारी को सटीक रखने का प्रयास किया गया है, फिर भी किसी कार्रवाई से पहले संबंधित आधिकारिक पोर्टल/विभाग से पुष्टि करें। वेबसाइट के निर्माता/डेवलपर किसी शिकायत, आवेदन, निर्णय या परिणाम के लिए उत्तरदायी नहीं हैं।
-          <br/><br/>
-          <em style="font-size:0.85em;color:#92400e;">This is an independent awareness initiative, not an official government portal or legal advice. Please verify details with official sources before taking action.</em>
-        </div>
-      </div>
-      <div class="disclaimer-modal__footer" style="justify-content: center;">
-        <button id="disclaimerAccept" class="btn btn--primary btn--full">
-          ✅ मैं सहमत हूँ / I Agree (Proceed)
-        </button>
-      </div>
-    </div>
-  </div>
 
   <!-- ── Sentinel for sticky header shadow ── -->
   <div id="headerSentinel" aria-hidden="true" style="height:1px;position:absolute;top:0;width:100%;pointer-events:none;"></div>
 
   <!-- ════ SITE HEADER ════ -->
   <header class="site-header" role="banner">
-      <div class="site-disclaimer">
-      विधिक अस्वीकरण: यह स्वतंत्र, गैर-सरकारी जन-जागरूकता पहल है। कानूनी सलाह या सेवा की गारंटी नहीं है।
-    </div>
     <div class="container">
       <div class="header-inner">
         <a href="./index.html" class="site-logo" aria-label="एक निजी पहल — होम पेज">
@@ -99,12 +66,12 @@
           <span class="menu-toggle__bar"></span>
         </button>
 
-                <nav id="navMenu" class="site-nav" aria-label="मुख्य नेविगेशन">
+        <nav id="navMenu" class="site-nav" aria-label="मुख्य नेविगेशन">
           <ul class="nav__list" role="list">
             <li><a href="./index.html" class="nav__link"><i data-lucide="home" class="inline-icon"></i> होम</a></li>
             <li><a href="./rights.html" class="nav__link"><i data-lucide="scale" class="inline-icon"></i> अधिकार</a></li>
             <li><a href="./schemes.html" class="nav__link"><i data-lucide="clipboard-list" class="inline-icon"></i> योजनाएँ</a></li>
-            <li><a href="./articles.html" class="nav__link"><i data-lucide="book-open" class="inline-icon"></i> मार्गदर्शक</a></li>
+            <li><a href="./articles.html" class="nav__link active" aria-current="page"><i data-lucide="book-open" class="inline-icon"></i> मार्गदर्शक</a></li>
             <li><a href="./problem-to-remedy.html" class="nav__link"><i data-lucide="help-circle" class="inline-icon"></i> समाधान</a></li>
             <li><a href="./official-contacts.html" class="nav__link"><i data-lucide="phone" class="inline-icon"></i> संपर्क</a></li>
             <li><a href="./drafter.html" class="nav__link"><i data-lucide="file-text" class="inline-icon"></i> Drafter</a></li>
@@ -120,126 +87,205 @@
 
   <!-- ── Nav Overlay (for closing mobile menu on outside click) ── -->
   <div id="navOverlay" class="nav-overlay" aria-hidden="true"></div>
-  <nav class="breadcrumb container" aria-label="Breadcrumb">
-    <a href="./index.html">होम</a>
-    <span class="breadcrumb__sep" aria-hidden="true">›</span>
-    <span class="breadcrumb__current" aria-current="page">मार्गदर्शक (Guides)</span>
-  </nav>
+  
 
   <main id="main-content">
-  <section class="section" style="padding-top: 40px; padding-bottom: 40px; background-color: #f8fafc;">
-    <div class="container">
-      <div class="section__header text-center" style="margin-bottom: 40px;">
-        <h1 class="section__title"><i data-lucide="book-open" class="inline-icon" style="color:var(--brand-teal);"></i> नागरिक मार्गदर्शक (Guides & Articles)</h1>
-        <p class="section__desc">विभिन्न सरकारी योजनाओं और कानूनी प्रक्रियाओं की विस्तृत चरण-दर-चरण जानकारी आसान हिंदी में पढ़ें।</p>
+    <!-- ════ UNIFIED SUBPAGE HERO BANNER (Full-Bleed Panoramic - Zero Boxes) ════ -->
+    <section class="sub-hero" aria-labelledby="articlesPageTitle">
+      <div class="sub-hero__backdrop" aria-hidden="true">
+        <img src="./assets/hero_articles_study.jpg" alt="" class="sub-hero__backdrop-img" loading="eager" />
+        <div class="sub-hero__scrim"></div>
       </div>
-      
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+      <div class="container sub-hero__container">
+        <div class="sub-hero__content">
+          <nav class="sub-hero__breadcrumb" aria-label="Breadcrumb">
+            <a href="./index.html"><i data-lucide="home" class="inline-icon" style="width:12px;height:12px;"></i> होम</a>
+            <span class="sub-hero__breadcrumb-sep" aria-hidden="true">›</span>
+            <span class="sub-hero__breadcrumb-current" aria-current="page">मार्गदर्शक (Guides)</span>
+          </nav>
+
+          <span class="sub-hero__badge"><i data-lucide="book-open" class="inline-icon" style="width:15px;height:15px;color:var(--color-primary);"></i> नागरिक मार्गदर्शक • Step-by-Step Guides</span>
+          <h1 id="articlesPageTitle" class="sub-hero__title">विस्तृत नागरिक मार्गदर्शिका व नियम</h1>
+          <p class="sub-hero__subtitle">सरकारी योजनाओं, RTI कानून, एफआईआर प्रक्रिया, राशन व पेंशन की प्रामाणिक व आसान चरण-दर-चरण मार्गदर्शिका। सीधे समाधान और नियम समझें।</p>
+          <div class="sub-hero__meta">
+            <span class="sub-hero__tag"><i data-lucide="check-circle" class="inline-icon" style="width:14px;height:14px;color:#059669;"></i> 8 विस्तृत विषय मार्गदर्शक</span>
+            <span class="sub-hero__tag"><i data-lucide="shield-check" class="inline-icon" style="width:14px;height:14px;color:#0284c7;"></i> 100% सत्यापित नियम</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 32px; padding-bottom: 60px; background-color: #f8fafc;">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
         
-        <!-- Article 1 -->
-        <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-          <div style="height: 160px; background: #0d5c50; display: flex; align-items: center; justify-content: center;">
-            <i data-lucide="file-question" style="color: white; width: 64px; height: 64px; opacity: 0.8;"></i>
+        <!-- Article 1: RTI -->
+        <article class="article-guide-card" style="background: white; border-radius: 16px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05); display: flex; flex-direction: column;">
+          <div style="background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); padding: 22px 24px 16px; border-bottom: 1px solid #bbf7d0; display: flex; align-items: center; justify-content: space-between;">
+            <div style="width: 52px; height: 52px; border-radius: 14px; background: #16a34a; color: white; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(22, 163, 74, 0.25);">
+              <i data-lucide="file-text" style="width: 26px; height: 26px;"></i>
+            </div>
+            <span style="background: white; color: #166534; padding: 4px 10px; border-radius: 999px; font-size: 0.78rem; font-weight: 700; border: 1px solid #bbf7d0; display: inline-flex; align-items: center; gap: 4px;">
+              <i data-lucide="clock" style="width: 12px; height: 12px;"></i> 5 मिनट पठन
+            </span>
           </div>
-          <div style="padding: 24px;">
-            <span style="background: #dcfce7; color: #166534; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 12px; display: inline-block;">RTI (सूचना का अधिकार)</span>
-            <h3 style="margin: 0 0 12px 0; font-size: 1.25rem; color: #0f172a;">RTI कैसे दाखिल करें? (Step-by-step)</h3>
-            <p style="color: #475569; font-size: 0.95rem; line-height: 1.5; margin-bottom: 16px;">ग्राम पंचायत के खर्चों की जानकारी चाहिए? जानिए सूचना का अधिकार 2005 के तहत ऑफलाइन और ऑनलाइन RTI कैसे लगाएं।</p>
-            <a href="./article-rti.html" style="color: #0ea5e9; font-weight: bold; text-decoration: none; display: flex; align-items: center; gap: 4px;">पूरा लेख पढ़ें <i data-lucide="arrow-right" style="width: 16px;"></i></a>
+          <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1;">
+            <span style="color: #166534; font-size: 0.8rem; font-weight: 700; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em;">RTI (सूचना का अधिकार)</span>
+            <h2 style="margin: 0 0 10px 0; font-size: 1.25rem; font-weight: 800; color: #0f172a; line-height: 1.35;">RTI कैसे दाखिल करें? (Step-by-step)</h2>
+            <p style="color: #475569; font-size: 0.94rem; line-height: 1.6; margin-bottom: 20px; flex-grow: 1;">ग्राम पंचायत के खर्चों की जानकारी चाहिए? जानिए सूचना का अधिकार 2005 के तहत ऑफलाइन और ऑनलाइन RTI कैसे लगाएं।</p>
+            <div style="padding-top: 14px; border-top: 1px solid #f1f5f9; display: flex; align-items: center; justify-content: space-between;">
+              <a href="./article-rti.html" style="color: #16a34a; font-weight: 700; font-size: 0.95rem; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">पूरा लेख पढ़ें <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i></a>
+              <span style="font-size: 0.78rem; color: #94a3b8; font-weight: 600;">विधिक प्रक्रिया</span>
+            </div>
           </div>
-        </div>
+        </article>
 
-        <!-- Article 2 -->
-        <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-          <div style="height: 160px; background: #ea580c; display: flex; align-items: center; justify-content: center;">
-            <i data-lucide="home" style="color: white; width: 64px; height: 64px; opacity: 0.8;"></i>
+        <!-- Article 2: Awas -->
+        <article class="article-guide-card" style="background: white; border-radius: 16px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05); display: flex; flex-direction: column;">
+          <div style="background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%); padding: 22px 24px 16px; border-bottom: 1px solid #fed7aa; display: flex; align-items: center; justify-content: space-between;">
+            <div style="width: 52px; height: 52px; border-radius: 14px; background: #ea580c; color: white; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(234, 88, 12, 0.25);">
+              <i data-lucide="home" style="width: 26px; height: 26px;"></i>
+            </div>
+            <span style="background: white; color: #9a3412; padding: 4px 10px; border-radius: 999px; font-size: 0.78rem; font-weight: 700; border: 1px solid #fed7aa; display: inline-flex; align-items: center; gap: 4px;">
+              <i data-lucide="clock" style="width: 12px; height: 12px;"></i> 6 मिनट पठन
+            </span>
           </div>
-          <div style="padding: 24px;">
-            <span style="background: #ffedd5; color: #9a3412; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 12px; display: inline-block;">आवास योजना</span>
-            <h3 style="margin: 0 0 12px 0; font-size: 1.25rem; color: #0f172a;">PM आवास योजना (ग्रामीण) नियम</h3>
-            <p style="color: #475569; font-size: 0.95rem; line-height: 1.5; margin-bottom: 16px;">जानें कि कौन-कौन इस योजना के पात्र हैं, 1.20 लाख रुपये की राशि कैसे मिलती है और आवेदन में क्या दस्तावेज लगते हैं।</p>
-            <a href="./article-awas.html" style="color: #0ea5e9; font-weight: bold; text-decoration: none; display: flex; align-items: center; gap: 4px;">पूरा लेख पढ़ें <i data-lucide="arrow-right" style="width: 16px;"></i></a>
+          <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1;">
+            <span style="color: #9a3412; font-size: 0.8rem; font-weight: 700; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em;">आवास योजना • ग्रामीण</span>
+            <h2 style="margin: 0 0 10px 0; font-size: 1.25rem; font-weight: 800; color: #0f172a; line-height: 1.35;">PM आवास योजना (ग्रामीण) नियम</h2>
+            <p style="color: #475569; font-size: 0.94rem; line-height: 1.6; margin-bottom: 20px; flex-grow: 1;">जानें कि कौन-कौन इस योजना के पात्र हैं, 1.20 लाख रुपये की राशि कैसे मिलती है और आवेदन में क्या दस्तावेज लगते हैं।</p>
+            <div style="padding-top: 14px; border-top: 1px solid #f1f5f9; display: flex; align-items: center; justify-content: space-between;">
+              <a href="./article-awas.html" style="color: #ea580c; font-weight: 700; font-size: 0.95rem; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">पूरा लेख पढ़ें <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i></a>
+              <span style="font-size: 0.78rem; color: #94a3b8; font-weight: 600;">सरकारी योजना</span>
+            </div>
           </div>
-        </div>
+        </article>
 
-        <!-- Article 3 -->
-        <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-          <div style="height: 160px; background: #2563eb; display: flex; align-items: center; justify-content: center;">
-            <i data-lucide="shield-alert" style="color: white; width: 64px; height: 64px; opacity: 0.8;"></i>
+        <!-- Article 3: FIR -->
+        <article class="article-guide-card" style="background: white; border-radius: 16px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05); display: flex; flex-direction: column;">
+          <div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); padding: 22px 24px 16px; border-bottom: 1px solid #bfdbfe; display: flex; align-items: center; justify-content: space-between;">
+            <div style="width: 52px; height: 52px; border-radius: 14px; background: #2563eb; color: white; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);">
+              <i data-lucide="shield" style="width: 26px; height: 26px;"></i>
+            </div>
+            <span style="background: white; color: #1e40af; padding: 4px 10px; border-radius: 999px; font-size: 0.78rem; font-weight: 700; border: 1px solid #bfdbfe; display: inline-flex; align-items: center; gap: 4px;">
+              <i data-lucide="clock" style="width: 12px; height: 12px;"></i> 7 मिनट पठन
+            </span>
           </div>
-          <div style="padding: 24px;">
-            <span style="background: #dbeafe; color: #1e40af; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 12px; display: inline-block;">कानूनी अधिकार</span>
-            <h3 style="margin: 0 0 12px 0; font-size: 1.25rem; color: #0f172a;">पुलिस FIR दर्ज न करे तो क्या करें?</h3>
-            <p style="color: #475569; font-size: 0.95rem; line-height: 1.5; margin-bottom: 16px;">अगर स्थानीय थाना प्रभारी आपकी FIR नहीं लिखते हैं, तो CrPC 154(3) और 156(3) के तहत आपके पास क्या कानूनी विकल्प हैं।</p>
-            <a href="./article-fir.html" style="color: #0ea5e9; font-weight: bold; text-decoration: none; display: flex; align-items: center; gap: 4px;">पूरा लेख पढ़ें <i data-lucide="arrow-right" style="width: 16px;"></i></a>
+          <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1;">
+            <span style="color: #1e40af; font-size: 0.8rem; font-weight: 700; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em;">कानूनी अधिकार • सुरक्षा</span>
+            <h2 style="margin: 0 0 10px 0; font-size: 1.25rem; font-weight: 800; color: #0f172a; line-height: 1.35;">पुलिस FIR दर्ज न करे तो क्या करें?</h2>
+            <p style="color: #475569; font-size: 0.94rem; line-height: 1.6; margin-bottom: 20px; flex-grow: 1;">अगर स्थानीय थाना प्रभारी आपकी FIR नहीं लिखते हैं, तो CrPC 154(3) और 156(3) के तहत आपके पास क्या कानूनी विकल्प हैं।</p>
+            <div style="padding-top: 14px; border-top: 1px solid #f1f5f9; display: flex; align-items: center; justify-content: space-between;">
+              <a href="./article-fir.html" style="color: #2563eb; font-weight: 700; font-size: 0.95rem; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">पूरा लेख पढ़ें <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i></a>
+              <span style="font-size: 0.78rem; color: #94a3b8; font-weight: 600;">विधिक अधिकार</span>
+            </div>
           </div>
-        </div>
+        </article>
 
-        <!-- Article 4 -->
-        <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-          <div style="height: 160px; background: #7c3aed; display: flex; align-items: center; justify-content: center;">
-            <i data-lucide="landmark" style="color: white; width: 64px; height: 64px; opacity: 0.8;"></i>
+        <!-- Article 4: Gram Sabha -->
+        <article class="article-guide-card" style="background: white; border-radius: 16px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05); display: flex; flex-direction: column;">
+          <div style="background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%); padding: 22px 24px 16px; border-bottom: 1px solid #e9d5ff; display: flex; align-items: center; justify-content: space-between;">
+            <div style="width: 52px; height: 52px; border-radius: 14px; background: #9333ea; color: white; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(147, 51, 234, 0.25);">
+              <i data-lucide="users" style="width: 26px; height: 26px;"></i>
+            </div>
+            <span style="background: white; color: #6b21a8; padding: 4px 10px; border-radius: 999px; font-size: 0.78rem; font-weight: 700; border: 1px solid #e9d5ff; display: inline-flex; align-items: center; gap: 4px;">
+              <i data-lucide="clock" style="width: 12px; height: 12px;"></i> 5 मिनट पठन
+            </span>
           </div>
-          <div style="padding: 24px;">
-            <span style="background: #f3e8ff; color: #6b21a8; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 12px; display: inline-block;">पंचायती राज</span>
-            <h3 style="margin: 0 0 12px 0; font-size: 1.25rem; color: #0f172a;">ग्राम सभा की बैठक के नियम</h3>
-            <p style="color: #475569; font-size: 0.95rem; line-height: 1.5; margin-bottom: 16px;">एक साल में कितनी खुली बैठकें होनी चाहिए? और एक नागरिक के रूप में प्रधान से सवाल पूछने का आपका क्या अधिकार है।</p>
-            <a href="./article-gramsabha.html" style="color: #0ea5e9; font-weight: bold; text-decoration: none; display: flex; align-items: center; gap: 4px;">पूरा लेख पढ़ें <i data-lucide="arrow-right" style="width: 16px;"></i></a>
+          <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1;">
+            <span style="color: #6b21a8; font-size: 0.8rem; font-weight: 700; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em;">पंचायती राज • सहभागिता</span>
+            <h2 style="margin: 0 0 10px 0; font-size: 1.25rem; font-weight: 800; color: #0f172a; line-height: 1.35;">ग्राम सभा की बैठक के नियम</h2>
+            <p style="color: #475569; font-size: 0.94rem; line-height: 1.6; margin-bottom: 20px; flex-grow: 1;">एक साल में कितनी खुली बैठकें होनी चाहिए? और एक नागरिक के रूप में प्रधान व सचिव से सवाल पूछने का आपका क्या अधिकार है।</p>
+            <div style="padding-top: 14px; border-top: 1px solid #f1f5f9; display: flex; align-items: center; justify-content: space-between;">
+              <a href="./article-gramsabha.html" style="color: #9333ea; font-weight: 700; font-size: 0.95rem; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">पूरा लेख पढ़ें <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i></a>
+              <span style="font-size: 0.78rem; color: #94a3b8; font-weight: 600;">पंचायती अधिकार</span>
+            </div>
           </div>
-        </div>
+        </article>
 
-      
-        <!-- Article 5 -->
-        <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-          <div style="height: 160px; background: #b45309; display: flex; align-items: center; justify-content: center;">
-            <i data-lucide="wheat" style="color: white; width: 64px; height: 64px; opacity: 0.8;"></i>
+        <!-- Article 5: Ration -->
+        <article class="article-guide-card" style="background: white; border-radius: 16px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05); display: flex; flex-direction: column;">
+          <div style="background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%); padding: 22px 24px 16px; border-bottom: 1px solid #fde68a; display: flex; align-items: center; justify-content: space-between;">
+            <div style="width: 52px; height: 52px; border-radius: 14px; background: #d97706; color: white; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(217, 119, 6, 0.25);">
+              <i data-lucide="shopping-bag" style="width: 26px; height: 26px;"></i>
+            </div>
+            <span style="background: white; color: #92400e; padding: 4px 10px; border-radius: 999px; font-size: 0.78rem; font-weight: 700; border: 1px solid #fde68a; display: inline-flex; align-items: center; gap: 4px;">
+              <i data-lucide="clock" style="width: 12px; height: 12px;"></i> 4 मिनट पठन
+            </span>
           </div>
-          <div style="padding: 24px;">
-            <span style="background: #fef3c7; color: #92400e; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 12px; display: inline-block;">राशन / खाद्य सुरक्षा</span>
-            <h3 style="margin: 0 0 12px 0; font-size: 1.25rem; color: #0f172a;">राशन कार्ड: नया यूनिट कैसे जोड़ें?</h3>
-            <p style="color: #475569; font-size: 0.95rem; line-height: 1.5; margin-bottom: 16px;">परिवार के नए सदस्य का नाम राशन कार्ड में जोड़ने की ऑनलाइन और ऑफलाइन प्रक्रिया, और आवश्यक दस्तावेज।</p>
-            <a href="./article-ration.html" style="color: #0ea5e9; font-weight: bold; text-decoration: none; display: flex; align-items: center; gap: 4px;">पूरा लेख पढ़ें <i data-lucide="arrow-right" style="width: 16px;"></i></a>
+          <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1;">
+            <span style="color: #92400e; font-size: 0.8rem; font-weight: 700; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em;">खाद्य सुरक्षा • राशन</span>
+            <h2 style="margin: 0 0 10px 0; font-size: 1.25rem; font-weight: 800; color: #0f172a; line-height: 1.35;">राशन कार्ड: नया यूनिट कैसे जोड़ें?</h2>
+            <p style="color: #475569; font-size: 0.94rem; line-height: 1.6; margin-bottom: 20px; flex-grow: 1;">परिवार के नए सदस्य या नवविवाहिता का नाम राशन कार्ड में जोड़ने की ऑनलाइन और ऑफलाइन प्रक्रिया, और आवश्यक दस्तावेज।</p>
+            <div style="padding-top: 14px; border-top: 1px solid #f1f5f9; display: flex; align-items: center; justify-content: space-between;">
+              <a href="./article-ration.html" style="color: #d97706; font-weight: 700; font-size: 0.95rem; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">पूरा लेख पढ़ें <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i></a>
+              <span style="font-size: 0.78rem; color: #94a3b8; font-weight: 600;">जन-सुविधा</span>
+            </div>
           </div>
-        </div>
+        </article>
 
-        <!-- Article 6 -->
-        <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-          <div style="height: 160px; background: #0369a1; display: flex; align-items: center; justify-content: center;">
-            <i data-lucide="coins" style="color: white; width: 64px; height: 64px; opacity: 0.8;"></i>
+        <!-- Article 6: Pension -->
+        <article class="article-guide-card" style="background: white; border-radius: 16px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05); display: flex; flex-direction: column;">
+          <div style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); padding: 22px 24px 16px; border-bottom: 1px solid #bae6fd; display: flex; align-items: center; justify-content: space-between;">
+            <div style="width: 52px; height: 52px; border-radius: 14px; background: #0284c7; color: white; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(2, 132, 199, 0.25);">
+              <i data-lucide="coins" style="width: 26px; height: 26px;"></i>
+            </div>
+            <span style="background: white; color: #075985; padding: 4px 10px; border-radius: 999px; font-size: 0.78rem; font-weight: 700; border: 1px solid #bae6fd; display: inline-flex; align-items: center; gap: 4px;">
+              <i data-lucide="clock" style="width: 12px; height: 12px;"></i> 6 मिनट पठन
+            </span>
           </div>
-          <div style="padding: 24px;">
-            <span style="background: #e0f2fe; color: #075985; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 12px; display: inline-block;">सामाजिक सुरक्षा</span>
-            <h3 style="margin: 0 0 12px 0; font-size: 1.25rem; color: #0f172a;">UP वृद्धावस्था और विधवा पेंशन</h3>
-            <p style="color: #475569; font-size: 0.95rem; line-height: 1.5; margin-bottom: 16px;">समाज कल्याण विभाग की पेंशन योजनाओं के लिए ऑनलाइन आवेदन कैसे करें और ई-केवाईसी (E-KYC) कैसे पूरी करें।</p>
-            <a href="./article-pension.html" style="color: #0ea5e9; font-weight: bold; text-decoration: none; display: flex; align-items: center; gap: 4px;">पूरा लेख पढ़ें <i data-lucide="arrow-right" style="width: 16px;"></i></a>
+          <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1;">
+            <span style="color: #075985; font-size: 0.8rem; font-weight: 700; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em;">सामाजिक सुरक्षा • पेंशन</span>
+            <h2 style="margin: 0 0 10px 0; font-size: 1.25rem; font-weight: 800; color: #0f172a; line-height: 1.35;">वृद्धावस्था और विधवा पेंशन नियम</h2>
+            <p style="color: #475569; font-size: 0.94rem; line-height: 1.6; margin-bottom: 20px; flex-grow: 1;">समाज कल्याण विभाग की पेंशन योजनाओं के लिए ऑनलाइन आवेदन कैसे करें और ई-केवाईसी (E-KYC) आधार सीडिंग कैसे पूरी करें।</p>
+            <div style="padding-top: 14px; border-top: 1px solid #f1f5f9; display: flex; align-items: center; justify-content: space-between;">
+              <a href="./article-pension.html" style="color: #0284c7; font-weight: 700; font-size: 0.95rem; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">पूरा लेख पढ़ें <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i></a>
+              <span style="font-size: 0.78rem; color: #94a3b8; font-weight: 600;">कल्याण योजना</span>
+            </div>
           </div>
-        </div>
+        </article>
 
-        <!-- Article 7 -->
-        <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-          <div style="height: 160px; background: #15803d; display: flex; align-items: center; justify-content: center;">
-            <i data-lucide="tractor" style="color: white; width: 64px; height: 64px; opacity: 0.8;"></i>
+        <!-- Article 7: PM Kisan -->
+        <article class="article-guide-card" style="background: white; border-radius: 16px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05); display: flex; flex-direction: column;">
+          <div style="background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); padding: 22px 24px 16px; border-bottom: 1px solid #bbf7d0; display: flex; align-items: center; justify-content: space-between;">
+            <div style="width: 52px; height: 52px; border-radius: 14px; background: #15803d; color: white; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(21, 128, 61, 0.25);">
+              <i data-lucide="sprout" style="width: 26px; height: 26px;"></i>
+            </div>
+            <span style="background: white; color: #166534; padding: 4px 10px; border-radius: 999px; font-size: 0.78rem; font-weight: 700; border: 1px solid #bbf7d0; display: inline-flex; align-items: center; gap: 4px;">
+              <i data-lucide="clock" style="width: 12px; height: 12px;"></i> 5 मिनट पठन
+            </span>
           </div>
-          <div style="padding: 24px;">
-            <span style="background: #dcfce7; color: #166534; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 12px; display: inline-block;">कृषि कल्याण</span>
-            <h3 style="margin: 0 0 12px 0; font-size: 1.25rem; color: #0f172a;">PM किसान सम्मान निधि स्टेटस</h3>
-            <p style="color: #475569; font-size: 0.95rem; line-height: 1.5; margin-bottom: 16px;">रुकी हुई किश्त कैसे प्राप्त करें? आधार बैंक लिंकिंग और पीएम किसान पोर्टल पर अपना स्टेटस चेक करने का तरीका।</p>
-            <a href="./article-pmkisan.html" style="color: #0ea5e9; font-weight: bold; text-decoration: none; display: flex; align-items: center; gap: 4px;">पूरा लेख पढ़ें <i data-lucide="arrow-right" style="width: 16px;"></i></a>
+          <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1;">
+            <span style="color: #166534; font-size: 0.8rem; font-weight: 700; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em;">कृषि कल्याण • सम्मान निधि</span>
+            <h2 style="margin: 0 0 10px 0; font-size: 1.25rem; font-weight: 800; color: #0f172a; line-height: 1.35;">PM किसान सम्मान निधि स्टेटस</h2>
+            <p style="color: #475569; font-size: 0.94rem; line-height: 1.6; margin-bottom: 20px; flex-grow: 1;">रुकी हुई किश्त कैसे प्राप्त करें? आधार बैंक खाता NPCI डीबीटी लिंकिंग और पीएम किसान पोर्टल पर स्टेटस चेक करने का तरीका।</p>
+            <div style="padding-top: 14px; border-top: 1px solid #f1f5f9; display: flex; align-items: center; justify-content: space-between;">
+              <a href="./article-pmkisan.html" style="color: #15803d; font-weight: 700; font-size: 0.95rem; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">पूरा लेख पढ़ें <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i></a>
+              <span style="font-size: 0.78rem; color: #94a3b8; font-weight: 600;">कृषि सहायता</span>
+            </div>
           </div>
-        </div>
+        </article>
 
-        <!-- Article 8 -->
-        <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-          <div style="height: 160px; background: #be123c; display: flex; align-items: center; justify-content: center;">
-            <i data-lucide="map" style="color: white; width: 64px; height: 64px; opacity: 0.8;"></i>
+        <!-- Article 8: Varasat -->
+        <article class="article-guide-card" style="background: white; border-radius: 16px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05); display: flex; flex-direction: column;">
+          <div style="background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 100%); padding: 22px 24px 16px; border-bottom: 1px solid #fecdd3; display: flex; align-items: center; justify-content: space-between;">
+            <div style="width: 52px; height: 52px; border-radius: 14px; background: #e11d48; color: white; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(225, 29, 72, 0.25);">
+              <i data-lucide="map" style="width: 26px; height: 26px;"></i>
+            </div>
+            <span style="background: white; color: #9f1239; padding: 4px 10px; border-radius: 999px; font-size: 0.78rem; font-weight: 700; border: 1px solid #fecdd3; display: inline-flex; align-items: center; gap: 4px;">
+              <i data-lucide="clock" style="width: 12px; height: 12px;"></i> 8 मिनट पठन
+            </span>
           </div>
-          <div style="padding: 24px;">
-            <span style="background: #ffe4e6; color: #9f1239; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 12px; display: inline-block;">राजस्व विभाग</span>
-            <h3 style="margin: 0 0 12px 0; font-size: 1.25rem; color: #0f172a;">खतौनी और विरासत (Varasat) दर्ज करें</h3>
-            <p style="color: #475569; font-size: 0.95rem; line-height: 1.5; margin-bottom: 16px;">परिवार के मुखिया के निधन के बाद जमीन/खेत अपने नाम (उत्तराधिकार) कराने की ऑनलाइन प्रक्रिया (राजस्व परिषद)।</p>
-            <a href="./article-varasat.html" style="color: #0ea5e9; font-weight: bold; text-decoration: none; display: flex; align-items: center; gap: 4px;">पूरा लेख पढ़ें <i data-lucide="arrow-right" style="width: 16px;"></i></a>
+          <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1;">
+            <span style="color: #9f1239; font-size: 0.8rem; font-weight: 700; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em;">राजस्व विभाग • भू-अभिलेख</span>
+            <h2 style="margin: 0 0 10px 0; font-size: 1.25rem; font-weight: 800; color: #0f172a; line-height: 1.35;">खतौनी और विरासत (Varasat) दर्ज करें</h2>
+            <p style="color: #475569; font-size: 0.94rem; line-height: 1.6; margin-bottom: 20px; flex-grow: 1;">परिवार के मुखिया के निधन के बाद जमीन/खेत अपने नाम (उत्तराधिकार) कराने की ऑनलाइन प्रक्रिया (राजस्व परिषद धारा 33)।</p>
+            <div style="padding-top: 14px; border-top: 1px solid #f1f5f9; display: flex; align-items: center; justify-content: space-between;">
+              <a href="./article-varasat.html" style="color: #e11d48; font-weight: 700; font-size: 0.95rem; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">पूरा लेख पढ़ें <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i></a>
+              <span style="font-size: 0.78rem; color: #94a3b8; font-weight: 600;">भू-राजस्व</span>
+            </div>
           </div>
-        </div>
+        </article>
       </div>
     </div>
   </section>
@@ -286,36 +332,6 @@
   <script src="./js/main.js?v=20260917-r8"></script>
   <script src="./js/voter-search.js?v=2"></script>
   <script src="./js/grievance.js"></script>
-  <script>
-    /* ── Disclaimer Modal Logic ── */
-    (function () {
-      var overlay = document.getElementById('disclaimerOverlay');
-      
-      // Check if user already accepted in this session
-      if (sessionStorage.getItem('disclaimerAccepted') === 'true') {
-        overlay.classList.add('hidden');
-        return;
-      }
-      
-      var acceptBtn = document.getElementById('disclaimerAccept');
-      // Show modal; trap focus inside
-      acceptBtn.focus();
-      acceptBtn.addEventListener('click', function () {
-        overlay.classList.add('hidden');
-        document.body.style.overflow = '';
-        sessionStorage.setItem('disclaimerAccepted', 'true');
-      });
-      document.body.style.overflow = 'hidden';
-      // Close on overlay click (outside modal box)
-      overlay.addEventListener('click', function (e) {
-        if (e.target === overlay) {
-          overlay.classList.add('hidden');
-          document.body.style.overflow = '';
-          sessionStorage.setItem('disclaimerAccepted', 'true');
-        }
-      });
-    })();
-  </script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function() {

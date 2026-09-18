@@ -4,7 +4,7 @@
   "description": "जानो अपने अधिकार (Jaano Apne Adhikar) — A private civic awareness and legal literacy platform for citizens.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test"
   },
   "repository": {
     "type": "git",

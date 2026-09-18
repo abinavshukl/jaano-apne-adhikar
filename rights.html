@@ -9,7 +9,7 @@
   <title>नागरिक अधिकार और विधिक मार्गदर्शिका — जानो अपने अधिकार</title>
   <meta property="og:title" content="नागरिक अधिकार और विधिक मार्गदर्शिका — जानो अपने अधिकार">
   <meta property="og:description" content="पंचायती राज, RTI, महिला अधिकार, पुलिस शिकायत और कानूनी विकल्पों की व्यावहारिक जानकारी।">
-  <link rel="stylesheet" href="./css/styles.css?v=20260917-r12" />
+  <link rel="stylesheet" href="./css/styles.css?v=20260918-r21" />
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
 
   <link rel="canonical" href="https://abinavshukl.github.io/jaano-apne-adhikar/rights.html" />
@@ -31,9 +31,6 @@
 
   <!-- ════ SITE HEADER ════ -->
   <header class="site-header" role="banner">
-      <div class="site-disclaimer">
-      विधिक अस्वीकरण: यह स्वतंत्र, गैर-सरकारी जन-जागरूकता पहल है। कानूनी सलाह या सेवा की गारंटी नहीं है।
-    </div>
     <div class="container">
       <div class="header-inner">
         <a href="./index.html" class="site-logo" aria-label="एक निजी पहल — होम पेज">
@@ -67,24 +64,35 @@
 
   <!-- ── Nav Overlay (for closing mobile menu on outside click) ── -->
   <div id="navOverlay" class="nav-overlay" aria-hidden="true"></div>
-  <nav class="breadcrumb container" aria-label="Breadcrumb">
-    <a href="./index.html">होम</a>
-    <span class="breadcrumb__sep" aria-hidden="true">›</span>
-    <span class="breadcrumb__current" aria-current="page">नागरिक अधिकार</span>
-  </nav>
+  
 
 
   <main id="main-content">
 
-    <!-- ════ PAGE HEADER ════ -->
-    <section class="page-header" aria-labelledby="rightsPageTitle">
-      <div class="container">
-        <p class="page-header__kicker">नागरिक अधिकार / Citizen Rights & Legal Redressal</p>
-        <h1 id="rightsPageTitle" class="page-header__title"><i data-lucide="scale" class="inline-icon"></i> नागरिक अधिकार एवं कानूनी मार्गदर्शिका</h1>
-        <p class="page-header__sub">Rights, Templates & Direct Action Links for All 4,443 Citizens</p>
-        <p style="margin-top: 12px; color: var(--color-neutral-mid); font-size: 0.95rem; line-height: 1.6; max-width: 920px; margin-left: auto; margin-right: auto;">
-          <strong>शैक्षिक सूचना:</strong> यह पेज सामान्य जागरूकता के लिए है; यह कानूनी सलाह या आधिकारिक सरकारी सेवा नहीं है। किसी भी कदम से पहले संबंधित विभाग, पोर्टल या योग्य विधिक सहायता से पुष्टि करें।
-        </p>
+    <!-- ════ UNIFIED SUBPAGE HERO BANNER (Full-Bleed Panoramic - Zero Boxes) ════ -->
+    <section class="sub-hero" aria-labelledby="rightsPageTitle">
+      <div class="sub-hero__backdrop" aria-hidden="true">
+        <img src="./assets/hero_rights_justice.jpg" alt="" class="sub-hero__backdrop-img" loading="eager" />
+        <div class="sub-hero__scrim"></div>
+      </div>
+      <div class="container sub-hero__container">
+        <div class="sub-hero__content">
+          <nav class="sub-hero__breadcrumb" aria-label="Breadcrumb">
+            <a href="./index.html"><i data-lucide="home" class="inline-icon" style="width:12px;height:12px;"></i> होम</a>
+            <span class="sub-hero__breadcrumb-sep" aria-hidden="true">›</span>
+            <span class="sub-hero__breadcrumb-current" aria-current="page">नागरिक अधिकार</span>
+          </nav>
+
+          <span class="sub-hero__badge"><i data-lucide="scale" class="inline-icon" style="width:15px;height:15px;color:var(--color-primary);"></i> नागरिक अधिकार • Legal Literacy</span>
+          <h1 id="rightsPageTitle" class="sub-hero__title">नागरिक अधिकार एवं कानूनी मार्गदर्शिका</h1>
+          <p class="sub-hero__subtitle">सरल हिंदी में अपने संवैधानिक अधिकार, पुलिस व FIR नियम, RTI और सरकारी योजनाओं की विधिक प्रक्रियाएं समझें। बिना किसी दलाल के अपने अधिकार जानें और सही कदम उठाएं।</p>
+          <div class="sub-hero__meta">
+            <a href="#emergencyAction" class="sub-hero__chip"><i data-lucide="zap" class="inline-icon" style="width:14px;height:14px;"></i> त्वरित सहायता</a>
+            <a href="#fundamentalRights" class="sub-hero__chip"><i data-lucide="book-open" class="inline-icon" style="width:14px;height:14px;"></i> मौलिक अधिकार</a>
+            <a href="#highPriorityRights" class="sub-hero__chip"><i data-lucide="shield" class="inline-icon" style="width:14px;height:14px;"></i> पुलिस व FIR</a>
+            <span class="sub-hero__tag"><i data-lucide="check-circle" class="inline-icon" style="width:14px;height:14px;color:#059669;"></i> 100% निःशुल्क</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -112,18 +120,24 @@
           </div>
         </div>
 
-        <div class="action-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
-          <a href="https://uppolice.gov.in/article/en/cctns-citizen-services" target="_blank" rel="noopener noreferrer" class="btn btn--secondary btn--full" style="background:#1e3a8a;color:#fff;border-color:#1e3a8a;padding:16px;">
-            <i data-lucide="shield" class="inline-icon"></i> UP Police Citizen Portal (e-FIR) ↗
+        <div class="action-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px;">
+          <a href="tel:112" class="btn btn--full" style="padding:14px; background:#2563eb; color:#ffffff; font-weight:700; border-radius:10px; display:inline-flex; align-items:center; justify-content:center; gap:8px;">
+            <i data-lucide="phone" style="width:16px;height:16px;"></i> आपातकाल 112 (पुलिस)
           </a>
-          <a href="https://jansunwai.up.nic.in" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--full" style="padding:16px;">
-            <i data-lucide="clipboard-list" class="inline-icon"></i> CM जनसुनवाई पोर्टल ↗
+          <a href="tel:1090" class="btn btn--full" style="padding:14px; background:#be185d; color:#ffffff; font-weight:700; border-radius:10px; display:inline-flex; align-items:center; justify-content:center; gap:8px;">
+            <i data-lucide="phone" style="width:16px;height:16px;"></i> महिला पावर लाइन 1090
           </a>
-          <a href="tel:1090" class="btn btn--outline btn--full" style="padding:16px;border-color:#ec4899;color:#be185d;">
-            <i data-lucide="phone" class="inline-icon"></i> महिला पावर लाइन 1090
+          <a href="tel:15100" class="btn btn--full" style="padding:14px; background:#047857; color:#ffffff; font-weight:700; border-radius:10px; display:inline-flex; align-items:center; justify-content:center; gap:8px;">
+            <i data-lucide="phone" style="width:16px;height:16px;"></i> मुफ्त वकील (DLSA) 15100
           </a>
-          <a href="tel:1064" class="btn btn--outline btn--full" style="padding:16px;border-color:#f59e0b;color:#b45309;">
-            <i data-lucide="phone" class="inline-icon"></i> भ्रष्टाचार निवारण (ACO) 1064
+          <a href="tel:1064" class="btn btn--full" style="padding:14px; background:#b45309; color:#ffffff; font-weight:700; border-radius:10px; display:inline-flex; align-items:center; justify-content:center; gap:8px;">
+            <i data-lucide="phone" style="width:16px;height:16px;"></i> एंटी-करप्शन 1064
+          </a>
+          <a href="https://jansunwai.up.nic.in" target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--full" style="padding:14px; border-color:#0284c7; color:#0369a1; font-weight:700; border-radius:10px; display:inline-flex; align-items:center; justify-content:center; gap:8px;">
+            <i data-lucide="clipboard-list" style="width:16px;height:16px;"></i> CM जनसुनवाई पोर्टल ↗
+          </a>
+          <a href="https://uppolice.gov.in/article/en/cctns-citizen-services" target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--full" style="padding:14px; border-color:#1e3a8a; color:#1e3a8a; font-weight:700; border-radius:10px; display:inline-flex; align-items:center; justify-content:center; gap:8px;">
+            <i data-lucide="shield" style="width:16px;height:16px;"></i> UP Police e-FIR पोर्टल ↗
           </a>
         </div>
       </div>
@@ -134,15 +148,15 @@
       <div class="container">
         <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 32px; box-shadow: var(--shadow-sm);">
           <h2 style="font-size:1.6rem; font-weight:800; margin-bottom: 24px; display:flex; align-items:center; gap:12px; color: var(--color-primary);">
-            <i data-lucide="book-open" class="inline-icon" style="color: #38bdf8;"></i> आपके संवैधानिक अधिकार (Fundamental Rights)
+            <i data-lucide="book-open" class="inline-icon" style="color: #0369a1;"></i> आपके संवैधानिक अधिकार (Fundamental Rights)
           </h2>
           <p style="font-size: 1.05rem; color: var(--color-neutral-mid); margin-bottom: 24px;">भारत के संविधान द्वारा हर नागरिक (चाहे वह किसी भी जाति, धर्म या वर्ग का हो) को कुछ मौलिक अधिकार दिए गए हैं, जिन्हें कोई भी अधिकारी या सरकार नहीं छीन सकती।</p>
           
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;">
             
             <!-- Right 1 -->
-            <details style="background: #f8fafc; border: 1px solid var(--color-border); border-radius: var(--radius-md); border-left: 4px solid #38bdf8; padding: 16px;">
-              <summary style="font-size: 1.1rem; font-weight: 700; color: #38bdf8; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">
+            <details style="background: #f8fafc; border: 1px solid var(--color-border); border-radius: var(--radius-md); border-left: 4px solid #0284c7; padding: 16px;">
+              <summary style="font-size: 1.1rem; font-weight: 700; color: #0369a1; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">
                 1. समानता का अधिकार (Right to Equality)
                 <i data-lucide="chevron-down" style="width:18px;height:18px;"></i>
               </summary>
@@ -160,8 +174,8 @@
             </details>
             
             <!-- Right 2 -->
-            <details style="background: #f8fafc; border: 1px solid var(--color-border); border-radius: var(--radius-md); border-left: 4px solid #f472b6; padding: 16px;">
-              <summary style="font-size: 1.1rem; font-weight: 700; color: #f472b6; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">
+            <details style="background: #f8fafc; border: 1px solid var(--color-border); border-radius: var(--radius-md); border-left: 4px solid #db2777; padding: 16px;">
+              <summary style="font-size: 1.1rem; font-weight: 700; color: #be185d; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">
                 2. स्वतंत्रता का अधिकार (Right to Freedom)
                 <i data-lucide="chevron-down" style="width:18px;height:18px;"></i>
               </summary>
@@ -179,8 +193,8 @@
             </details>
 
             <!-- Right 3 -->
-            <details style="background: #f8fafc; border: 1px solid var(--color-border); border-radius: var(--radius-md); border-left: 4px solid #10b981; padding: 16px;">
-              <summary style="font-size: 1.1rem; font-weight: 700; color: #10b981; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">
+            <details style="background: #f8fafc; border: 1px solid var(--color-border); border-radius: var(--radius-md); border-left: 4px solid #059669; padding: 16px;">
+              <summary style="font-size: 1.1rem; font-weight: 700; color: #047857; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">
                 3. जीवन और व्यक्तिगत स्वतंत्रता (Right to Life)
                 <i data-lucide="chevron-down" style="width:18px;height:18px;"></i>
               </summary>
@@ -198,8 +212,8 @@
             </details>
 
             <!-- Right 4 -->
-            <details style="background: #f8fafc; border: 1px solid var(--color-border); border-radius: var(--radius-md); border-left: 4px solid #fbbf24; padding: 16px;">
-              <summary style="font-size: 1.1rem; font-weight: 700; color: #fbbf24; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">
+            <details style="background: #f8fafc; border: 1px solid var(--color-border); border-radius: var(--radius-md); border-left: 4px solid #d97706; padding: 16px;">
+              <summary style="font-size: 1.1rem; font-weight: 700; color: #b45309; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">
                 4. शोषण के विरुद्ध अधिकार (Against Exploitation)
                 <i data-lucide="chevron-down" style="width:18px;height:18px;"></i>
               </summary>
@@ -217,8 +231,8 @@
             </details>
             
             <!-- Right 5 -->
-            <details style="background: #f8fafc; border: 1px solid var(--color-border); border-radius: var(--radius-md); border-left: 4px solid #a78bfa; padding: 16px; grid-column: 1 / -1;">
-              <summary style="font-size: 1.1rem; font-weight: 700; color: #a78bfa; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">
+            <details style="background: #f8fafc; border: 1px solid var(--color-border); border-radius: var(--radius-md); border-left: 4px solid #7c3aed; padding: 16px; grid-column: 1 / -1;">
+              <summary style="font-size: 1.1rem; font-weight: 700; color: #6d28d9; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">
                 5. संवैधानिक उपचारों का अधिकार (Constitutional Remedies)
                 <i data-lucide="chevron-down" style="width:18px;height:18px;"></i>
               </summary>
@@ -594,7 +608,7 @@
             </div>
           </article>
 
-          <article class="right-card" style="grid-column: 1 / -1; border-left-color: #10b981;">
+          <article class="right-card" style="grid-column: 1 / -1; border-left-color: #047857;">
             <h3 class="right-card__title" style="color: #047857;">
               <i data-lucide="hammer" class="inline-icon"></i> MNREGA जॉब कार्ड कैसे बनवाएँ?
             </h3>
