@@ -783,13 +783,13 @@ p  { margin-bottom: 0.75rem; }
 /* Mobile Adjustments for .sub-hero (< 860px) */
 @media (max-width: 860px) {
   .sub-hero {
-    min-height: 360px;
+    min-height: 310px;
     align-items: flex-start;
     padding: 0;
   }
   .sub-hero__container {
-    padding-top: 44px;
-    padding-bottom: 28px;
+    padding-top: 28px;
+    padding-bottom: 20px;
   }
   .sub-hero__backdrop-img {
     object-position: 92% center;
