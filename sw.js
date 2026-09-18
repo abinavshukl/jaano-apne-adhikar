@@ -1,4 +1,4 @@
-const CACHE_NAME = 'adhikar-cache-v20260918-r21';
+const CACHE_NAME = 'adhikar-cache-v20260918-r22';
 const urlsToCache = [
   './',
   './index.html',
@@ -23,11 +23,13 @@ const urlsToCache = [
   './article-ration.html',
   './article-rti.html',
   './article-varasat.html',
-  './css/styles.css?v=20260918-r21',
+  './css/styles.css?v=20260918-r22',
   './js/main.js?v=20260918-r1',
   './js/config.js',
   './js/drafter.js',
   './data/schemes.json',
+  './data/search-index.json',
+  './js/search.js?v=20260918-r22',
   './assets/hero_village_panoramic.jpg',
   './assets/hero_rights_justice.jpg',
   './assets/hero_schemes_farmer.jpg',

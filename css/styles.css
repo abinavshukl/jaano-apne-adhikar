@@ -407,6 +407,7 @@ p  { margin-bottom: 0.75rem; }
 
 /* Search Bar (Benchmark Matching) */
 .hero__search-box {
+  position: relative;
   display: flex;
   align-items: center;
   background: #ffffff;
@@ -4102,6 +4103,289 @@ select, input, textarea {
   font-size: 0.88rem;
   color: #334155;
   line-height: 1.5;
+}
+
+
+/* ════ UNIVERSAL MULTI-LINGUAL SEARCH & DROPDOWN ════ */
+.search-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 16px;
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.16), 0 4px 12px rgba(15, 23, 42, 0.08);
+  overflow: hidden;
+  z-index: 1000;
+  max-height: 420px;
+  overflow-y: auto;
+  display: none;
+  text-align: left;
+}
+
+.search-dropdown.is-open {
+  display: block;
+  animation: searchDropdownFade 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes searchDropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.search-dropdown__item {
+  display: block;
+  padding: 12px 18px;
+  border-bottom: 1px solid #f1f5f9;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.15s ease, border-left-color 0.15s ease;
+  cursor: pointer;
+  border-left: 3px solid transparent;
+}
+
+.search-dropdown__item:last-of-type {
+  border-bottom: none;
+}
+
+.search-dropdown__item:hover,
+.search-dropdown__item.is-selected {
+  background: #f0fdf4;
+  border-left-color: #16a34a;
+}
+
+.search-dropdown__item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.search-dropdown__item-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.35;
+}
+
+.search-dropdown__item:hover .search-dropdown__item-title,
+.search-dropdown__item.is-selected .search-dropdown__item-title {
+  color: #15803d;
+}
+
+.search-dropdown__badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+  background: #e0f2fe;
+  color: #0369a1;
+  flex-shrink: 0;
+}
+
+.search-dropdown__badge--schemes { background: #dcfce7; color: #166534; }
+.search-dropdown__badge--rights { background: #fee2e2; color: #991b1b; }
+.search-dropdown__badge--land { background: #fef3c7; color: #92400e; }
+.search-dropdown__badge--helpline { background: #fee2e2; color: #dc2626; }
+.search-dropdown__badge--templates { background: #f3e8ff; color: #6b21a8; }
+.search-dropdown__badge--articles { background: #e0f2fe; color: #0369a1; }
+.search-dropdown__badge--transparency { background: #d1fae5; color: #065f46; }
+.search-dropdown__badge--fraud { background: #fee2e2; color: #991b1b; }
+.search-dropdown__badge--drafter { background: #ccfbf1; color: #0f766e; }
+.search-dropdown__badge--remedy { background: #fef9c3; color: #854d0e; }
+.search-dropdown__badge--contacts { background: #e0e7ff; color: #3730a3; }
+
+.search-dropdown__item-snippet {
+  font-size: 0.82rem;
+  color: #64748b;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.search-dropdown__highlight {
+  background: #fef08a;
+  color: #854d0e;
+  padding: 0 2px;
+  border-radius: 2px;
+  font-weight: 700;
+}
+
+.search-dropdown__empty {
+  padding: 24px 16px;
+  text-align: center;
+  color: #64748b;
+  font-size: 0.92rem;
+}
+
+.search-dropdown__footer {
+  padding: 10px 16px;
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.search-dropdown__footer-btn {
+  background: none;
+  border: none;
+  color: #1d4ed8;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+  font-size: 0.8rem;
+}
+
+.search-dropdown__footer-btn:hover {
+  text-decoration: underline;
+}
+
+/* ── Search Results Page (articles.html?q=...) ── */
+.search-results-section {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.search-results-hero {
+  background: #ffffff;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+}
+
+.search-results-hero__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.search-results-hero__query-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-results-hero__query-tag {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1d4ed8;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 1.05rem;
+}
+
+.search-results-hero__count {
+  color: #475569;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.search-results-hero__clear {
+  color: #ef4444;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: #fef2f2;
+}
+
+.search-results-hero__clear:hover {
+  background: #fee2e2;
+}
+
+.search-results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 18px;
+}
+
+.search-result-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease;
+}
+
+.search-result-card:hover {
+  border-color: #16a34a;
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(22, 163, 74, 0.1);
+  transform: translateY(-2px);
+}
+
+.search-result-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.search-result-card__title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 8px 0;
+  line-height: 1.35;
+}
+
+.search-result-card__desc {
+  font-size: 0.92rem;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.search-result-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.92rem;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.search-result-card__cta:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .search-dropdown {
+    max-height: 340px;
+  }
+  .search-dropdown__item {
+    padding: 10px 14px;
+  }
+  .search-results-hero {
+    padding: 16px;
+  }
 }
 
 /* ── Reduced Motion (final guard) ────────────────────────────────── */

@@ -1,0 +1,425 @@
+[
+  {
+    "id": "pm-kisan",
+    "title": "PM-किसान सम्मान निधि योजना",
+    "category": "योजना (Scheme)",
+    "categoryKey": "schemes",
+    "url": "./schemes.html#pm-kisan",
+    "snippet": "किसानों को सालाना ₹6,000 (तीन किस्तों में)। e-KYC, भूलेख अंकन व पात्रता चेक करें।",
+    "keywords": ["pm kisan", "pm-kisan", "pmkisan", "किसान", "सम्मान निधि", "samman nidhi", "kisan", "kheti", "farming", "krishi", "agriculture", "6000", "ekyc", "e-kyc", "land seeding", "1800-115-526"]
+  },
+  {
+    "id": "pm-awas",
+    "title": "PM आवास योजना (ग्रामीण)",
+    "category": "योजना (Scheme)",
+    "categoryKey": "schemes",
+    "url": "./schemes.html#pm-awas",
+    "snippet": "पक्का घर बनाने के लिए ₹1.20 लाख की सरकारी सहायता (3 किस्तों में)। बेघर व कच्चे मकान वाले पात्र।",
+    "keywords": ["pm awas", "pmay", "pmayg", "आवास", "घर", "makan", "ghar", "colony", "कालोनी", "bpl", "secc", "housing", "1.20 lakh", "gram pradhan", "bdo"]
+  },
+  {
+    "id": "ayushman",
+    "title": "आयुष्मान भारत योजना (गोल्डन कार्ड)",
+    "category": "योजना (Scheme)",
+    "categoryKey": "schemes",
+    "url": "./schemes.html#ayushman",
+    "snippet": "प्रतिवर्ष प्रति परिवार ₹5 लाख तक का कैशलेस मुफ्त इलाज। सरकारी व पैनल अस्पतालों में मान्य।",
+    "keywords": ["ayushman", "bharat", "आयुष्मान", "golden card", "गोल्डन कार्ड", "swasthya", "health", "ilaj", "इलाज", "hospital", "अस्पताल", "bima", "14555", "5 lakh"]
+  },
+  {
+    "id": "ujjwala",
+    "title": "PM उज्ज्वला योजना (मुफ्त गैस कनेक्शन)",
+    "category": "योजना (Scheme)",
+    "categoryKey": "schemes",
+    "url": "./schemes.html#ujjwala",
+    "snippet": "BPL व निर्धन परिवारों की महिलाओं के नाम मुफ्त LPG गैस कनेक्शन व पहला भरा हुआ सिलेंडर।",
+    "keywords": ["ujjwala", "gas", "उज्ज्वला", "गैस", "cylinder", "सिलेंडर", "chulha", "lpg", "women", "mahila", "1906", "free gas"]
+  },
+  {
+    "id": "kanya-sumangala",
+    "title": "मुख्यमंत्री कन्या सुमंगला योजना",
+    "category": "योजना (Scheme)",
+    "categoryKey": "schemes",
+    "url": "./schemes.html#kanya",
+    "snippet": "बेटी के जन्म से उच्च शिक्षा तक कुल ₹15,000 की 6 चरणों में वित्तीय सहायता। UP निवासियों हेतु।",
+    "keywords": ["kanya sumangala", "sumangla", "कन्या सुमंगला", "beti", "ladki", "girl child", "education", "15000", "mksy", "dswo"]
+  },
+  {
+    "id": "shramik-card",
+    "title": "श्रमिक कार्ड व लेबर पंजीयन (BOCW)",
+    "category": "योजना (Scheme)",
+    "categoryKey": "schemes",
+    "url": "./schemes.html#shramik",
+    "snippet": "मज़दूरों हेतु 16 सरकारी योजनाओं का लाभ, कन्या विवाह, औज़ार व साइकिल सहायता। 90 दिन कार्य प्रमाण अनिवार्य।",
+    "keywords": ["shramik", "labour card", "श्रमिक", "मजदूर", "majdoor", "bocw", "upbocw", "construction", "shram vibhag", "cycle", "kanya vivah"]
+  },
+  {
+    "id": "ration-card",
+    "title": "राशन कार्ड (पात्र गृहस्थी व अंत्योदय)",
+    "category": "राशन व खाद्य (Ration)",
+    "categoryKey": "entitlement",
+    "url": "./article-ration.html",
+    "snippet": "पात्र गृहस्थी को 5 किग्रा/यूनिट एवं अंत्योदय को 35 किग्रा राशन मुफ्त। कोटेदार कम राशन दे तो 1967 पर शिकायत करें।",
+    "keywords": ["ration", "rashan", "राशन", "kotedar", "कोटेदार", "quota", "aay", "antyodaya", "phh", "nfsa", "khadya", "food", "dealer", "1967", "supply officer"]
+  },
+  {
+    "id": "pension-guide",
+    "title": "पेंशन योजना (वृद्धावस्था, विधवा, दिव्यांग)",
+    "category": "पेंशन (Pension)",
+    "categoryKey": "entitlement",
+    "url": "./article-pension.html",
+    "snippet": "₹1,000 प्रति माह पेंशन बहाली, आधार e-KYC, बैंक NPCI लिंकिंग और रुकी पेंशन पुनः चालू कराने की प्रक्रिया।",
+    "keywords": ["pension", "पेंशन", "vridha", "vidhwa", "divyang", "viklang", "बुजुर्ग", "विधवा", "विकलांग", "sspy", "dswo", "bdo", "npci", "ruki pension"]
+  },
+  {
+    "id": "mgnrega-guide",
+    "title": "मनरेगा (MGNREGA) 100 दिन रोज़गार व जॉब कार्ड",
+    "category": "रोज़गार (Employment)",
+    "categoryKey": "remedy",
+    "url": "./problem-to-remedy.html#wage",
+    "snippet": "हर ग्रामीण परिवार का 100 दिन काम का कानूनी हक। 15 दिन में काम न मिलने पर बेरोजगारी भत्ता का दावा करें।",
+    "keywords": ["mgnrega", "nrega", "manrega", "मनरेगा", "नरेगा", "job card", "जॉब कार्ड", "mazdoori", "wage", "rozgar", "रोजगार", "grs", "bdo", "unemployment allowance"]
+  },
+  {
+    "id": "khatauni-guide",
+    "title": "खतौनी व भूलेख ज़मीन रिकॉर्ड (Khatauni / Bhulekh)",
+    "category": "राजस्व व ज़मीन (Land)",
+    "categoryKey": "land",
+    "url": "./land-revenue-guide.html",
+    "snippet": "खतौनी के कॉलम समझना, नाम जांचना, upbhulekh.gov.in से मुफ्त नकल निकालना और अशुद्धियां सुधारना।",
+    "keywords": ["khatauni", "khatoni", "khasra", "खतौनी", "खसरा", "bhulekh", "भूलेख", "nakal", "नकल", "jamin", "zameen", "ज़मीन", "land", "lekhpal", "लेखपाल", "tehsil"]
+  },
+  {
+    "id": "varasat-guide",
+    "title": "वरासत (उत्तराधिकार) दर्ज कराने का नियम",
+    "category": "राजस्व व ज़मीन (Land)",
+    "categoryKey": "land",
+    "url": "./article-varasat.html",
+    "snippet": "घर के मुखिया की मृत्यु के बाद कानूनी वारिसों के नाम खतौनी में निःशुल्क दर्ज कराना (धारा 33 UP राजस्व संहिता)।",
+    "keywords": ["varasat", "virasat", "वरासत", "विरासत", "uttradhikar", "वारिस", "waris", "death", "mutation", "namantaran", "नामांतरण", "lekhpal", "free", "muft", "fees zero"]
+  },
+  {
+    "id": "paimaish-guide",
+    "title": "पैमाइश (खेत की नाप) व मेड़बंदी (धारा 24)",
+    "category": "राजस्व व ज़मीन (Land)",
+    "categoryKey": "land",
+    "url": "./land-revenue-guide.html",
+    "snippet": "पड़ोसी खेत विवाद या मेड़ काटने पर SDM को सरकारी पैमाइश का आवेदन। निर्धारित चालान रसीद व प्रक्रिया।",
+    "keywords": ["paimaish", "pamaish", "पैमाइश", "naap", "नाप", "medbandi", "मेड़", "boundary", "dhara 24", "धारा 24", "sdm", "kanoongo", "revenue code", "vivad"]
+  },
+  {
+    "id": "land-encroachment",
+    "title": "अवैध कब्ज़ा व ग्राम सभा भूमि बेदखली (धारा 67/134)",
+    "category": "राजस्व व ज़मीन (Land)",
+    "categoryKey": "land",
+    "url": "./rights.html#landRights",
+    "snippet": "पुश्तैनी भूमि, चरागाह, तालाब या खलिहान पर दबंगों के अवैध कब्जे के विरुद्ध SDM कोर्ट में बेदखली का मुकदमा।",
+    "keywords": ["kabza", "avadh kabza", "कब्जा", "अवैध कब्जा", "encroachment", "talab", "charagah", "gram sabha land", "dhara 67", "dhara 134", "sdm court", "tehsildar"]
+  },
+  {
+    "id": "fir-guide",
+    "title": "एफआईआर (FIR) कैसे दर्ज कराएं व ज़ीरो एफआईआर",
+    "category": "कानूनी अधिकार (Legal Right)",
+    "categoryKey": "rights",
+    "url": "./article-fir.html",
+    "snippet": "थाना FIR लिखने से मना करे तो BNSS धारा 173(4) के तहत SP को रजिस्टर्ड डाक भेजें व मजिस्ट्रेट आदेश लें।",
+    "keywords": ["fir", "police", "एफआईआर", "थाना", "thana", "daroga", "sp", "police adhikar", "zero fir", "bnss 173", "lalita kumari", "complaint", "tahrir", "तहरीर"]
+  },
+  {
+    "id": "arrest-rights",
+    "title": "गिरफ़्तारी के समय कानूनी अधिकार (Arrest Rules)",
+    "category": "कानूनी अधिकार (Legal Right)",
+    "categoryKey": "rights",
+    "url": "./rights.html#highPriorityRights",
+    "snippet": "24 घंटे में मजिस्ट्रेट पेशी, परिजनों को तुरंत सूचना, महिलाओं की सूर्यास्त बाद गिरफ्तारी पर रोक (BNSS)।",
+    "keywords": ["arrest", "giraftari", "गिरफ्तारी", "police custody", "remand", "hiraasat", "women arrest", "24 ghante", "24 hours", "magistrate", "mlc", "police brutality"]
+  },
+  {
+    "id": "police-misconduct",
+    "title": "पुलिस दुर्व्यवहार या मारपीट — शिकायत व MLC नियम",
+    "category": "कानूनी अधिकार (Legal Right)",
+    "categoryKey": "rights",
+    "url": "./rights.html#highPriorityRights",
+    "snippet": "मारपीट होने पर पहले CHC अस्पताल में MLC बनवाएं। SP, PCA और मानवाधिकार आयोग (NHRC) में शिकायत।",
+    "keywords": ["police marpeet", "brutality", "police complaint", "mlc", "medico legal", "marpeet", "pca", "nhrc", "shrc", "112", "daroga complaint"]
+  },
+  {
+    "id": "women-rights",
+    "title": "महिला अधिकार (घरेलू हिंसा, सम्पति व सुरक्षा)",
+    "category": "महिला सुरक्षा (Women Rights)",
+    "categoryKey": "rights",
+    "url": "./rights.html#highPriorityRights",
+    "snippet": "घरेलू हिंसा पर BNS धारा 85, 1090 वूमेन हेल्पलाइन, पैतृक सम्पति में समान हक और मनरेगा में 33% आरक्षण।",
+    "keywords": ["women", "mahila", "महिला", "domestic violence", "gharelu hinsa", "1090", "power line", "dahej", "dowry", "498a", "bns 85", "property right", "beti ka hak"]
+  },
+  {
+    "id": "senior-citizen-rights",
+    "title": "वरिष्ठ नागरिक भरण-पोषण कानून (Senior Citizens)",
+    "category": "बुजुर्ग अधिकार (Senior Citizens)",
+    "categoryKey": "rights",
+    "url": "./rights.html#highPriorityRights",
+    "snippet": "संतान द्वारा देखभाल न करने पर SDM ट्रिब्यूनल में भरण-पोषण भत्ता व सम्पति बेदखली आदेश का विधिक अधिकार।",
+    "keywords": ["senior citizen", "vridha", "buzurg", "माता पिता", "maintenance act", "gujara bhatta", "sdm tribunal", "pension", "bharan poshan"]
+  },
+  {
+    "id": "rti-guide",
+    "title": "RTI (सूचना का अधिकार अधिनियम 2005)",
+    "category": "मार्गदर्शिका (Guide)",
+    "categoryKey": "articles",
+    "url": "./article-rti.html",
+    "snippet": "सरकारी बजट, ग्राम विकास खर्च व योजनाओं का सच जानने हेतु ₹10 में सूचना मांगने की पूरी प्रक्रिया।",
+    "keywords": ["rti", "suchna ka adhikar", "सूचना का अधिकार", "right to information", "pradhan kharch", "budget", "muster roll", "pio", "first appeal", "30 din", "10 rupaye"]
+  },
+  {
+    "id": "gramsabha-guide",
+    "title": "ग्राम सभा की बैठकें व बजट जांच (26 Jan / 15 Aug)",
+    "category": "मार्गदर्शिका (Guide)",
+    "categoryKey": "articles",
+    "url": "./article-gramsabha.html",
+    "snippet": "ग्राम सभा की खुली बैठक में भाग लेना, आवास/पेंशन लाभार्थियों का सत्यापन व प्रधान के खर्चों की जांच का अधिकार।",
+    "keywords": ["gram sabha", "gram pradhan", "ग्राम सभा", "प्रधान", "khuli baithak", "26 january", "15 august", "panchayat", "bdo", "panchayat secretary", "voter"]
+  },
+  {
+    "id": "drafter-tool",
+    "title": "ऑनलाइन शिकायत व प्रार्थना पत्र जनरेटर (Drafter)",
+    "category": "टूल व मसौदा (Drafter Tool)",
+    "categoryKey": "drafter",
+    "url": "./drafter.html",
+    "snippet": "RTI, FIR, वरासत, राशन, पैमाइश और जनसुनवाई के लिए बिना वकील सटीक कानूनी भाषा में प्रार्थना पत्र तैयार करें।",
+    "keywords": ["drafter", "letter generator", "application maker", "prathna patra", "प्रार्थना पत्र", "draft", "shikayat", "masoda", "generator", "print"]
+  },
+  {
+    "id": "template-rti",
+    "title": "RTI आवेदन प्रारूप (ग्राम पंचायत / BDO स्तर)",
+    "category": "दस्तावेज़ प्रारूप (Template)",
+    "categoryKey": "templates",
+    "url": "./templates.html",
+    "snippet": "ग्राम पंचायत और ब्लॉक में विकास कार्यों, मस्टर रोल व आवास सूची की जानकारी मांगने का मानक प्रार्थना पत्र।",
+    "keywords": ["rti format", "rti template", "rti application", "rti form", "सूचना आवेदन", "copy rti", "bdo rti"]
+  },
+  {
+    "id": "template-mgnrega",
+    "title": "मनरेगा मज़दूरी भुगतान हेतु प्रार्थना पत्र प्रारूप",
+    "category": "दस्तावेज़ प्रारूप (Template)",
+    "categoryKey": "templates",
+    "url": "./templates.html",
+    "snippet": "15 दिन से अधिक मजदूरी न मिलने पर खंड विकास अधिकारी (BDO) को बेरोजगारी भत्ते सहित आवेदन पत्र।",
+    "keywords": ["mgnrega template", "nrega application", "wage complaint format", "manrega prathna patra", "मजदूरी आवेदन"]
+  },
+  {
+    "id": "template-varasat",
+    "title": "खतौनी / वरासत आपत्ति (Mutation Objection) प्रारूप",
+    "category": "दस्तावेज़ प्रारूप (Template)",
+    "categoryKey": "templates",
+    "url": "./templates.html",
+    "snippet": "पिता की मृत्यु के बाद खतौनी में नाम दर्ज कराने या गलत नाम पर तहसीलदार को आपत्ति पत्र का प्रारूप।",
+    "keywords": ["varasat format", "mutation template", "khatoni application", "tehsildar application", "वरासत फॉर्म", "आपत्ति पत्र"]
+  },
+  {
+    "id": "template-fir",
+    "title": "धारा 173(4) BNSS के तहत SP को FIR दर्ज कराने हेतु प्रार्थना पत्र",
+    "category": "दस्तावेज़ प्रारूप (Template)",
+    "categoryKey": "templates",
+    "url": "./templates.html",
+    "snippet": "थानेदार द्वारा FIR दर्ज न करने पर पुलिस अधीक्षक (SP) को पंजीकृत डाक से भेजने हेतु कानूनी प्रार्थना पत्र।",
+    "keywords": ["fir template", "sp application", "police complaint format", "bnss 173 format", "एफआईआर प्रार्थना पत्र"]
+  },
+  {
+    "id": "template-paimaish",
+    "title": "ज़मीन की सरकारी पैमाइश (नाप) हेतु SDM को प्रार्थना पत्र",
+    "category": "दस्तावेज़ प्रारूप (Template)",
+    "categoryKey": "templates",
+    "url": "./templates.html",
+    "snippet": "मेड़ विवाद के समाधान हेतु SDM को धारा 24 के तहत सरकारी चालान सहित पैमाइश कराने का प्रारूप।",
+    "keywords": ["paimaish template", "land measurement format", "sdm application", "dhara 24 format", "पैमाइश प्रार्थना पत्र"]
+  },
+  {
+    "id": "template-pension",
+    "title": "रुकी हुई पेंशन पुनः चालू कराने हेतु DSWO को आवेदन",
+    "category": "दस्तावेज़ प्रारूप (Template)",
+    "categoryKey": "templates",
+    "url": "./templates.html",
+    "snippet": "वृद्धावस्था/विधवा पेंशन बैंक में न आने पर जिला समाज कल्याण अधिकारी को जांच व बहाली का आवेदन।",
+    "keywords": ["pension template", "dswo application", "ruki pension format", "pension complaint format", "पेंशन प्रार्थना पत्र"]
+  },
+  {
+    "id": "template-ration",
+    "title": "राशन कार्ड में नाम जोड़ने/सुधारने हेतु प्रार्थना पत्र",
+    "category": "दस्तावेज़ प्रारूप (Template)",
+    "categoryKey": "templates",
+    "url": "./templates.html",
+    "snippet": "परिवार के नए सदस्य का नाम जोड़ने या कोटेदार द्वारा राशन कम देने पर पूर्ति निरीक्षक/BDO को आवेदन।",
+    "keywords": ["ration template", "ration card application", "ration sudhar format", "supply officer application", "राशन आवेदन"]
+  },
+  {
+    "id": "template-jansunwai",
+    "title": "जनसुनवाई (Jansunwai) व मुख्यमंत्री पोर्टल शिकायत प्रारूप",
+    "category": "दस्तावेज़ प्रारूप (Template)",
+    "categoryKey": "templates",
+    "url": "./templates.html",
+    "snippet": "भ्रष्टाचार, लापरवाही या लंबित मामलों को सीधे मुख्यमंत्री व जिलाधिकारी स्तर पर दर्ज कराने का मानक प्रारूप।",
+    "keywords": ["jansunwai template", "cm helpline format", "dm application", "shikayat patra", "जनसुनवाई प्रार्थना पत्र"]
+  },
+  {
+    "id": "escalation-stages",
+    "title": "शिकायत आगे बढ़ाने के 4 चरण (Escalation Guide)",
+    "category": "शिकायत निवारण (Remedy)",
+    "categoryKey": "remedy",
+    "url": "./escalation-guide.html",
+    "snippet": "थाना/ब्लॉक (चरण 1) से SP/SDM (चरण 2), DM/SSP (चरण 3) और जनसुनवाई 1076/हाईकोर्ट (चरण 4) तक की पूरी सीढ़ी।",
+    "keywords": ["escalation", "shikayat sidhi", "sp", "dm", "sdm", "bdo", "tehsildar", "lokayukta", "high court", "sunwai nahi hui", "afsar sun nahi raha"]
+  },
+  {
+    "id": "remedy-land-dispute",
+    "title": "ज़मीन के कागज़ (खतौनी) में नाम नहीं या खेत पर किसी और का नाम",
+    "category": "समस्या समाधान (Remedy)",
+    "categoryKey": "remedy",
+    "url": "./problem-to-remedy.html#land",
+    "snippet": "तहसील में आपत्ति दर्ज करना, लेखपाल से खुली बैठक में रिकॉर्ड अपडेट कराना। सरकारी फीस ₹0 (मुफ्त)।",
+    "keywords": ["khatoni me naam nahi", "khet par kisi aur ka naam", "zameen vivad", "land problem", "remedy land", "bhulekh sudhar"]
+  },
+  {
+    "id": "remedy-wage-theft",
+    "title": "ठेकेदार ने मज़दूरी काट ली या कम पैसे दिए (Wage Theft)",
+    "category": "समस्या समाधान (Remedy)",
+    "categoryKey": "remedy",
+    "url": "./problem-to-remedy.html#wage",
+    "snippet": "मज़दूरी की चोरी संज्ञेय अपराध है। थाने में लिखित शिकायत दें, SDM या श्रम आयुक्त से तुरंत हस्तक्षेप मांगें।",
+    "keywords": ["thekedar paise nahi de raha", "majdoori kat li", "wage theft", "labour court", "bns 378", "mgnrega paisa ruka"]
+  },
+  {
+    "id": "remedy-jansunwai-stuck",
+    "title": "जनसुनवाई शिकायत पर 15 दिन से कोई कार्रवाई नहीं हुई",
+    "category": "समस्या समाधान (Remedy)",
+    "categoryKey": "remedy",
+    "url": "./problem-to-remedy.html#legal",
+    "snippet": "jansunwai.up.nic.in पर स्टेटस चेक करें। तहसील 'समाधान दिवस' में रसीद दिखाएं या 1076 CM हेल्पलाइन पर कॉल करें।",
+    "keywords": ["jansunwai stuck", "shikayat ka jawab nahi", "samadhan diwas", "1076 helpline", "cm helpline", "complaint pending"]
+  },
+  {
+    "id": "remedy-ration-cut",
+    "title": "कोटेदार राशन कम दे रहा है या यूनिट कटी हुई है",
+    "category": "समस्या समाधान (Remedy)",
+    "categoryKey": "remedy",
+    "url": "./problem-to-remedy.html#entitlement",
+    "snippet": "टोल-फ्री 1967 या पूर्ति निरीक्षक को शिकायत दें। इलेक्ट्रॉनिक कांटे की पर्ची लेना आपका अनिवार्य विधिक हक है।",
+    "keywords": ["kotedar rashan kam deta hai", "rashan card kat gaya", "ration grievance", "1967", "supply inspector", "unit cut"]
+  },
+  {
+    "id": "fee-transparency-guide",
+    "title": "सरकारी फीस पारदर्शिता — रिश्वत से बचाव व मुफ़्त सेवाएँ",
+    "category": "पारदर्शिता व फीस (Transparency)",
+    "categoryKey": "transparency",
+    "url": "./fee-transparency.html",
+    "snippet": "वरासत, राशन सुधार, एफआईआर कॉपी, ई-केवाईसी सब ₹0 मुफ़्त हैं। दलालों व रिश्वतखोरों के विरुद्ध 1064 एंटी-करप्शन कॉल करें।",
+    "keywords": ["fee transparency", "zero fee", "rishwat", "bribe", "ghoos", "bhrashtachar", "dalal", "1064", "free services", "sarkari fees kitni hai", "anti corruption"]
+  },
+  {
+    "id": "fraud-warning-guide",
+    "title": "गाँव में होने वाले फर्जीवाड़े व साइबर ठगी से बचाव",
+    "category": "सुरक्षा व चेतावनी (Fraud Warning)",
+    "categoryKey": "fraud",
+    "url": "./fraud-warning.html",
+    "snippet": "फर्जी लोन एजेंट, बायोमेट्रिक क्लोनिंग, CSC अवैध वसूली और बैंक OTP फ्रॉड से सावधान रहें। साइबर हेल्पलाइन 1930।",
+    "keywords": ["fraud", "dhokhadhadi", "cyber crime", "1930", "thagi", "csc extra charge", "otp fraud", "fake agent", "scam", "biometric fraud"]
+  },
+  {
+    "id": "status-tracker",
+    "title": "ऑनलाइन स्थिति जांच पोर्टल (Status Tracker)",
+    "category": "टूल व स्टेटस (Status Check)",
+    "categoryKey": "status",
+    "url": "./status-check.html",
+    "snippet": "जनसुनवाई, आय/जाति प्रमाण पत्र, PM-Kisan, PM-Awas, और राशन कार्ड आवेदन की स्थिति सीधे ट्रैक करें।",
+    "keywords": ["status check", "track application", "jansunwai status", "pm kisan status", "rashan card status", "edistrict status", "sthiti check kare"]
+  },
+  {
+    "id": "helpline-112",
+    "title": "आपातकालीन पुलिस सेवा 112 (Emergency Police)",
+    "category": "हेल्पलाइन (Helpline)",
+    "categoryKey": "helpline",
+    "url": "tel:112",
+    "snippet": "चोरी, झगड़ा, दुर्घटना या किसी भी तत्काल पुलिस सहायता के लिए 24 घंटे उपलब्ध राष्ट्रीय आपात नंबर।",
+    "keywords": ["112", "police helpline", "emergency", "aapatkalin", "dial 112", "police call"]
+  },
+  {
+    "id": "helpline-1930",
+    "title": "राष्ट्रीय साइबर अपराध हेल्पलाइन 1930 (Cyber Fraud)",
+    "category": "हेल्पलाइन (Helpline)",
+    "categoryKey": "helpline",
+    "url": "tel:1930",
+    "snippet": "खाते से अवैध पैसा कटने या ऑनलाइन वित्तीय धोखाधड़ी होने पर गोल्डन ऑवर (2 घंटे) में तुरंत 1930 डायल करें।",
+    "keywords": ["1930", "cyber crime", "cyber helpline", "bank fraud helpline", "khate se paise kat gaye", "online thagi call"]
+  },
+  {
+    "id": "helpline-1076",
+    "title": "मुख्यमंत्री जनसुनवाई हेल्पलाइन 1076 (CM Helpline UP)",
+    "category": "हेल्पलाइन (Helpline)",
+    "categoryKey": "helpline",
+    "url": "tel:1076",
+    "snippet": "अधिकारियों द्वारा बात न सुनने या सरकारी योजनाओं में रुकावट पर सीधे मुख्यमंत्री कार्यालय में शिकायत दर्ज कराएं।",
+    "keywords": ["1076", "cm helpline", "jansunwai call", "mukhyamantri helpline", "shikayat helpline", "up helpline"]
+  },
+  {
+    "id": "helpline-1090",
+    "title": "महिला पावर लाइन 1090 (Women Power Line)",
+    "category": "हेल्पलाइन (Helpline)",
+    "categoryKey": "helpline",
+    "url": "tel:1090",
+    "snippet": "महिलाओं के साथ छेड़छाड़, फोन पर अश्लील कॉल या किसी भी दुर्व्यवहार के विरुद्ध 24 घंटे गोपनीय सुरक्षा सेवा।",
+    "keywords": ["1090", "women helpline", "mahila power line", "chedchad", "phone harassment", "ladkiyo ki helpline"]
+  },
+  {
+    "id": "helpline-15100",
+    "title": "मुफ़्त सरकारी वकील व विधिक सहायता 15100 (DLSA / NALSA)",
+    "category": "हेल्पलाइन (Helpline)",
+    "categoryKey": "helpline",
+    "url": "tel:15100",
+    "snippet": "यदि कोर्ट में केस लड़ने या वकील करने के पैसे नहीं हैं, तो DLSA से 100% मुफ्त सरकारी वकील प्राप्त करें।",
+    "keywords": ["15100", "free lawyer", "muft vakeel", "dlsa", "nalsa", "legal aid", "sarkari vakeel", "court fees"]
+  },
+  {
+    "id": "helpline-1967",
+    "title": "खाद्य व रसद विभाग हेल्पलाइन 1967 (Ration Supply)",
+    "category": "हेल्पलाइन (Helpline)",
+    "categoryKey": "helpline",
+    "url": "tel:1967",
+    "snippet": "कोटेदार द्वारा कम राशन देने, राशन न बांटने या कार्ड से नाम कटने की आधिकारिक शिकायत दर्ज कराएं।",
+    "keywords": ["1967", "rashan helpline", "kotedar complaint", "khadya rasad", "ration phone number", "dealer complaint"]
+  },
+  {
+    "id": "helpline-1064",
+    "title": "एंटी करप्शन विजिलेंस हेल्पलाइन 1064 (Anti-Corruption)",
+    "category": "हेल्पलाइन (Helpline)",
+    "categoryKey": "helpline",
+    "url": "tel:1064",
+    "snippet": "कोई भी सरकारी कर्मचारी, लेखपाल या अधिकारी काम के बदले रिश्वत मांगे, तो सीधे सतर्कता विभाग को फोन करें।",
+    "keywords": ["1064", "anti corruption", "vigilance", "rishwat helpline", "ghoos complaint", "bhrashtachar call"]
+  },
+  {
+    "id": "helpline-18001805555",
+    "title": "मनरेगा लोकपाल व सहायता हेल्पलाइन 1800-180-5555",
+    "category": "हेल्पलाइन (Helpline)",
+    "categoryKey": "helpline",
+    "url": "tel:18001805555",
+    "snippet": "मनरेगा जॉब कार्ड न बनने, कार्य न मिलने या 15 दिन में मज़दूरी भुगतान न होने पर राज्य स्तरीय हेल्पलाइन।",
+    "keywords": ["18001805555", "1800-180-5555", "nrega helpline", "mgnrega phone", "ombudsperson", "manrega shikayat"]
+  },
+  {
+    "id": "official-contacts-dir",
+    "title": "जिले व तहसील के प्रमुख अधिकारियों के पद व संपर्क सूची",
+    "category": "अधिकारी संपर्क (Contacts)",
+    "categoryKey": "contacts",
+    "url": "./official-contacts.html",
+    "snippet": "DM, SDM, BDO, CDO, SP, क्षेत्राधिकारी (CO), तहसीलदार व लेखपाल के कार्यक्षेत्र एवं मिलने का समय।",
+    "keywords": ["dm", "sdm", "bdo", "cdo", "sp", "tehsildar", "lekhpal", "officials", "adhikari", "contact numbers", "karyalay", "office"]
+  },
+  {
+    "id": "legal-disclaimer",
+    "title": "विधिक अस्वीकरण व नागरिक मंच नीति (Legal Disclaimer)",
+    "category": "नीति व नियम (Policy)",
+    "categoryKey": "legal",
+    "url": "./legal.html",
+    "snippet": "यह मंच स्वतंत्र विधिक साक्षरता हेतु है। आधिकारिक कानूनों, शासकीय आदेशों व गैर-सरकारी मंच नीति की जानकारी।",
+    "keywords": ["legal", "disclaimer", "privacy policy", "terms", "gopniyata niti", "vidhik suchna", "non government"]
+  }
+]
