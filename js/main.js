@@ -361,20 +361,6 @@
     }, 10 * 1000);
   }
 
-  function initDistrictSelector() {
-    const selector = document.getElementById('districtSelector');
-    if (!selector) return;
-    const savedLocation = localStorage.getItem('selectedNewsLocation');
-    if (savedLocation) selector.value = savedLocation;
-    
-    selector.addEventListener('change', async () => {
-      localStorage.setItem('selectedNewsLocation', selector.value);
-      tickerItems = [...CIVIC_FALLBACK];
-      renderMarquee();
-      tickerItems = await fetchNewsFromSources();
-      renderMarquee();
-    });
-  }
 
 
   async function fetchImpactStats() {
@@ -474,7 +460,6 @@
     initSmoothScroll();
     initStickyHeader();
     initMobileNav();
-    initDistrictSelector();
     initNewsTicker();
     initImpactStats();
     initInteractiveChecklists();

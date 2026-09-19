@@ -4396,3 +4396,57 @@ select, input, textarea {
     scroll-behavior: auto !important;
   }
 }
+
+/* ── Print Styles (Added for cleaner legal drafts) ──────────────── */
+@media print {
+  /* Hide non-essential UI */
+  .site-header,
+  .site-footer,
+  .mobile-bottom-nav,
+  .sub-hero,
+  .hero,
+  .breadcrumb,
+  form,
+  .btn,
+  .drafter-output-header,
+  .nav-overlay,
+  .nav-drawer {
+    display: none !important;
+  }
+
+  /* Reset body and remove background */
+  body {
+    background: transparent !important;
+    color: #000 !important;
+    font-size: 12pt;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Expand draft area for printing */
+  #draftOutputArea {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  #draftContent {
+    border: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 13pt !important;
+    line-height: 1.6 !important;
+    color: #000 !important;
+  }
+
+  /* Hide speech bubbles/hints underneath draft */
+  #draftOutputArea > div:not(#draftContent),
+  #draftOutputArea > hr {
+    display: none !important;
+  }
+
+  @page {
+    margin: 2cm;
+  }
+}
