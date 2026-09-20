@@ -304,14 +304,30 @@
   let tickerItems = [];
   let newsRefreshInProgress = false;
 
+  function escapeHTML(str) {
+    if (typeof str !== 'string') return str;
+    return str
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
+  }
+
   function buildTickerSpan(item) {
     const isExternal = item.link && /^https?:\/\//i.test(item.link);
     const linkLabel = item.linkLabel || (isExternal ? 'आधिकारिक वेबसाइट' : 'विस्तार से पढ़ें');
     const targetAttributes = isExternal ? ' target="_blank" rel="noopener noreferrer"' : '';
-    const linkHtml = item.link
-      ? ` <a href="${item.link}"${targetAttributes} style="color:#93c5fd;text-decoration:underline;margin-left:4px;">${linkLabel}</a>`
+    const safeLink = escapeHTML(item.link);
+    const safeLinkLabel = escapeHTML(linkLabel);
+    const safeText = escapeHTML(item.text);
+    const safeLabel = escapeHTML(item.label);
+    const safeIcon = escapeHTML(item.icon);
+
+    const linkHtml = safeLink
+      ? ` <a href="${safeLink}"${targetAttributes} style="color:#93c5fd;text-decoration:underline;margin-left:4px;">${safeLinkLabel}</a>`
       : '';
-    return `<i data-lucide="${item.icon}" class="inline-icon" style="color:#eab308;margin-right:4px;"></i><strong>${item.label}:</strong> ${item.text}${linkHtml}`;
+    return `<i data-lucide="${safeIcon}" class="inline-icon" style="color:#eab308;margin-right:4px;"></i><strong>${safeLabel}:</strong> ${safeText}${linkHtml}`;
   }
 
   function renderMarquee() {
