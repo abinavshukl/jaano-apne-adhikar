@@ -1,6 +1,6 @@
 # Project Status — जानो अपने अधिकार (Jaano Apne Adhikar)
 
-Last updated: **17 September 2026**. This document records the verified production state of the repository.
+Last updated: **21 September 2026**. This document records the verified production state of the repository.
 
 ---
 
@@ -25,8 +25,14 @@ Last updated: **17 September 2026**. This document records the verified producti
 - Calibrated 8px frosted glass backdrop blur with high-contrast slate tint on `.nav-overlay` to diffuse background text and maximize menu readability.
 - 100% opaque solid drawer surface with strong elevation drop shadow.
 - Gesture-friendly floating 6-item bottom navigation with `env(safe-area-inset-bottom)` safe-area padding.
-- Service worker ([sw.js](sw.js)) caching with immediate network-first strategy (v20260917-r4).
+- Service worker ([sw.js](sw.js)) caching with immediate network-first strategy (v20260918-r22) — **43 URLs cached**.
 - Complete [sitemap.xml](sitemap.xml) with 23 indexed URLs.
+
+### D. Universal Multi-Lingual Search Engine
+- Instant live typeahead search across all 47 indexed entries (schemes, rights, helplines, articles, contacts, land laws, templates).
+- Matches Hindi (Devanagari), English, and phonetic Hinglish — scored, ranked results.
+- Full-page search results on `articles.html` with `?q=` query parameter support.
+- Offline-capable: falls back to cache gracefully when network is unavailable.
 
 ---
 
@@ -42,9 +48,27 @@ Last updated: **17 September 2026**. This document records the verified producti
 
 ---
 
-## 3. Automated Audit & Compliance
+## 3. Visual Psychology Audit (21 September 2026)
 
-- **JavaScript Syntax**: 5 active script files verified via Node.js (`node -c`) — **0 errors**.
-- **CSS Architecture**: 544 balanced rule blocks in `css/styles.css` (pruned 140 lines of dead booth CSS) — **0 syntax errors**.
-- **Internal Asset & Link Checks**: All stylesheet, script, and image references point to valid local or CDN files — **0 broken links**.
+A site-wide visual psychology audit was completed and all high/medium priority issues resolved:
+
+| Priority | Issue | Fix Applied |
+|---|---|---|
+| 1 | Cards without hover states | Added `translateY(-4px)` lift to pillar cards (`index.html`) and article cards (`articles.html`) |
+| 2 | Dense text walls on `rights.html` | Paragraph line breaks added to long blocks |
+| 3 | Missing section kickers on `schemes.html` | 2 `section__kicker` labels added |
+| 4 | `font-weight: 800` overuse | `articles.html`: 28 → 9 (H2 only); `rights.html`: 9 → 0 |
+| 5 | Inline style overload on `articles.html` | Extracted 9 reusable BEM classes (`.article-guide-card__*`) — reduced inline attrs by 49 |
+
+**Remaining (low priority):** Mapping ~40–55 hardcoded hex colors per page to CSS custom property tokens.
+
+---
+
+## 4. Automated Audit & Compliance
+
+- **JavaScript Syntax**: 6 active script files verified via Node.js (`node --check`) — **0 errors**.
+- **Unit Tests**: 2/2 passing — search engine (Hindi/English/Hinglish) and drafter form reset.
+- **CSS Architecture**: 828 balanced rule blocks in `css/styles.css` — **0 syntax errors**.
+- **Search Index**: 47 entries, all with required fields (`id`, `title`, `category`, `categoryKey`, `url`, `snippet`, `keywords`) — **0 integrity errors**.
+- **Internal Asset & Link Checks**: All 22 HTML pages, 7 core assets, 43 SW-cached URLs verified — **0 broken links**.
 - **Privacy & Security**: Zero trackers, zero analytics, zero external complaint submissions. All drafted forms stay 100% on the user's device.

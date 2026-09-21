@@ -44,18 +44,26 @@ Live site: [https://abinavshukl.github.io/jaano-apne-adhikar/](https://abinavshu
    - 👴 [article-pension.html](article-pension.html) — वृद्धा, विधवा व दिव्यांग पेंशन स्थिति व समाधान
    - 🏛️ [article-gramsabha.html](article-gramsabha.html) — ग्राम सभा बैठक, खुली बैठक व बजट निगरानी
 
-5. **मोबाइल-प्रथम अनुभव (Mobile-First Experience):**
+5. **सार्वभौमिक बहुभाषी खोज इंजन (Universal Multi-Lingual Search Engine):**
+   - लाइव टाइपअहेड सर्च — हिंदी, अंग्रेज़ी और हिंग्लिश में एकसाथ खोजें
+   - 47 इंडेक्स्ड एंट्री — योजनाएँ, अधिकार, हेल्पलाइन, लेख, संपर्क, भूलेख कानून, टेम्पलेट
+   - स्कोर-आधारित रैंकिंग: सटीक टाइटल मैच से लेकर आंशिक कीवर्ड मैच तक
+   - ऑफलाइन-कैपेबल: नेटवर्क न हो तो SW कैश से परिणाम
+
+6. **मोबाइल-प्रथम अनुभव (Mobile-First Experience):**
    - 1080×2400 (20:9) और 360×800 स्क्रीन पर पूर्ण अनुकूलन
    - जेस्चर नेविगेशन के लिए सेफ-एरिया सपोर्ट (`env(safe-area-inset-bottom)`)
    - 6-टैब फ्लोटिंग बॉटम बार व लैंडस्केप रेस्पॉन्सिव साइड-ड्रॉअर
-   - ऑफलाइन सपोर्ट हेतु सर्विस वर्कर ([sw.js](sw.js))
+   - ऑफलाइन सपोर्ट हेतु सर्विस वर्कर ([sw.js](sw.js)) — **43 URLs कैश्ड**
 
 ---
 
 ## 🏛️ तकनीकी संरचना (Technical Architecture)
 
 * **फ्रंटएंड:** 100% Vanilla HTML5, CSS3, ES6+ JavaScript
-* **डिज़ाइन सिस्टम:** Vanilla CSS Custom Properties (Tokens), BEM-आधारित मॉड्यूलर संरचना, डार्क/लाइट कॉन्ट्रास्ट
+* **डिज़ाइन सिस्टम:** Vanilla CSS Custom Properties (Tokens), BEM-आधारित मॉड्यूलर CSS क्लासेज़ (828 balanced rule blocks), माइक्रो-एनिमेशन व hover lift effects
+* **खोज इंजन:** क्लाइंट-साइड JSON इंडेक्स (`data/search-index.json` — 47 entries), स्कोर-रैंक्ड बहुभाषी मैचिंग
+* **टेस्टिंग:** Node.js built-in test runner — 2 automated unit tests (search + drafter)
 * **आइकॉन्स:** Lucide Icons (SVG)
 * **फॉन्ट:** Google Fonts (Mukta)
 * **प्राइवेसी व सुरक्षा:** नो ट्रैकिंग, नो थर्ड-पार्टी एनालिटिक्स, क्लाइंट-साइड डेटा प्रोसेसिंग (शिकायत ड्राफ्ट केवल यूजर के डिवाइस पर रहता है)
